@@ -1,0 +1,83 @@
+.menu-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.menu-wrapper{
+    position: relative;
+}
+.hamburger-menuu{
+    z-index: 11;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    display: none;
+}
+.menu-secondary{
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: #A5C9FF;
+}
+.menuu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 3rem;
+    width: 100%;
+    padding: 40px 20px;
+}
+.menuu .logoContainer .logo{
+    color: #fff;
+    font-size: 16px;
+}
+.menu-layer{
+    width: 100%;
+    background-color: #000;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 13;
+}
+.menu-links nav{
+   display: block;
+}
+.menu-links nav div{
+   padding: 0;
+   margin: 0;
+}
+.menu-links nav div p{
+  list-style: none;
+  font-size: 70px;
+  font-weight: 700;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 90px;
+  overflow-y: hidden;
+  position: relative;
+  font-family: montreal;
+}
+.menu-links nav div p p{
+    position: absolute;
+    color: #fff;
+    font-family: york;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    transform: rotate(0);
+}
+.menu-links nav div p a:hover{
+    color: #000;
+}

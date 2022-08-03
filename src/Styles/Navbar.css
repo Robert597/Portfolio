@@ -1,0 +1,62 @@
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 40px 40px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    list-style-type: none;
+    font-family: Neue;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px 10px;
+    color: #212121;
+}
+
+
+.contact{
+    font-family: Neue;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+.logo{
+  font-family: york;
+  font-size: 24px; 
+  font-weight: bolder;
+  cursor: pointer; 
+  color: #212121;
+}
+.hamburger-menu{
+    display: none;
+}
+
+
+    @media all and (max-width: 760px){
+        .navbar, .contact{
+            display: none;
+        }
+       .hamburger-menu{
+        display: block;
+       }
+       .NavbarContainer{
+        padding: 30px 20px;
+    }
+    }

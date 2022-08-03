@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Neue';
+  src: url('../Fonts/neue/NeueMontreal-Regular.otf');
+}
+@font-face {
+  font-family: 'NeueLight';
+  src: url('../Fonts/neue/NeueMontreal-Light.otf');
+}
+@font-face {
+  font-family: 'NeueBold';
+  src: url('../Fonts/neue/NeueMontreal-Bold.otf');
+}
+@font-face {
+  font-family: 'GroteskBold';
+  src: url('../Fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf');
+}
+@font-face {
+  font-family: 'Grotesk';
+  src: url('../Fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf');
+}
+@font-face {
+  font-family: york;
+  src: url(../Fonts/newyork/NewYork\ PERSONAL\ USE.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.about{
+  height: 100vh;
+  background-color: #000;
+}
+
+
+
+

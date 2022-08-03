@@ -1,0 +1,232 @@
+.bannerContainer{
+    padding: 40px;
+    width: 100%;
+}
+.creative, .developer{
+    font-size: 100px;
+    color: #212121;
+    font-weight: bolder;
+    font-family: york, Grotesk;
+    text-transform: uppercase;
+    height: 130px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.software{
+    display: flex;
+    width: 100%;
+    font-size: 100px;
+    color: #212121;
+    font-weight: bolder;
+    font-family: york, Grotesk;
+    align-items: center;
+    text-transform: uppercase;
+    height: 130px;
+    margin-bottom: 30px;
+}
+.software h1{
+    margin: 0 40px;
+}
+.developer{
+    position: relative;
+}
+.developer h1{
+    position: absolute;
+    z-index: 10;
+    background-color: #f1f1f1;
+}
+.me{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+}
+.me img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.circle{
+    position: relative;
+    left: 80%;
+    bottom: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 15;
+   }
+   .arrowicon{
+     position: absolute;
+     display: inline;
+   }
+   #circular{
+     position: absolute;
+     user-select: none;
+     pointer-events: none;
+     font-size: 10px;
+     text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    left: 50px;
+    transform-origin: 0 50px;
+    animation: animate 5s linear infinite;
+    }
+   
+    @keyframes animate{
+     from{
+       transform: rotate(0deg);
+     }
+     to{
+       transform: rotate(360deg);
+     }
+    }
+    
+    #circular span{
+      position: absolute;
+      transform-origin: 0 50px;
+      font-family: Neue;
+    }
+
+    @media all and (max-width: 1000px){
+        .creative, .developer{
+            font-size: 70px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        .software h1{
+            margin: 0 30px;
+        }
+        .software{
+            font-size: 70px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+    }
+    @media all and (max-width: 760px){
+        .creative, .developer{
+            font-size: 60px;
+            height: 80px;
+            margin-bottom: 30px;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            bottom: 10px;
+          }
+          #circular{
+           transform-origin: 0 40px;
+           left: 40px;
+           }
+           #circular span{
+            position: absolute;
+            transform-origin: 0 40px;
+            font-family: Neue;
+          }
+        .software{
+            font-size: 60px;
+            height: 80px;
+            margin-bottom: 30px;
+        }
+        .software h1{
+            margin: 0 20px;
+        }
+        .me{
+            width: 15%;
+        }
+    }
+    @media all and (max-width: 650px){
+        .creative, .developer{
+            font-size: 50px;
+            height: 70px;
+        }
+        .software h1{
+            margin: 0 20px;
+        }
+        .software{
+            font-size: 50px;
+            height: 70px;
+        }
+    }
+    @media all and (max-width: 550px){
+        .creative, .developer{
+            font-size: 40px;
+            height: 60px;
+        }
+        .software h1{
+            margin: 0 20px;
+        }
+        .software{
+            font-size: 40px;
+            height: 60px;
+        }
+     
+    }
+    @media all and (max-width: 480px){
+        .creative, .developer{
+            font-size: 30px;
+            height: 50px;
+        }
+        .software h1{
+            margin: 0 20px;
+        }
+        .software{
+            font-size: 30px;
+            height: 50px;
+        }
+        .me{
+            width: 20%;
+        }
+      .circle{
+        width: 80px;
+        height: 80px;
+        bottom: 20px;
+        left: 80%;
+      }
+      #circular{
+       transform-origin: 0 40px;
+       left: 40px;
+       }
+       #circular span{
+        position: absolute;
+        transform-origin: 0 40px;
+        font-family: Neue;
+      }
+    }
+    @media all and (max-width: 395px) {
+        .circle{
+            width: 60px;
+            height: 60px;
+            bottom: 10px;
+            left: 80%;
+          }
+          #circular{
+           transform-origin: 0 30px;
+           left: 30px;
+           }
+           #circular span{
+            position: absolute;
+            transform-origin: 0 30px;
+            font-family: Neue;
+            font-size: 8px;
+          }
+    }
+    @media all and (max-width: 350px) {
+        .creative, .developer{
+            font-size: 25px;
+            height: 45px;
+        }
+        .software h1{
+            margin: 0 20px;
+        }
+        .software{
+            font-size: 25px;
+            height: 45px;
+        }
+    }

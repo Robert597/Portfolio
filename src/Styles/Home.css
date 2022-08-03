@@ -1,0 +1,18 @@
+.Homewrapper{
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.HomeContainer{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+@media all and  (min-height: 650px){
+    .HomeContainer{
+     padding-top: 50px;
+    }
+}
