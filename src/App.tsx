@@ -27,7 +27,7 @@ return (
   }
   containerRef={containerRef}
 >
-  <main data-scroll-container ref={containerRef}>
+  <main data-scroll-container ref={containerRef} className="main">
    <Home/>
    <About/>
   </main>
