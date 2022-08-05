@@ -1,36 +1,39 @@
 .bannerContainer{
-    padding: 40px;
+    padding: 40px 0;
     width: 100%;
 }
 .creative, .developer{
-    font-size: 100px;
+    font-size: 90px;
     color: #212121;
     font-weight: bolder;
     font-family: york, Grotesk;
     text-transform: uppercase;
-    height: 130px;
+    height: 120px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    padding: 0 40px;
 }
 
 .software{
     display: flex;
     width: 100%;
-    font-size: 100px;
+    font-size: 90px;
     color: #212121;
     font-weight: bolder;
     font-family: york, Grotesk;
     align-items: center;
     text-transform: uppercase;
-    height: 130px;
+    height: 120px;
     margin-bottom: 30px;
+    padding: 0 40px;
 }
 .software h1{
     margin: 0 40px;
 }
 .developer{
     position: relative;
+    padding: 0 40px;
 }
 .developer h1{
     position: absolute;
@@ -50,9 +53,9 @@
 }
 
 .circle{
-    position: relative;
+    position: fixed;
     left: 80%;
-    bottom: 60px;
+    bottom: 100px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -78,7 +81,33 @@
     transform-origin: 0 50px;
     animation: animate 5s linear infinite;
     }
-   
+   hr{
+    color: #212121;
+    height: 2px;
+   width: 100vw;
+   }
+   .downContent{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .downcontent{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    
+   }
+   .downcontent p{
+    font-family: neue;
+    font-size: 16px;
+    color: #212121;
+    display: block;
+   }
     @keyframes animate{
      from{
        transform: rotate(0deg);
@@ -93,8 +122,24 @@
       transform-origin: 0 50px;
       font-family: Neue;
     }
+.introLoader{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: #212121;
+    padding: 0 40px;
+}
+.count{
+    font-size: 56px;
+    font-weight: bold;
+    font-family: Grotesk;
+}
 
-    @media all and (max-width: 1000px){
+    @media all and (max-width: 1000px ) and (min-height: 600px){
         .creative, .developer{
             font-size: 70px;
             height: 100px;
@@ -109,16 +154,17 @@
             margin-bottom: 30px;
         }
     }
-    @media all and (max-width: 760px){
+    @media all and (max-width: 760px) {
         .creative, .developer{
             font-size: 60px;
             height: 80px;
             margin-bottom: 30px;
         }
         .circle{
+            position: fixed;
             width: 80px;
             height: 80px;
-            bottom: 10px;
+            top: 80%;
           }
           #circular{
            transform-origin: 0 40px;
@@ -140,7 +186,30 @@
         .me{
             width: 15%;
         }
+        .downContent{
+           min-height: 4rem;
+           padding: 20px 0; 
+           }
+           .downcontent{
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: 0 20px;
+            justify-content: left;
+             }
+           .downcontent p{
+            font-family: Neue;
+            font-size: 18px;
+            color: #212121;
+           padding: 10px 0;
+           }
+           .introLoader{
+            padding: 0 20px;
+           }
     }
+
     @media all and (max-width: 650px){
         .creative, .developer{
             font-size: 50px;
@@ -186,7 +255,6 @@
       .circle{
         width: 80px;
         height: 80px;
-        bottom: 20px;
         left: 80%;
       }
       #circular{
@@ -203,7 +271,6 @@
         .circle{
             width: 60px;
             height: 60px;
-            bottom: 10px;
             left: 80%;
           }
           #circular{
@@ -228,5 +295,21 @@
         .software{
             font-size: 25px;
             height: 45px;
+        }
+    }
+    @media all and (max-width: 500px) and (min-height: 700px){
+        .downContent{
+            position: fixed;
+            top: 70%;
+           }
+    }
+    @media all and (min-width: 761px) and (max-height: 600px){
+        .creative, .developer{
+            font-size: 50px;
+            height: 70px;
+        }
+        .software{
+            font-size: 50px;
+            height: 70px;
         }
     }

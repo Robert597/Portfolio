@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import {RiMenu4Fill} from "react-icons/ri";
 import Mobile from "./Mobile";
 
-const Navbar = () => {
+const Navbar = ({loading}:{loading: Boolean}) => {
     const [state, setState] = React.useState<{
         initial: boolean | null,
         clicked: boolean | null,
@@ -44,6 +44,8 @@ const Navbar = () => {
             ROBERT
             </h1>
         </div>
+        {
+            !loading && 
         <ul className='navbar'>
             <motion.li>
                 <motion.p
@@ -85,7 +87,8 @@ const Navbar = () => {
             }>Projects</motion.p>
             </motion.li>
         </ul>
-
+}
+{!loading && 
         <div className="contact">
         <motion.p
         whileHover={
@@ -99,10 +102,15 @@ const Navbar = () => {
             }
         }>Contact</motion.p>
         </div>
+}
+
+{
+    !loading && 
 
 <div className='hamburger-menu' onClick={() => handleMenu()}>
 <RiMenu4Fill/>
 </div>
+}
 </div>
 <Mobile state={state} handleMenu={handleMenu}/>
 </div>

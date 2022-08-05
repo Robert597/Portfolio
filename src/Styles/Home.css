@@ -1,18 +1,16 @@
 .Homewrapper{
     width: 100vw;
-    background-color: #212121;
+    background-color: #212121; 
+    position: relative;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
+    align-items: center;
 }
 .HomeContainer{
     background-color: #f1f1f1;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    position: relative;
 }
-@media all and  (min-height: 650px){
-    .HomeContainer{
-     padding-top: 50px;
-    }
-}
+
