@@ -9,7 +9,11 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   useEffect(() => {
     const tl = gsap.timeline({delay: 1.4});
    setTimeout(() => setLoading(false), 1500);
-   
+   tl.to(".HomeContainer", {
+    scale: 1,
+    duration: 1,
+    ease: "easeInOut"
+   })
   }, [])
   
   return (
