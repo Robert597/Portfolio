@@ -13,6 +13,8 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     scale: 1,
     duration: 1,
     ease: "easeInOut"
+   }).to(".developer h1", {
+    left: "15%"
    })
   }, [])
   
