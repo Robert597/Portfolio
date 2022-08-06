@@ -13,7 +13,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   }, [])
   
   return (
-    <section  className='Homewrapper'>
+    <section data-scroll-section  className='Homewrapper'>
         <div className='HomeContainer'>
         <Navbar loading={loading}/>
         <Banner loading={loading}/>

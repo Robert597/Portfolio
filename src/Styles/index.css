@@ -46,6 +46,7 @@ code {
 .about{
   height: 100vh;
   width: 100vw;
+  background-color: #fff;
 }
 .main{
   width: 100vw;
