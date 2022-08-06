@@ -29,12 +29,12 @@ return (
   }
   containerRef={containerRef}
 >
-  <AnimatePresence>
-  <main data-scroll-container ref={containerRef} className="main">
+  
+  <div data-scroll-container ref={containerRef} className="main">
    <Home loading={loading} setLoading={setLoading}/>
    <About/>
-  </main>
-  </AnimatePresence>
+  </div>
+  
 </LocomotiveScrollProvider>
 )
 }

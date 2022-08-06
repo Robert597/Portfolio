@@ -9,17 +9,11 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   useEffect(() => {
     const tl = gsap.timeline({delay: 1.4});
    setTimeout(() => setLoading(false), 1500);
-   tl.to('.HomeContainer', {
-    minHeight: "100vh",
-    width: "100%",
-    duration: 1,
-    ease: "easeInOut",
-   })
    
   }, [])
   
   return (
-    <section data-scroll-section className='Homewrapper'>
+    <section  className='Homewrapper'>
         <div className='HomeContainer'>
         <Navbar loading={loading}/>
         <Banner loading={loading}/>
