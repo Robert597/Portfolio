@@ -7,6 +7,8 @@ import gsap from 'gsap'
 
 const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<SetStateAction<boolean>>; }) => {
   useEffect(() => {
+    let img = document.querySelector(".me img") as HTMLElement | null;
+    let shift = img.offsetWidth;
     const tl = gsap.timeline({delay: 1.4});
    setTimeout(() => setLoading(false), 1500);
    tl.to(".HomeContainer", {
@@ -14,13 +16,17 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     duration: 1,
     ease: "easeInOut"
    }).to(".developer h1", {
-    left: "15%"
+    left: shift + 45,
+    duration: 1,
+    ease: "slow (0.7, 0.7, false)"
    })
   }, [])
+
+ 
   
   return (
-    <section data-scroll-section  className='Homewrapper'>
-        <div className='HomeContainer'>
+    <section data-scroll-section  className='Homewrapper' >
+        <div className='HomeContainer' >
         <Navbar loading={loading}/>
         <Banner loading={loading}/>
         </div>
