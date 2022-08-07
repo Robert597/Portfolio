@@ -55,7 +55,7 @@
 .circle{
     position: fixed;
     left: 80%;
-    bottom: 100px;
+    bottom: 120px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -156,8 +156,8 @@
     }
     @media all and (max-width: 760px) {
         .creative, .developer{
-            font-size: 60px;
-            height: 80px;
+            font-size: 80px;
+            height: 100px;
             margin-bottom: 30px;
         }
         .circle{
@@ -176,8 +176,8 @@
             font-family: Neue;
           }
         .software{
-            font-size: 60px;
-            height: 80px;
+            font-size: 80px;
+            height: 100px;
             margin-bottom: 30px;
         }
         .software h1{
