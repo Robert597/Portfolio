@@ -103,7 +103,7 @@
     
    }
    .downcontent p{
-    font-family: neue;
+    font-family: 'Poppins',neue;
     font-size: 16px;
     color: #212121;
     display: block;
@@ -155,10 +155,12 @@
         }
     }
     @media all and (max-width: 760px) {
+        
         .creative, .developer{
             font-size: 60px;
             height: 80px;
             margin-bottom: 30px;
+            padding: 0 20px;
         }
         .circle{
             position: fixed;
@@ -179,6 +181,7 @@
             font-size: 60px;
             height: 80px;
             margin-bottom: 30px;
+            padding: 0 20px;
         }
         .software h1{
             margin: 0 20px;
@@ -200,7 +203,6 @@
             justify-content: left;
              }
            .downcontent p{
-            font-family: Neue;
             font-size: 18px;
             color: #212121;
            padding: 10px 0;
@@ -238,12 +240,17 @@
      
     }
     @media all and (max-width: 480px){
-        .creative, .developer{
+        .creative{
             font-size: 40px;
             height: 60px;
         }
+        .developer{
+            font-size: 35px;
+            height: 65px;
+        }
         .software h1{
             margin: 0 20px;
+    
         }
         .software{
             font-size: 40px;
