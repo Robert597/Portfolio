@@ -14,7 +14,9 @@
     align-items: center;
     padding: 0 40px;
 }
-
+.animateMarquee .software{
+animation-play-state: running;
+}
 .software{
     display: flex;
     width: 100%;
@@ -27,18 +29,47 @@
     height: 120px;
     margin-bottom: 30px;
     padding: 0 40px;
+    transform: translate3d(calc(-25% + 10vw), 0, 0);
+      animation: marquee-lg 8s linear infinite;
+      animation-play-state: paused;
 }
+@keyframes marquee {
+    0% {
+      transform: translate3d(-25%, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-150%, 0, 0);
+    }
+  }
+  @keyframes marquee-lg {
+    0% {
+      transform: translate3d(calc(-25% + 20vw), 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(calc(-100% + 20vw), 0, 0);
+    }
+  }
 .software h1{
     margin: 0 40px;
 }
 .developer{
     position: relative;
     padding: 0 40px;
+    transition: all 2s ease-in-out;
 }
 .developer h1{
     position: absolute;
     z-index: 10;
+    left: 0;
     background-color: #f1f1f1;
+    transition: all 2s ease-in-out;
+}
+.shift  h1{
+    position: absolute;
+    left: 15%;
+    transition: all 2s ease-in-out;
 }
 .me{
     position: absolute;
@@ -138,7 +169,13 @@
     font-weight: bold;
     font-family: Grotesk;
 }
-
+@media all and (max-width: 1000px){
+    .software{
+        transform: translate3d(25%, 0, 0);
+    animation: marquee 8s linear infinite;
+    animation-play-state: paused;
+    }
+}
     @media all and (max-width: 1000px ) and (min-height: 600px){
         .creative, .developer{
             font-size: 70px;
@@ -188,6 +225,10 @@
         }
         .me{
             width: 15%;
+        }
+        .shift  h1{
+            left: 20%;
+            transition: all 2s ease-in-out;
         }
         .downContent{
            min-height: 4rem;
@@ -245,8 +286,8 @@
             height: 60px;
         }
         .developer{
-            font-size: 35px;
-            height: 65px;
+            font-size: 36px;
+            height: 60px;
         }
         .software h1{
             margin: 0 20px;
@@ -257,7 +298,12 @@
             height: 60px;
         }
         .me{
-            width: 20%;
+            width: 16%;
+        }
+        .shift  h1{
+            left: 23%;
+            transition: all 2s ease-in-out;
+            position: absolute;
         }
       .circle{
         width: 80px;

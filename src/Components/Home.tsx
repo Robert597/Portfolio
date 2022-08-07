@@ -6,20 +6,22 @@ import "../Styles/Home.css";
 import gsap from 'gsap'
 
 const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<SetStateAction<boolean>>; }) => {
+  const [shift, setShift] = React.useState<boolean>(false);
+  const [play, setPlay] = React.useState<boolean>(false);
   useEffect(() => {
-    let img = document.querySelector(".me img") as HTMLElement | null;
-    let shift = img.offsetWidth;
     const tl = gsap.timeline({delay: 1.4});
-   setTimeout(() => setLoading(false), 1500);
+   setTimeout(() => {setLoading(false);
+  }, 1500);
+   setTimeout(() => {setPlay(true);
+  }, 2500);
+
    tl.to(".HomeContainer", {
     scale: 1,
     duration: 1,
     ease: "easeInOut"
-   }).to(".developer h1", {
-    left: shift + 45,
-    duration: 1,
-    ease: "slow (0.7, 0.7, false)"
    })
+
+   setTimeout(() => setShift(true), 3000);
   }, [])
 
  
@@ -28,7 +30,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     <section data-scroll-section  className='Homewrapper' >
         <div className='HomeContainer' >
         <Navbar loading={loading}/>
-        <Banner loading={loading}/>
+        <Banner loading={loading} shift={shift} play={play}/>
         </div>
     </section>
   )

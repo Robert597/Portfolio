@@ -6,7 +6,7 @@ import "../Styles/Banner.css";
 
 
 
-const Banner = ({loading}: { loading: boolean; }) => {
+const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play: boolean;}) => {
     const[count, setCount] = useState(0);
 
     useEffect(() => {
@@ -36,20 +36,20 @@ const Banner = ({loading}: { loading: boolean; }) => {
     
     
   return (
-    <div className='bannerContainer'>
+    <div className={`bannerContainer ${play && 'animateMarquee'}`}>
         <div className='creative'>
             <h1 >Creative</h1>
         </div>
         
-            <div className='software' data-scroll>
-            <h1 data-scroll data-scroll-speed = "10" data-scroll-direction="horizontal">Software</h1>
-            <h1 data-scroll data-scroll-speed = "10" data-scroll-direction="horizontal">Software</h1>
-            <h1 data-scroll data-scroll-speed = "10" data-scroll-direction="horizontal">Software</h1>
-            <h1 data-scroll data-scroll-speed = "10" data-scroll-direction="horizontal">Software</h1>
+            <div className='software' >
+            <h1>Software</h1>
+            <h1>Software</h1>
+            <h1>Software</h1>
+            <h1>Software</h1>
             </div>
         
 
-        <div className='developer'>
+        <div className={shift ? 'developer shift' : 'developer'}>
         <div className='me'>
                 <img src={me} alt="me"/>
             </div>
