@@ -156,8 +156,8 @@
     }
     @media all and (max-width: 760px) {
         .creative, .developer{
-            font-size: 80px;
-            height: 100px;
+            font-size: 60px;
+            height: 80px;
             margin-bottom: 30px;
         }
         .circle{
@@ -176,8 +176,8 @@
             font-family: Neue;
           }
         .software{
-            font-size: 80px;
-            height: 100px;
+            font-size: 60px;
+            height: 80px;
             margin-bottom: 30px;
         }
         .software h1{
@@ -239,15 +239,15 @@
     }
     @media all and (max-width: 480px){
         .creative, .developer{
-            font-size: 30px;
-            height: 50px;
+            font-size: 40px;
+            height: 60px;
         }
         .software h1{
             margin: 0 20px;
         }
         .software{
-            font-size: 30px;
-            height: 50px;
+            font-size: 40px;
+            height: 60px;
         }
         .me{
             width: 20%;
