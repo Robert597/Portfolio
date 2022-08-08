@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import me from "../Assets/me3.jpg";
 import {BsArrowDown} from "react-icons/bs";
 import "../Styles/Banner.css";
+import {motion} from 'framer-motion';
+import { rollText, floatIn} from '../utils/framerVariants';
 
 
 
@@ -29,7 +31,7 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
             }else{
                 setCount(prev => prev + 10);
             }
-        }, 100);
+        }, 120);
 
         return () => clearInterval(introCount);
     }, [count]);
@@ -56,24 +58,42 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
             <h1>Developer</h1>
         </div>
 {!loading &&
-        <div className='circle' data-scroll>
+        <motion.div className='circle' 
+        initial= {{
+            opacity: 0.5,
+           scale: 0.5
+        }}
+        animate={{
+            opacity:1,
+            scale: 1,
+            transition: {
+                delay: 1,
+                duration: 1,
+                ease: "circIn",
+                repeat: 2,
+                repeatType: "reverse"
+             } }
+        }>
        <BsArrowDown className='arrowicon'/>
         
-        <h2 id="circular" data-scroll>
+        <h2 id="circular">
             Scroll-down-Scroll-down.
         </h2>
-        </div>
+        </motion.div>
 }
         
         {!loading &&
-        <div className='downContent'>
+        <motion.div className='downContent'
+        variants={floatIn}
+initial='initial'
+animate='animate'>
         <hr/>
         <div className='downcontent'>
         <p>Robert Oluwaseun</p>
             <p>Available for freelance work.</p>
             <p>Portfolio 2021/2022</p>
             </div>
-        </div>
+        </motion.div>
 }
 
 {loading && (

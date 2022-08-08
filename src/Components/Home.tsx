@@ -9,11 +9,11 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   const [shift, setShift] = React.useState<boolean>(false);
   const [play, setPlay] = React.useState<boolean>(false);
   useEffect(() => {
-    const tl = gsap.timeline({delay: 1.4});
+    const tl = gsap.timeline({delay: 1.7});
    setTimeout(() => {setLoading(false);
-  }, 1500);
+  }, 2700);
    setTimeout(() => {setPlay(true);
-  }, 2500);
+  }, 4800);
 
    tl.to(".HomeContainer", {
     scale: 1,
@@ -21,7 +21,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     ease: "easeInOut"
    })
 
-   setTimeout(() => setShift(true), 3000);
+   setTimeout(() => setShift(true), 4400);
   }, [])
 
  
