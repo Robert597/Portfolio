@@ -13,7 +13,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
    setTimeout(() => {setLoading(false);
   }, 2700);
    setTimeout(() => {setPlay(true);
-  }, 4800);
+  }, 5400);
 
    tl.to(".HomeContainer", {
     scale: 1,

@@ -21,13 +21,11 @@ export const rollText = {
     },
     animate:{
         opacity:1,
-        scale: 1
-    },
-    transition: {
-        delay: 1,
-        duration: 1,
-        ease: "circIn",
-        repeat: 1,
-        repeatType: "reverse"
+        scale: 1,
+        transition: {
+            delay: 1,
+            duration: 1,
+            ease: "circIn"
+        }
     }
 }

@@ -171,7 +171,7 @@ animation-play-state: running;
 }
 @media all and (max-width: 1000px){
     .software{
-        transform: translate3d(25%, 0, 0);
+        transform: translate3d(0, 0, 0);
     animation: marquee 8s linear infinite;
     animation-play-state: paused;
     }

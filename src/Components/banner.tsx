@@ -59,21 +59,9 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
         </div>
 {!loading &&
         <motion.div className='circle' 
-        initial= {{
-            opacity: 0.5,
-           scale: 0.5
-        }}
-        animate={{
-            opacity:1,
-            scale: 1,
-            transition: {
-                delay: 1,
-                duration: 1,
-                ease: "circIn",
-                repeat: 2,
-                repeatType: "reverse"
-             } }
-        }>
+        variants={rollText}
+initial='initial'
+animate='animate'>
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
