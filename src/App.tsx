@@ -42,7 +42,7 @@ return (
   containerRef={containerRef}
 >
   
-  <div data-scroll-container ref={containerRef} className="main" id="main">
+  <div data-scroll-container ref={containerRef} className={loading ? "main nope" : "main"} id="main">
    <Home loading={loading} setLoading={setLoading} />
    <About/>
   </div>

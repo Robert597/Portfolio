@@ -11,6 +11,8 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     const tl = gsap.timeline({delay: 1.7});
    setTimeout(() => {setLoading(false);
   }, 2700);
+  
+
    setTimeout(() => {setPlay(true);
   }, 3800);
 
