@@ -5,6 +5,9 @@
     height: 3rem;
     padding: 40px 40px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 30;
 }
 .navbar{
     display: flex;
@@ -58,5 +61,8 @@
        }
        .NavbarContainer{
         padding: 30px 20px;
+        position: fixed;
+        top: 0;
+        z-index: 30;
     }
     }

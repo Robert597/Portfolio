@@ -3,7 +3,7 @@ import "../Styles/Navbar.css";
 import {motion} from "framer-motion";
 import {RiMenu4Fill} from "react-icons/ri";
 import Mobile from "./Mobile";
-import { floatIn } from '../utils/framerVariants';
+
 
 
 const Navbar = ({loading}:{loading: Boolean}) => {
@@ -38,9 +38,13 @@ const Navbar = ({loading}:{loading: Boolean}) => {
             })
         }
     }
+   
+      
+       
+    
   return (
     <div>
-    <div className="NavbarContainer" data-scroll-sticky data-scroll-target = ".main">
+    <div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
             ROBERT
@@ -48,10 +52,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
         </div>
         {
             !loading && 
-        <motion.ul className='navbar'
-        variants={floatIn}
-        initial='initial'
-        animate='animate'>
+        <motion.ul className='navbar'>
 
             <motion.li>
                 <motion.p
@@ -95,10 +96,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
         </motion.ul>
 }
 {!loading && 
-        <motion.div className="contact"
-        variants={floatIn}
-        initial='initial'
-        animate='animate'>
+        <motion.div className="contact">
         <motion.p
         whileHover={
             {
@@ -116,9 +114,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
 {
     !loading && 
 
-<motion.div className='hamburger-menu' onClick={() => handleMenu()} variants={floatIn}
-initial='initial'
-animate='animate'>
+<motion.div className='hamburger-menu' onClick={() => handleMenu()} >
 <RiMenu4Fill/>
 </motion.div>
 }
@@ -129,4 +125,4 @@ animate='animate'>
 }
 
 
-export default Navbar
+export default Navbar;

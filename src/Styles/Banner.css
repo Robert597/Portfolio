@@ -1,6 +1,7 @@
 .bannerContainer{
     padding: 40px 0;
     width: 100%;
+    margin-top: 3rem;
 }
 .creative, .developer{
     font-size: 90px;
@@ -57,19 +58,19 @@ animation-play-state: running;
 .developer{
     position: relative;
     padding: 0 40px;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .developer h1{
     position: absolute;
     z-index: 10;
     left: 0;
     background-color: #f1f1f1;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .shift  h1{
     position: absolute;
     left: 15%;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .me{
     position: absolute;
@@ -228,7 +229,6 @@ animation-play-state: running;
         }
         .shift  h1{
             left: 20%;
-            transition: all 2s ease-in-out;
         }
         .downContent{
            min-height: 4rem;
@@ -302,7 +302,6 @@ animation-play-state: running;
         }
         .shift  h1{
             left: 23%;
-            transition: all 2s ease-in-out;
             position: absolute;
         }
       .circle{

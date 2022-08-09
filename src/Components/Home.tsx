@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import { Dispatch, SetStateAction } from 'react';
 import Banner from './banner';
-import Navbar from './Navbar';
 import "../Styles/Home.css";
 import gsap from 'gsap'
 
@@ -13,7 +12,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
    setTimeout(() => {setLoading(false);
   }, 2700);
    setTimeout(() => {setPlay(true);
-  }, 5400);
+  }, 3800);
 
    tl.to(".HomeContainer", {
     scale: 1,
@@ -21,15 +20,19 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
     ease: "easeInOut"
    })
 
-   setTimeout(() => setShift(true), 4400);
-  }, [])
+   setTimeout(() => setShift(true), 2800);
+  }, []);
 
  
   
   return (
     <section data-scroll-section  className='Homewrapper' >
         <div className='HomeContainer' >
-        <Navbar loading={loading}/>
+          {loading &&  <div className="logoContainer">
+             <h1 className='logo'>
+            ROBERT
+            </h1>
+        </div>}
         <Banner loading={loading} shift={shift} play={play}/>
         </div>
     </section>

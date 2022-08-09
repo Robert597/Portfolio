@@ -58,10 +58,7 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
             <h1>Developer</h1>
         </div>
 {!loading &&
-        <motion.div className='circle' 
-        variants={rollText}
-initial='initial'
-animate='animate'>
+        <motion.div className='circle'>
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
@@ -71,10 +68,7 @@ animate='animate'>
 }
         
         {!loading &&
-        <motion.div className='downContent'
-        variants={floatIn}
-initial='initial'
-animate='animate'>
+        <motion.div className='downContent'>
         <hr/>
         <div className='downcontent'>
         <p>Robert Oluwaseun</p>
