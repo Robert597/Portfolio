@@ -15,5 +15,11 @@
     min-height: calc(var(--vh, 1vh) * 100);
     transform: scale(0.8);
 }
+.logocontainer{
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+}
+
 
 

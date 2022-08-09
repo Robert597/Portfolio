@@ -43,15 +43,16 @@ const Navbar = ({loading}:{loading: Boolean}) => {
        
     
   return (
+
     <div>
+        {!loading && <>
     <div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
             ROBERT
             </h1>
         </div>
-        {
-            !loading && 
+         
         <motion.ul className='navbar'>
 
             <motion.li>
@@ -94,8 +95,8 @@ const Navbar = ({loading}:{loading: Boolean}) => {
             }>Projects</motion.p>
             </motion.li>
         </motion.ul>
-}
-{!loading && 
+
+
         <motion.div className="contact">
         <motion.p
         whileHover={
@@ -109,17 +110,18 @@ const Navbar = ({loading}:{loading: Boolean}) => {
             }
         }>Contact</motion.p>
         </motion.div>
-}
 
-{
-    !loading && 
+
+
 
 <motion.div className='hamburger-menu' onClick={() => handleMenu()} >
 <RiMenu4Fill/>
 </motion.div>
-}
+
 </div>
 <Mobile state={state} handleMenu={handleMenu}/>
+</>
+}
 </div>
   )
 }

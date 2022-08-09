@@ -28,7 +28,7 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   return (
     <section data-scroll-section  className='Homewrapper' >
         <div className='HomeContainer' >
-          {loading &&  <div className="logoContainer">
+          {loading &&  <div className="logocontainer">
              <h1 className='logo'>
             ROBERT
             </h1>
