@@ -3,6 +3,8 @@ import {LocomotiveScrollProvider} from "react-locomotive-scroll";
 import About from './Components/About';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
+import "./Styles/locomotive.css";
+import gsap from "gsap";
 
 function App() {
  
@@ -11,10 +13,24 @@ function App() {
 
   useEffect(() => {
     //SETTING DOCUMENT HEIGHT ON LOAD
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    //@ts-ignore
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    })
   })
 
+ useEffect(() => {
+   loading ? gsap.set('.c-scrollbar', {
+    css: {
+      display: "none"
+    }
+   }) : gsap.set('.c-scrollbar', {
+    css: {
+      display: "block"
+    }
+   })
+ }, [loading])
  
   
 
@@ -42,7 +58,7 @@ return (
   containerRef={containerRef}
 >
   
-  <div data-scroll-container ref={containerRef} className={loading ? "main nope" : "main"} id="main">
+  <div data-scroll-container ref={containerRef} className="main" id="main">
    <Home loading={loading} setLoading={setLoading} />
    <About/>
   </div>

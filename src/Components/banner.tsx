@@ -13,14 +13,14 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
 
     useEffect(() => {
         if(!loading) {
-    const text = document.getElementById("circular") as HTMLElement;
-    text.innerHTML = text.innerText.replace(/\S/g, "<span>$&</span>");
-    const ele = document.querySelectorAll('span');
-    for(var i=0; i < ele.length; i++){
-        ele[i].style.transform= "rotate(" + i * 15
-         + "deg)";
-    }
-}
+            const text = document.getElementById("circular") as HTMLElement;
+            text.innerHTML = text.innerText.replace(/\S/g, "<span class='rolls'>$&</span>");
+            const ele = document.querySelectorAll('.rolls') as any;
+            for(var i=0; i < ele.length; i++){
+                ele[i].style.transform= "rotate(" + i * 15
+                 + "deg)";
+            }
+        }
     }, [loading]);
 
     useEffect(() => {
@@ -39,11 +39,11 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
     
   return (
     <div className={`bannerContainer ${play && 'animateMarquee'}`}>
-        <div className='creative'>
-            <h1 >Creative</h1>
+        <div className='creative' data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal">
+            <h1>Creative</h1>
         </div>
         
-            <div className='software' >
+            <div className='software'>
             <h1>Software</h1>
             <h1>Software</h1>
             <h1>Software</h1>
@@ -58,7 +58,7 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
             <h1>Developer</h1>
         </div>
 {!loading &&
-        <motion.div className='circle'>
+        <motion.div className='circle' data-scroll data-scroll-speed="2">
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">

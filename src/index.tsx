@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Styles/index.css';
-import "./Styles/locomotive-scroll.css";
 import App from './App';
 
 

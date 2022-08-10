@@ -26,9 +26,22 @@
     position: relative;
     padding: 5px 10px;
     color: #212121;
+    display: flex;
+    justify-content: center;
 }
-
-
+.navbar li span, .contact span{
+    height: 1px;
+    background-color: #212121;
+    width: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+}
+.navbar li:hover span, .contact:hover span{
+    width: 100%;
+    left: 0;
+}
 .contact{
     font-family: Neue;
     font-size: 16px;
@@ -37,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px 10px;
 }
 .logoContainer{
     display: flex;

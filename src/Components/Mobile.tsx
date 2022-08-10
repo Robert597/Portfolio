@@ -51,7 +51,7 @@ gsap.fromTo([".menu-secondary", ".hamburger-menuu"], {
     },
     ease: "power3.inOut"
 })
-gsap.fromTo(".menuLink p p", {
+gsap.fromTo(".menuLink p span", {
     y: 100
 }, {
     y: 0,
@@ -84,10 +84,10 @@ gsap.fromTo(".menuLink p p", {
                     <div className="menu-links">
                         <nav>
                            <div className='menuLink'>
-                            <p onClick={() => handleMenu()}><p>Home</p></p>
-                            <p onClick={() => handleMenu()}><p>Projects</p></p>
-                            <p onClick={() => handleMenu()}><p>About</p></p>
-                            <p onClick={() => handleMenu()}><p>Contact</p></p>
+                            <p onClick={() => handleMenu()}><span>Home</span></p>
+                            <p onClick={() => handleMenu()}><span>Projects</span></p>
+                            <p onClick={() => handleMenu()}><span>About</span></p>
+                            <p onClick={() => handleMenu()}><span>Contact</span></p>
                            
                         </div> 
                         </nav>

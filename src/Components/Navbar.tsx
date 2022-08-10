@@ -57,58 +57,26 @@ const Navbar = ({loading}:{loading: Boolean}) => {
 
             <motion.li>
                 <motion.p
-                whileHover={
-                    {
-                        scale: 1.1,
-                        y: -2,
-                        transition: {
-                            ease: "easeInOut",
-                            duration: .5
-                        }
-                    }
-                }>Home</motion.p>
+                >Home</motion.p>
+                <span></span>
             </motion.li>
             <motion.li>
             <motion.p
-            whileHover={
-                {
-                    scale: 1.1,
-                    y: -2,
-                    transition: {
-                        ease: "easeInOut",
-                        duration: .5
-                    }
-                }
-            }>About</motion.p>
+            >About</motion.p>
+            <span></span>
             </motion.li>
             <motion.li>
             <motion.p
-            whileHover={
-                {
-                    scale: 1.1,
-                    y: -2,
-                    transition: {
-                        ease: "easeInOut",
-                        duration: .5
-                    }
-                }
-            }>Projects</motion.p>
+           >Projects</motion.p>
+           <span></span>
             </motion.li>
         </motion.ul>
 
 
         <motion.div className="contact">
         <motion.p
-        whileHover={
-            {
-                scale: 1.1,
-                y: -2,
-                transition: {
-                    ease: "easeInOut",
-                    duration: .5
-                }
-            }
-        }>Contact</motion.p>
+        >Contact</motion.p>
+        <span></span>
         </motion.div>
 
 

@@ -42,7 +42,6 @@
 .menuu .logoContainer .logo{
     color: #fff;
     font-size: 16px;
-
 }
 
 .menu-layer{
@@ -80,7 +79,7 @@
   position: relative;
   font-family: montreal;
 }
-.menu-links nav div p p{
+.menu-links nav div p span{
     position: absolute;
     color: #fff;
     font-family: york;
