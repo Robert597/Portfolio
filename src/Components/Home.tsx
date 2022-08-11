@@ -10,19 +10,21 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   useEffect(() => {
     const tl = gsap.timeline({delay: 1.7});
    setTimeout(() => {setLoading(false);
-  }, 2700);
+  }, 2800);
   
 
    setTimeout(() => {setPlay(true);
-  }, 3800);
+  }, 3900);
 
    tl.to(".HomeContainer", {
     scale: 1,
     duration: 1,
     ease: "easeInOut"
-   })
+   }).to(".bannerContainer", {css:{
+    marginTop: "3.2rem"
+   }});
 
-   setTimeout(() => setShift(true), 2800);
+   setTimeout(() => setShift(true), 2900);
   }, []);
 
  
@@ -30,11 +32,6 @@ const Home = ({loading, setLoading}: { loading: boolean; setLoading: Dispatch<Se
   return (
     <section data-scroll-section  className='Homewrapper' >
         <div className='HomeContainer' >
-          {loading &&  <div className="logocontainer">
-             <h1 className='logo'>
-            ROBERT
-            </h1>
-        </div>}
         <Banner loading={loading} shift={shift} play={play}/>
         </div>
     </section>

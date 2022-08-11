@@ -27,7 +27,7 @@
     position: fixed;
     height: 0;
     width: 100%;
-    background-color: #A5C9FF;
+    background-color: #cdea68;
 }
 .menuu{
     display: flex;
@@ -46,7 +46,7 @@
 
 .menu-layer{
     width: 100%;
-    background-color: #000;
+    background-color: #005a34;
     height: 100%;
     overflow: hidden;
     display: flex;

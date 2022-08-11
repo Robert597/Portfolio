@@ -39,7 +39,7 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
     
   return (
     <div className={`bannerContainer ${play && 'animateMarquee'}`}>
-        <div className='creative' data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal">
+        <div className='creative' data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
             <h1>Creative</h1>
         </div>
         

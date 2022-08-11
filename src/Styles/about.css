@@ -1,0 +1,228 @@
+.about{
+    position: relative;
+    min-height: 100vh;
+}
+.topAbout{
+    background-color: #005a34;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100%;
+}
+
+.iam {
+    padding: 50px 0;
+}
+.iam div{
+    display: flex;
+    align-items: center;
+    font-size: 90px;
+    flex-wrap: nowrap;
+    color: #212121;
+    font-weight: bolder;
+    font-family:  york;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    transform: translate3d(calc(0, 0, 0));
+      animation: marqueeab-lg 15s linear infinite; 
+}
+@keyframes marqueeab-lg {
+    0% {
+      transform: translate3d(calc(-5%), 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(calc(-80%), 0, 0);
+    }
+  }
+.iam div h1{
+    white-space: nowrap;
+    padding: 0 15px;
+}
+.centerAbout{
+    background-color: #cdea68;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: 8;
+}
+.firstAbout{
+    display: flex;
+    width: 100%;
+}
+.aboutText{
+    width: 70%;
+    padding: 30px;
+    position: relative;
+}
+.aboutLargeText{
+    padding: 30px 10px;
+}
+.aboutLargeText h1{
+    font-size: 36px;
+    height: 40px;
+    color: #212121;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: Neue;
+    overflow-y: hidden;
+}
+.aboutLargeText h1 span {
+    position: absolute;
+}
+.aboutText .hrline{
+    background-color: #212121;
+    color: #212121;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+}
+.aboutBottomText{
+padding: 25px 10px;
+}
+.aboutBottomText h1{
+    font-size: 18px;
+    height: 26px;
+    color: #212121;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: Neue;
+    overflow-y: hidden;
+}
+.aboutBottomText h1 span {
+    position: absolute;
+}
+.skill{
+    width: 30%;
+    padding: 90px 20px;
+    position: relative;
+}
+.skillh1{
+    font-size: 36px;
+    height: 40px;
+    color: #212121;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: Neue;
+    overflow-y: hidden;
+}
+.skillh1 span{
+    position: absolute;
+}
+.skills h1{
+    font-size: 18px;
+    height: 26px;
+    color: #212121;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: Neue;
+    overflow-y: hidden;
+}
+.mobilehr{
+    display: none;
+}
+.skills h1 span{
+    position: absolute;
+} 
+@media all and (max-width: 760px){
+    .iam div{
+        font-size: 60px; 
+    }
+    .firstAbout{
+        flex-direction: column;
+    }
+    .aboutText{
+        width: 100%;
+    }
+    .aboutBottomText h1{
+        font-size: 24px;
+        height: 32px;
+    }
+    .aboutBottomText h1 span {
+        position: absolute;
+    }
+    .mobilehr{
+        display: block;
+        background-color: #212121;
+        height: 1px;
+        width: 100%;
+    }
+    .skill{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        position: relative;
+    }
+    .skillh1{
+        font-size: 36px;
+        height: 40px;
+        color: #212121;
+        position: relative;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        font-family: Neue;
+        overflow-y: hidden;
+        width: 30%;
+    }
+    .skillh1 span{
+        position: absolute;
+    }
+    .skills{
+        width: 70%;
+       text-align: center;
+    }
+    .skills h1 span{
+        position: absolute;
+    } 
+}
+@media all and (max-width: 650px){
+    .aboutLargeText h1{
+        font-size: 24px;
+        height: 30px;
+    }
+    .aboutBottomText h1{
+        font-size: 18px;
+        height: 24px;
+    }
+}
+ 
+@media all and (max-width: 600px){
+    .skills{
+       text-align: left;
+       padding-left: 100px;
+    }
+}
+@media all and (max-width: 550px){
+    .skills{
+       text-align: left;
+       padding-left: 100px;
+    }
+    .aboutText{
+        padding: 30px 15px;
+    }
+    .aboutLargeText{
+        padding: 15px 0;
+    }
+    .aboutLargeText h1{
+        font-size: 20px;
+        height: 26px;
+        font-weight: bold;
+    }
+}
+@media all and (max-width: 410px){
+    .aboutLargeText h1{
+        font-size: 17px;
+        height: 25px;
+        font-weight: bold;
+    }
+    .aboutBottomText h1{
+        font-size: 14px;
+        height: 22px;
+    }
+    .skills h1{
+        font-size: 14px;
+        height: 24px;
+    }
+}

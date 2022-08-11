@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Neue';
+  font-family: Neue;
   src: url('../Fonts/neue/NeueMontreal-Regular.otf');
 }
 @font-face {
-  font-family: 'NeueLight';
+  font-family: NeueLight;
   src: url('../Fonts/neue/NeueMontreal-Light.otf');
 }
 @font-face {
-  font-family: 'NeueBold';
+  font-family: NeueBold;
   src: url('../Fonts/neue/NeueMontreal-Bold.otf');
 }
 @font-face {
-  font-family: 'GroteskBold';
+  font-family: GroteskBold;
   src: url('../Fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf');
 }
 @font-face {
-  font-family: 'Grotesk';
+  font-family: Grotesk;
   src: url('../Fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf');
 }
 @font-face {
@@ -42,11 +42,9 @@ code {
   sans-serif;
 }
 
-.about{
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100vw;
-  background-color: #fff;
+.project{
+  min-height: 100vh;
+  background-color: #000;
 }
 
 

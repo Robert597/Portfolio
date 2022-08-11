@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 import "./Styles/locomotive.css";
 import gsap from "gsap";
+import Project from './Components/Project';
 
 function App() {
  
@@ -63,6 +64,7 @@ return (
   <div data-scroll-container ref={containerRef} className="main" id="main">
    <Home loading={loading} setLoading={setLoading} />
    <About/>
+   <Project/>
   </div>
   
 </LocomotiveScrollProvider>
