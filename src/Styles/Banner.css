@@ -29,26 +29,26 @@ animation-play-state: running;
     height: 120px;
     margin-bottom: 30px;
     padding: 0 40px;
-    transform: translate3d(calc(-25% + 10vw), 0, 0);
+    transform: translate3d(calc(0), 0, 0);
       animation: marquee-lg 8s linear infinite;
       animation-play-state: paused;
 }
 @keyframes marquee {
     0% {
-      transform: translate3d(-25%, 0, 0);
+      transform: translate3d(0%, 0, 0);
     }
   
     100% {
-      transform: translate3d(-150%, 0, 0);
+      transform: translate3d(-175%, 0, 0);
     }
   }
   @keyframes marquee-lg {
     0% {
-      transform: translate3d(calc(-25% + 20vw), 0, 0);
+      transform: translate3d(calc(0), 0, 0);
     }
   
     100% {
-      transform: translate3d(calc(-100% + 20vw), 0, 0);
+      transform: translate3d(calc(-150% + 20vw), 0, 0);
     }
   }
 .software h1{

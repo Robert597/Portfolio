@@ -67,10 +67,15 @@
     margin-bottom: 10px;
     font-family: Neue;
     overflow-y: hidden;
+    transition: all .5s ease-in-out;
 }
+
 .aboutLargeText h1 span {
     position: absolute;
+    top: 100%;
 }
+
+
 .aboutText .hrline{
     background-color: #212121;
     color: #212121;
@@ -89,9 +94,11 @@ padding: 25px 10px;
     margin-bottom: 10px;
     font-family: Neue;
     overflow-y: hidden;
+    transition: all .5s linear;
 }
 .aboutBottomText h1 span {
     position: absolute;
+    top: 100%;
 }
 .skill{
     width: 30%;
@@ -107,9 +114,11 @@ padding: 25px 10px;
     margin-bottom: 10px;
     font-family: Neue;
     overflow-y: hidden;
+    transition: all .5s ease-in-out;
 }
 .skillh1 span{
     position: absolute;
+    top: 100%;
 }
 .skills h1{
     font-size: 18px;
@@ -120,13 +129,20 @@ padding: 25px 10px;
     margin-bottom: 10px;
     font-family: Neue;
     overflow-y: hidden;
+    transition: all .5s ease-in-out;
 }
 .mobilehr{
     display: none;
 }
 .skills h1 span{
     position: absolute;
+    top: 100%;
 } 
+.up h1 span, .up span{
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
 @media all and (max-width: 760px){
     .iam div{
         font-size: 60px; 
@@ -220,6 +236,9 @@ padding: 25px 10px;
         font-size: 17px;
         height: 25px;
         font-weight: bold;
+    }
+    .aboutBottomText{
+        padding: 25px 0;
     }
     .aboutBottomText h1{
         font-size: 14px;

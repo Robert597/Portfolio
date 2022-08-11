@@ -1,8 +1,13 @@
-import React from 'react';
-import about from "../Assets/my2.jpg";
+import { useEffect } from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import "../Styles/about.css";
 
 const About = () => {
+ 
+     
+ 
+  
+ 
   return (
     <section data-scroll-section className="about">
         <div className="topAbout" >
@@ -27,9 +32,12 @@ const About = () => {
             <div className="firstAbout">
             <div className="aboutText">
 
-               <div className="aboutLargeText">
-                  <h1>
-                    <span>
+               <div className="aboutLargeText" data-scroll 
+               data-scroll-class="up"
+               data-scroll-repeat="true"
+               data-scroll-offset="200">
+                  <h1  data-scroll >
+                    <span >
                       Software developer based in Lagos, Nigeria.
                     </span>
                   </h1>
@@ -40,7 +48,10 @@ const About = () => {
                   </h1>
                </div>
 <span className="hrline"></span>
-               <div className="aboutBottomText">
+               <div className="aboutBottomText" data-scroll 
+               data-scroll-class="up"
+               data-scroll-repeat="true"
+               data-scroll-offset="200">
                 
                 <h1>
                   <span>I am Robert Oluwaseun, a fullstack web developer</span>
@@ -64,12 +75,19 @@ const About = () => {
                </div>
 </div>
 <span className='mobilehr'></span>
-             <div className="skill">
-             <h1 className='skillh1'>
+             <div className="skill" >
+             <h1 className='skillh1' data-scroll 
+            data-scroll-class="up"
+            data-scroll-repeat="true"
+            data-scroll-offset="200">
       <span>Skills:</span>
     </h1>
 
-  <div className="skills">
+  <div className="skills" 
+   data-scroll 
+   data-scroll-class="up"
+   data-scroll-repeat="true"
+   data-scroll-offset="200">
     <h1>
       <span>Javascript</span>
     </h1>
