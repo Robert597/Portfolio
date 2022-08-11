@@ -1,6 +1,7 @@
 .about{
     position: relative;
     min-height: 100vh;
+    background-color: #005a34;
 }
 .topAbout{
     background-color: #005a34;
@@ -178,6 +179,9 @@ padding: 25px 10px;
     } 
 }
 @media all and (max-width: 650px){
+    .iam div{
+        font-size: 40px; 
+    }
     .aboutLargeText h1{
         font-size: 24px;
         height: 30px;
@@ -211,7 +215,7 @@ padding: 25px 10px;
         font-weight: bold;
     }
 }
-@media all and (max-width: 410px){
+@media all and (max-width: 440px){
     .aboutLargeText h1{
         font-size: 17px;
         height: 25px;
@@ -221,8 +225,20 @@ padding: 25px 10px;
         font-size: 14px;
         height: 22px;
     }
+    .skill{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .skills{
+        text-align: left;
+        padding-left: 0px;
+        padding-top: 20px;
+     }
     .skills h1{
-        font-size: 14px;
-        height: 24px;
+        font-size: 18px;
+        height: 26px;
     }
 }
