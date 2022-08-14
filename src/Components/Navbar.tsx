@@ -53,31 +53,6 @@ const Navbar = ({loading}:{loading: Boolean}) => {
             </h1>
         </div>
          
-        <motion.ul className='navbar'>
-
-            <motion.li>
-                <motion.p
-                >Home</motion.p>
-                <span></span>
-            </motion.li>
-            <motion.li>
-            <motion.p
-            >About</motion.p>
-            <span></span>
-            </motion.li>
-            <motion.li>
-            <motion.p
-           >Projects</motion.p>
-           <span></span>
-            </motion.li>
-        </motion.ul>
-
-
-        <motion.div className="contact">
-        <motion.p
-        >Contact</motion.p>
-        <span></span>
-        </motion.div>
 
 
 

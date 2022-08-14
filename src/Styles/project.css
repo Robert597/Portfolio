@@ -1,0 +1,31 @@
+.project{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    position: relative;
+  }
+  .projectTop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 40px;
+  }
+  .projectTop h1{
+    font-size: 80px;
+    color: #212121;
+    font-family: york;
+  }
+  .projectTopHr{
+position: absolute;
+right: 0;
+width: 0%;
+transition:  all .5s ease-in-out;
+height: 2px;
+background-color: #212121;
+  }
+  .showHr{
+    width: 100%;
+    transition:  all .5s ease-in-out;
+  }

@@ -24,7 +24,7 @@
     text-transform: uppercase;
     color: #f1f1f1;
     transform: translate3d(calc(0, 0, 0));
-      animation: marqueeab-lg 15s linear infinite; 
+      animation: marqueeab-lg 8s linear infinite; 
 }
 @keyframes marqueeab-lg {
     0% {

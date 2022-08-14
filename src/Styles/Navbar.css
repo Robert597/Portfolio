@@ -64,7 +64,8 @@
   color: #212121;
 }
 .hamburger-menu{
-    display: none;
+    display: block;
+    cursor: pointer;
 }
 
 
