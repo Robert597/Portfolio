@@ -37,11 +37,14 @@
     height: 3rem;
     width: 100%;
     padding: 40px 20px;
+    cursor: pointer;
+    text-shadow: 0 0 8px #f1f1f1;
 }
 
 .menuu .logoContainer .logo{
     color: #fff;
     font-size: 16px;
+    text-shadow: 0 0 8px #f1f1f1;
 }
 
 .menu-layer{
@@ -86,6 +89,7 @@
     text-decoration: none;
     transition: all .5s ease-in-out;
     transform: rotate(0);
+    text-shadow: 0 0 10px #f1f1f1;
 }
 .menu-links nav div p a:hover{
     color: #000;

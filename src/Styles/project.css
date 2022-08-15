@@ -15,6 +15,7 @@
   .projectTop h1{
     font-size: 80px;
     color: #212121;
+    text-shadow: 0 0 10px #212121;
     font-family: york;
   }
   .projectTopHr{
@@ -25,7 +26,76 @@ transition:  all .5s ease-in-out;
 height: 2px;
 background-color: #212121;
   }
+  .projectHr{
+    position: absolute;
+width: 0%;
+transition:  all .5s ease-in-out;
+height: 2px;
+background-color: #212121;
+  }
   .showHr{
     width: 100%;
     transition:  all .5s ease-in-out;
   }
+  .projectDetailsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 20px 40px;
+    cursor: pointer;
+  }
+  .projectDetailsContainer h1{
+font-family: york;
+color: #212121;
+font-size: 60px;
+height: 70px;
+position: relative;
+display: block;
+width: 60%;
+overflow-y: hidden;
+text-shadow: 0 0 10px #212121;
+  }
+  .projectDetailsContainer h1 span{
+    position: absolute;
+    top: 100%;
+    transition: all .5s ease-in-out;
+  }
+  .projectDetailsContainer .projectUp span{
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  background-color:#f1f1f1;
+  border-radius: 24px;
+  border: 1px #212121 solid;
+  cursor: pointer;
+  font-family: Neue;
+  font-size: 14px;
+  height: 40px;
+  padding: 2px 20px;
+  position: relative;
+  text-align: center;
+  margin-right: 10px;
+  text-shadow: 0 0 10px #212121;
+  transition: all .5s ease-in-out;
+}
+.button-17 a{
+    text-decoration: none;
+    font-family: Neue;
+  font-size: 14px;
+  color: #212121;
+  text-shadow: 0 0 5px #212121;
+  transition: all .5s ease-in-out;
+}
+
+.button-17:hover{
+    box-shadow: 0px 5px 8px  #212121;
+}

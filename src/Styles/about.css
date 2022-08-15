@@ -73,6 +73,7 @@
 .aboutLargeText h1 span {
     position: absolute;
     top: 100%;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -99,6 +100,7 @@ padding: 25px 10px;
 .aboutBottomText h1 span {
     position: absolute;
     top: 100%;
+    transition: all 0.5s ease-in-out;
 }
 .skill{
     width: 30%;
@@ -119,6 +121,7 @@ padding: 25px 10px;
 .skillh1 span{
     position: absolute;
     top: 100%;
+    transition: all 0.5s ease-in-out;
 }
 .skills h1{
     font-size: 18px;
@@ -137,11 +140,12 @@ padding: 25px 10px;
 .skills h1 span{
     position: absolute;
     top: 100%;
+    transition: all 0.5s ease-in-out;
 } 
 .up h1 span, .up span{
     position: absolute;
     top: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 @media all and (max-width: 760px){
     .iam div{
