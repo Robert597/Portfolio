@@ -62,7 +62,7 @@
   font-weight: bolder;
   cursor: pointer; 
   color: #212121;
-  text-shadow: 0 0 10px #212121;
+  text-shadow: 0 0 2px #212121;
 }
 .hamburger-menu{
     display: block;

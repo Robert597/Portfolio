@@ -1,8 +1,9 @@
 .project{
-    min-height: 100vh;
     width: 100vw;
+    min-height: 100vh;
     background-color: #f1f1f1;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 120px;
     position: relative;
   }
   .projectTop{
@@ -15,7 +16,7 @@
   .projectTop h1{
     font-size: 80px;
     color: #212121;
-    text-shadow: 0 0 10px #212121;
+    text-shadow: 0 0 4px #212121;
     font-family: york;
   }
   .projectTopHr{
@@ -23,14 +24,14 @@ position: absolute;
 right: 0;
 width: 0%;
 transition:  all .5s ease-in-out;
-height: 2px;
+height: 1px;
 background-color: #212121;
   }
   .projectHr{
     position: absolute;
 width: 0%;
 transition:  all .5s ease-in-out;
-height: 2px;
+height: 1px;
 background-color: #212121;
   }
   .showHr{
@@ -55,7 +56,7 @@ position: relative;
 display: block;
 width: 60%;
 overflow-y: hidden;
-text-shadow: 0 0 10px #212121;
+text-shadow: 0 0 4px #212121;
   }
   .projectDetailsContainer h1 span{
     position: absolute;
@@ -71,7 +72,7 @@ text-shadow: 0 0 10px #212121;
 
 
 /* CSS */
-.button-17 {
+.projectDetailButtons .button-17 {
   align-items: center;
   background-color:#f1f1f1;
   border-radius: 24px;
@@ -84,7 +85,8 @@ text-shadow: 0 0 10px #212121;
   position: relative;
   text-align: center;
   margin-right: 10px;
-  text-shadow: 0 0 10px #212121;
+  text-shadow: 0 0 2px #212121;
+  opacity: 0;
   transition: all .5s ease-in-out;
 }
 .button-17 a{
@@ -92,10 +94,20 @@ text-shadow: 0 0 10px #212121;
     font-family: Neue;
   font-size: 14px;
   color: #212121;
-  text-shadow: 0 0 5px #212121;
+  text-shadow: 0 0 2px #212121;
   transition: all .5s ease-in-out;
 }
 
 .button-17:hover{
-    box-shadow: 0px 5px 8px  #212121;
+    box-shadow: 0px 2px 5px  #212121;
+}
+.projectLowerPart{
+  padding: 20px 40px;
+}
+.projectLowerPart p{
+ font-size: 16px;
+ color: #212121;
+}
+.projectDetailButtons .showBtn{
+  opacity: 1;
 }

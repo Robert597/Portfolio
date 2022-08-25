@@ -19,8 +19,15 @@ let secondaryMenu = useRef();
     useEffect(() => {
      if(state.clicked === false){
 //close
+gsap.to(".menuLink p span", {
+    y: 100,
+    duration: .5,
+    stagger: .2,
+    ease: "slow (0.7, 0.7, false)"
+})
 gsap.to([".hamburger-menuu", ".menu-secondary"], {
     height: 0,
+    delay: 1,
     duration: 1, 
     stagger: {
         amount: .2
@@ -28,6 +35,7 @@ gsap.to([".hamburger-menuu", ".menu-secondary"], {
     ease: "power3.inOut"
 });
 gsap.to(".hamburger-menuu", {
+    delay: 1,
     duration: 1.2,
     css: {display: "none"}
 })

@@ -18,11 +18,11 @@
 .logocontainer{
     display: flex;
     align-items: center;
-    padding: 20px ;
+    padding: 40px 40px;
 }
 @media all and (max-width: 760px){
     .logocontainer{
-        padding:  20px;
+        padding: 30px 20px;
     }
 }
 

@@ -7,32 +7,45 @@ const Projects = () => {
     {
       name: "Moments",
       link: "https://momentss.vercel.app",
-      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive.",
-      stacks: ["Reactjs", "Nodejs", "MongoDb", "Firebase"]
+      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive. This project was built using Reactjs for user Interface, Node and expressJs for server, MongoDb for database and use of javascript animation library(GSAP) for animations.",
+    }, 
+    {
+      name: "RobCommerce",
+      link: "https://momentss.vercel.app",
+      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
     },
     {
-      name: "Moments",
+      name: "RobCommerc",
       link: "https://momentss.vercel.app",
-      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive.",
-      stacks: ["Reactjs", "Nodejs", "MongoDb", "Firebase"]
-    }
+      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
+    },
+    {
+      name: "RobCommerc",
+      link: "https://momentss.vercel.app",
+      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
+    },
+    {
+      name: "RobCommerc",
+      link: "https://momentss.vercel.app",
+      details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
+    },
   ]
   return (
-    <div data-scroll-section className='project'>
+    <div  className='project' data-scroll-section >
       <div className="projectTop">
         <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="4">PROJECTS(5)</h1>
         <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="3">2021-2022</h1>
       </div>
       <span className='projectTopHr'
       data-scroll 
-      data-scroll-offset="200"
+      data-scroll-offset="50"
       data-scroll-repeat="true"
       data-scroll-class="showHr"></span>
 
       <div className='projectContainer'>
         {
-          Projects.map(item => (
-       <Project item={item}/>
+          Projects.map((item, index) => (
+       <Project item={item} index={index} key={index}/> 
           ))
         }
       </div>

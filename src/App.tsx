@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import "./Styles/locomotive.css";
 import gsap from "gsap";
 import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 
 function App() {
  
@@ -65,6 +66,8 @@ return (
    <Home loading={loading} setLoading={setLoading} />
    <About/>
    <Projects/>
+   <Contact/>
+
   </div>
   
 </LocomotiveScrollProvider>

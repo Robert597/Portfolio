@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-const Project = ({item}:  {item: {
+const Project = ({item, index}:  {item: {
     name: string;
     link: string;
-    details: string;
-    stacks: string[];
-}}) => {
+    details: string
+}, index: number}) => {
+  
     const[showDetails, setShowDetails] = React.useState<boolean>(false);
   return (
     <>
@@ -15,32 +15,36 @@ const Project = ({item}:  {item: {
 
 <div className='projectDetailsContainer'>
   <h1 data-scroll
-  data-scroll-offset="200"
+  data-scroll-offset="70"
   data-scroll-repeat="true"
   data-scroll-class="projectUp"><span>
   {item.name}
     </span></h1>
   <div className='projectDetailButtons'>
-    <button className='button-17' onClick={() => setShowDetails(prev => !prev)}>{!showDetails ? "Expand" : "Collapse" }</button>
-    <button className='button-17'><a href={item.link} target="_blank" rel="noreferrer">Live Site</a></button>
+    <button className='button-17' onClick={() => setShowDetails(prev => !prev)} 
+    data-scroll
+    data-scroll-offset="70"
+    data-scroll-repeat="true"
+    data-scroll-class="showBtn">{!showDetails ? "Expand" : "Collapse" }</button>
+    <button className='button-17'
+     data-scroll
+     data-scroll-offset="70"
+     data-scroll-repeat="true"
+     data-scroll-class="showBtn"><a href={item.link} target="_blank" rel="noreferrer">Live Site</a></button>
   </div>
 </div>
 
 {showDetails && <div className='projectLowerPart'>
 <p>{item.details}</p>
-<div className='projectSkills'>
-{item.stacks.map(skill => (
-<span>{skill}</span>
-))}
-</div>
 </div>
 }
 
 <span className='projectHr'
 data-scroll 
-data-scroll-offset="200"
+data-scroll-offset="70"
 data-scroll-repeat="true"
-data-scroll-class="showHr"></span>
+data-scroll-class="showHr"
+style={ index % 2  ?  {right: 0} : {left: 0}}></span>
 </div>
     </>
   )
