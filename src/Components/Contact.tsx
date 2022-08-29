@@ -37,13 +37,15 @@ const Contact = () => {
         </div>
         <div className="social-links">
           <div className="row1">
-            <div>robertseun1@gmail.com</div>
-            <div>+2349050083955</div>
+            <div><a href="mailto:robertseun1@gmail.com" target="_blank" rel="noreferrer">robertseun1@gmail.com</a></div>
+            <div>
+            <a href="https://wa.me/09050083955" target="_blank" rel="noreferrer">Whatsapp</a>
+            </div>
           </div>
           <div className="row2">
-            <div>Twitter</div>
-            <div>LinkedIn</div>
-            <div>Github</div>
+            <div> <a href="https://twitter.com/Rohbert001" target="_blank" rel="noreferrer">Twitter</a></div>
+            <div> <a href="https://www.linkedin.com/in/oluwaseun-robert-a43b3221b" target="_blank" rel="noreferrer">LinkedIn</a></div>
+            <div> <a href="https://github.com/Robert597" target="_blank" rel="noreferrer">Github</a></div>
           </div>
         </div>
         <div className="contact-form">
