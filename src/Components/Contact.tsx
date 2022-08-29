@@ -53,27 +53,8 @@ const Contact = () => {
           </span>
         </div>
        </div>
-    <span className="contactDivider"></span>
-       <div className="container-2">
-        <div className="inputboxes">
-          <div className="row1">
-            <input type="text" placeholder="Name" /><input
-              placeholder="E-mail"
-              type="text"
-            /><input placeholder="Subject" type="text" />
-          </div>
-          <div className="row2">
-            <div className="textarea">
-              <textarea placeholder="Message"></textarea>
-            </div>
-          </div>
-        </div>
-        <div className="submitbtn">
-         <BiSend className="sendBtn"/>
-          <h1>Submit</h1>
-        </div>
-      </div>
-      
+       
+    
       </div>
 
     </div>

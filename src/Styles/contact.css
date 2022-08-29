@@ -105,7 +105,7 @@ background-color: #212121;
   }
   .social-links .row1 div {
     width: 50%;
-    border: 2px solid #005a34;
+    border: 2px solid #212121;
     text-align: center;
     margin: 5px 5px;
     transition: color, background-color ease-in-out 0.2s;
@@ -115,7 +115,7 @@ background-color: #212121;
   .social-links .row2 div {
     width: calc(100% / 3);
     text-align: center;
-    border: 2px solid #005a34;
+    border: 2px solid #212121;
     margin: 5px 5px;
     padding: 30px 0px;
     transition: color, background-color ease-in-out 0.2s;
@@ -123,7 +123,7 @@ background-color: #212121;
   }
   .social-links .row1 div:hover,
   .social-links .row2 div:hover {
-    background-color: #005a34;
+    background-color: #212121;
     color: #f1f1f1;
     transition: color, background-color ease-in-out 0.2s;
   }
@@ -319,12 +319,17 @@ background-color: #212121;
   }
   
   @media (max-width: 800px) {
+    .contactTop{
+      background-color: #005a34;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: 100%;
+      padding-top: 25px;
+  }
     .container-2 {
       flex-direction: column;
     }
-    .contact-form{
-      display: none;
-    }
+    
     .container-2 .inputboxes {
       width: 100%;
     }
@@ -374,6 +379,13 @@ background-color: #212121;
     }
   }
   @media (max-width: 680px){
+    .contact-form {
+      position: absolute;
+      right: 50px;
+      bottom: 65%;
+      width: 100px;
+      height: 100px;
+    }
     .container-1 .social-links {
       position: relative;
       padding: 0 20px;
@@ -393,7 +405,6 @@ background-color: #212121;
     }
     .social-links .row1 div {
       width: 100%;
-      border: 2px solid #005a34;
       text-align: center;
       margin: 5px 0px;
       transition: color, background-color ease-in-out 0.2s;
@@ -403,7 +414,6 @@ background-color: #212121;
     .social-links .row2 div {
       width: 100%;
       text-align: center;
-      border: 2px solid #005a34;
       margin: 5px 0px;
       padding: 30px 0px;
       transition: color, background-color ease-in-out 0.2s;
@@ -413,6 +423,13 @@ background-color: #212121;
   @media (max-width: 610px){
     .content h1 {
       font-size: 40px;
+    }
+    .contact-form {
+      position: absolute;
+      right: 50px;
+      bottom: 70%;
+      width: 100px;
+      height: 100px;
     }
     .marquee1{
       font-family: york;
@@ -455,6 +472,13 @@ background-color: #212121;
   @media (max-width: 450px) {
     .content h1 {
       font-size: 30px;
+    }
+    .contact-form {
+      position: absolute;
+      right: 50px;
+      bottom: 65%;
+      width: 90px;
+      height: 90px;
     }
     .social-links .row1 div {
     padding: 20px 0;
