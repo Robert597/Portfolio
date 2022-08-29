@@ -42,8 +42,8 @@ const Contact = () => {
           </div>
           <div className="row2">
             <div>Twitter</div>
-            <div>Linkedin</div>
-            <div>github</div>
+            <div>LinkedIn</div>
+            <div>Github</div>
           </div>
         </div>
         <div className="contact-form">
