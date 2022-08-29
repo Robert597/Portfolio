@@ -333,7 +333,7 @@ background-color: #212121;
       width: 100%;
       padding: 0px 10px;
       margin-top: 25px;
-      height: 150px;
+      height: 50px;
       flex-direction: row-reverse;
     }
     .inputboxes .row1 {
@@ -395,7 +395,7 @@ background-color: #212121;
       width: 100%;
       border: 2px solid #005a34;
       text-align: center;
-      margin: 5px 5px;
+      margin: 5px 0px;
       transition: color, background-color ease-in-out 0.2s;
       padding: 30px 0px;
       border-radius: 5vw;
@@ -404,7 +404,7 @@ background-color: #212121;
       width: 100%;
       text-align: center;
       border: 2px solid #005a34;
-      margin: 5px 5px;
+      margin: 5px 0px;
       padding: 30px 0px;
       transition: color, background-color ease-in-out 0.2s;
       border-radius: 5vw;
@@ -453,6 +453,9 @@ background-color: #212121;
   }
 
   @media (max-width: 450px) {
+    .content h1 {
+      font-size: 30px;
+    }
     .social-links .row1 div {
     padding: 20px 0;
     }
