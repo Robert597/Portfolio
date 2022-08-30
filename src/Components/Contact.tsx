@@ -21,34 +21,66 @@ const Contact = () => {
       <div className="container-1">
         <div className="content">
           <h1>
-            <p>  Do you have a question,</p>
+            <p  data-scroll 
+      data-scroll-offset="70"
+      data-scroll-repeat="true"
+      data-scroll-class="showcontact">  Do you have a question,</p>
           </h1>
           <h1>
-            <p> an idea, or a project you</p>
+            <p  data-scroll 
+      data-scroll-offset="70"
+      data-scroll-repeat="true"
+      data-scroll-class="showcontact"> an idea, or a project you</p>
           </h1>
           <h1>
-            <p>
+            <p  data-scroll 
+      data-scroll-offset="70"
+      data-scroll-repeat="true"
+      data-scroll-class="showcontact">
             need help with?</p>
           </h1>
           <h1>
-            <p>
+            <p  data-scroll 
+      data-scroll-offset="70"
+      data-scroll-repeat="true"
+      data-scroll-class="showcontact">
            Contact Me!</p>
           </h1>
         </div>
         <div className="social-links">
           <div className="row1">
-            <div><a href="mailto:robertseun1@gmail.com" target="_blank" rel="noreferrer">robertseun1@gmail.com</a></div>
-            <div>
+            <div 
+             data-scroll 
+             data-scroll-offset="70"
+             data-scroll-repeat="true"
+             data-scroll-class="input-show"><a href="mailto:robertseun1@gmail.com" target="_blank" rel="noreferrer">robertseun1@gmail.com</a></div>
+            <div  data-scroll 
+             data-scroll-offset="70"
+             data-scroll-repeat="true"
+             data-scroll-class="input-show">
             <a href="https://wa.me/09050083955" target="_blank" rel="noreferrer">Whatsapp</a>
             </div>
           </div>
-          <div className="row2">
-            <div> <a href="https://twitter.com/Rohbert001" target="_blank" rel="noreferrer">Twitter</a></div>
-            <div> <a href="https://www.linkedin.com/in/oluwaseun-robert-a43b3221b" target="_blank" rel="noreferrer">LinkedIn</a></div>
-            <div> <a href="https://github.com/Robert597" target="_blank" rel="noreferrer">Github</a></div>
+          <div className="row2" >
+            <div  data-scroll 
+             data-scroll-offset="70"
+             data-scroll-repeat="true"
+             data-scroll-class="input-show"> <a href="https://twitter.com/Rohbert001" target="_blank" rel="noreferrer">Twitter</a></div>
+            <div  data-scroll 
+             data-scroll-offset="70"
+             data-scroll-repeat="true"
+             data-scroll-class="input-show"> <a href="https://www.linkedin.com/in/oluwaseun-robert-a43b3221b" target="_blank" rel="noreferrer">LinkedIn</a></div>
+            <div  data-scroll 
+             data-scroll-offset="70"
+             data-scroll-repeat="true"
+             data-scroll-class="input-show"> <a href="https://github.com/Robert597" target="_blank" rel="noreferrer">Github</a></div>
           </div>
         </div>
-        <div className="contact-form">
+        <div className="contact-form" 
+        data-scroll 
+        data-scroll-offset="70"
+        data-scroll-repeat="true"
+        data-scroll-class="contact-form-show">
           <img src={circle} alt="" />
           <span>
         <BsArrowDown className='contactArrow'/>

@@ -76,10 +76,23 @@ background-color: #212121;
   .content h1 {
     padding: 0px;
     font-size: 80px;
+    height: 90px;
     color: #212121;
-    line-height: 130%;
     font-family: york;
     white-space: nowrap;
+    position: relative;
+    overflow-y: hidden;
+    transition: all 1s ease-in-out;
+  }
+  .content h1 p{
+    position: absolute;
+    top: 90px;
+    transition: all 1s ease-in-out;
+  }
+  .content h1 .showcontact{
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-in-out;
   }
   .container-1 .social-links {
     padding: 0px 80px;
@@ -110,6 +123,12 @@ background-color: #212121;
     transition: color, background-color ease-in-out 0.2s;
     padding: 30px 0px;
     border-radius: 5vw;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 1s;
+  }
+  .social-links .row1 .input-show{
+    opacity: 1;
+    transition: opacity 1s ease-in-out 1s;
   }
   .social-links .row1 div a {
    text-decoration: none;
@@ -123,7 +142,15 @@ background-color: #212121;
     padding: 30px 0px;
     transition: color, background-color ease-in-out 0.2s;
     border-radius: 5vw;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 1s;
   }
+
+  .social-links .row2 .input-show{
+    opacity: 1;
+    transition: opacity 1s ease-in-out 1s;
+  }
+
   .social-links .row2 div a{
     text-decoration: none;
    color: #212121;
@@ -261,6 +288,12 @@ background-color: #212121;
     justify-content: center;
     width: 150px;
     height: 150px;
+    opacity: 0;
+    transition: all 1s ease-in-out 1s;
+  }
+  .contact-form-show{
+    opacity: 1;
+    transition: all 1s ease-in-out 1s;
   }
   .contact-form img {
     position: absolute;
@@ -321,6 +354,7 @@ background-color: #212121;
       }
       .content h1 {
         font-size: 70px;
+        height: 80px;
         font-weight: bold;
       }
       .marquee1{
@@ -387,6 +421,7 @@ background-color: #212121;
   @media (max-width: 701px){
     .content h1 {
       font-size: 50px;
+      height: 60px;
     }
   }
   @media (max-width: 680px){
@@ -434,6 +469,7 @@ background-color: #212121;
   @media (max-width: 610px){
     .content h1 {
       font-size: 40px;
+      height: 50px;
     }
     .contact-form {
       position: absolute;
@@ -468,6 +504,7 @@ background-color: #212121;
   }
     .content h1 {
       font-size: 35px;
+      height: 45px;
     }
     .container-1 .content {
       padding: 20px 15px;
@@ -483,6 +520,7 @@ background-color: #212121;
   @media (max-width: 450px) {
     .content h1 {
       font-size: 30px;
+      height: 40px;
     }
     .contact-form {
       position: absolute;
