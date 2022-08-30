@@ -124,11 +124,11 @@ background-color: #212121;
     padding: 30px 0px;
     border-radius: 5vw;
     opacity: 0;
-    transition: opacity 1s ease-in-out 1s;
+    transition: opacity 1s ease-in-out ;
   }
   .social-links .row1 .input-show{
     opacity: 1;
-    transition: opacity 1s ease-in-out 1s;
+    transition: opacity 1s ease-in-out ;
   }
   .social-links .row1 div a {
    text-decoration: none;
@@ -143,12 +143,12 @@ background-color: #212121;
     transition: color, background-color ease-in-out 0.2s;
     border-radius: 5vw;
     opacity: 0;
-    transition: opacity 1s ease-in-out 1s;
+    transition: opacity 1s ease-in-out ;
   }
 
   .social-links .row2 .input-show{
     opacity: 1;
-    transition: opacity 1s ease-in-out 1s;
+    transition: opacity 1s ease-in-out ;
   }
 
   .social-links .row2 div a{

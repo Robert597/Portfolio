@@ -147,6 +147,14 @@ padding: 25px 10px;
     transition: all 1s ease-in-out;
 }
 @media all and (max-width: 760px){
+    .topAbout{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .centerAbout{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
     .iam div{
         font-size: 60px; 
     }
