@@ -20,7 +20,19 @@
 }
 @font-face {
   font-family: york;
-  src: url(../Fonts/newyork/NewYork\ PERSONAL\ USE.otf);
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Condensed/SuisseIntlCond-Semibold.otf);
+}
+@font-face {
+  font-family: condense;
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Condensed/SuisseIntlCond-Regular.otf);
+}
+@font-face {
+  font-family: condenseInt;
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Int/SuisseIntl-Regular.otf);
+}
+@font-face {
+  font-family: work;
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Works/SuisseWorks-Regular.otf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *{

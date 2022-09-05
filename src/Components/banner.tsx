@@ -2,15 +2,19 @@ import React, {useEffect, useState} from 'react';
 import me from "../Assets/me3.jpg";
 import {BsArrowDown} from "react-icons/bs";
 import "../Styles/Banner.css";
-import {motion} from 'framer-motion';
-import { rollText, floatIn} from '../utils/framerVariants';
+import {motion, useScroll} from 'framer-motion';
+import {useLocomotiveScroll} from 'react-locomotive-scroll';
+
+
 
 
 
 
 const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play: boolean;}) => {
     const[count, setCount] = useState(0);
+  const [line, setLine] = useState(2);
 
+   
     useEffect(() => {
         if(!loading) {
             const text = document.getElementById("circular") as HTMLElement;
@@ -36,29 +40,40 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
         return () => clearInterval(introCount);
     }, [count]);
     
-    
+      const {scroll} = useLocomotiveScroll();
+
+    useEffect(() => {
+        scroll?.on('scroll', (args: any) => {
+        setLine(2 + (args.scroll.y / 100));
+        })
+    }, [scroll]);
   return (
     <div className={`bannerContainer ${play && 'animateMarquee'}`}>
-        <div className='creative' data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
-            <h1>Creative</h1>
+        <div className='creative' 
+       data-scroll>
+            <h1 data-scroll> <span data-scroll
+           
+            data-scroll-direction="horizontal"
+            data-scroll-speed="7">SOFT</span>
+            
+            <span className='dash' style={{
+                transform: `scale(${line}, 1)`
+            }}>-</span><span data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-7">WARE</span></h1>
+        </div>
+
+        <div className='developer'
+       >
+       <h1>Developer</h1>
         </div>
         
-            <div className='software'>
-            <h1>Software</h1>
-            <h1>Software</h1>
-            <h1>Software</h1>
-            <h1>Software</h1>
-            </div>
+           
         
 
-        <div className={shift ? 'developer shift' : 'developer'}>
-        <div className='me'>
-                <img src={me} alt="me"/>
-            </div>
-            <h1>Developer</h1>
-        </div>
+      
 {!loading &&
-        <motion.div className='circle' data-scroll data-scroll-speed="2">
+        <motion.div className='circle'>
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
@@ -66,17 +81,27 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
         </h2>
         </motion.div>
 }
-        
-        {!loading &&
-        <motion.div className='downContent'>
-        <hr/>
-        <div className='downcontent'>
-        <p>Robert Oluwaseun</p>
-            <p>Available for freelance work.</p>
-            <p>Portfolio 2021/2022</p>
-            </div>
-        </motion.div>
-}
+
+{
+    !loading && (
+        <div className="focus">
+            <h1>
+                <p>Focus:</p>
+                <span></span>
+            </h1>
+             <p>
+                <span className="numbering">01.</span> <span>Frontend</span>
+             </p>
+             <p>
+             <span className="numbering">02.</span>  <span>Backend</span>
+             </p>
+             <p>
+             <span className="numbering">03.</span>  <span>API Design</span>
+             </p>
+        </div>
+    )
+}       
+
 
 {loading && (
     <div className="introLoader">
@@ -85,7 +110,7 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
     </div>
 )}
     </div>
-  );
+  )
 }
 
 

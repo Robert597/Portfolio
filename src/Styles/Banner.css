@@ -1,37 +1,66 @@
 .bannerContainer{
     padding: 40px 0;
     width: 100%;
-}
-.creative, .developer{
-    font-size: 90px;
-    color: #212121;
-    font-weight: bolder;
-    font-family: york, Grotesk;
-    text-transform: uppercase;
-    height: 120px;
-    margin-bottom: 30px;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.creative{
+    color: #9fa5d5;
+    text-shadow: 1px 1px 3px #e8f5c8;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 180px;
+    line-height: 200px;
+   
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.creative h1 span{
+    display: inline-block;
+}
+
+
+ .developer{
+    font-size: 180px;
+    line-height: 200px;
+    color: #9fa5d5;
+    text-shadow: 1px 1px 3px #e8f5c8;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    display: block;
     align-items: center;
     padding: 0 40px;
 }
 .animateMarquee .software{
 animation-play-state: running;
 }
-.software{
-    display: flex;
-    width: 100%;
-    font-size: 90px;
-    color: #212121;
-    font-weight: bolder;
-    font-family: york, Grotesk;
-    align-items: center;
-    text-transform: uppercase;
-    height: 120px;
-    margin-bottom: 30px;
-    padding: 0 40px;
-    transform: translate3d(calc(0), 0, 0);
-      animation: marquee-lg 8s linear infinite;
-      animation-play-state: paused;
+
+.focus{
+    position: absolute;
+    right: 15%;
+    top: 60%;
+}
+.focus h1 p{
+    font-size: 16px;
+    font-family: york;
+    color: rgb(170, 170, 170);
+}
+.focus p{
+    font-size: 24px;
+    font-family: condense;
+    color: #9fa5d5;
+}
+.numbering{
+    font-family: works;
+    font-size: 20px;
 }
 @keyframes marquee {
     0% {
@@ -53,40 +82,16 @@ animation-play-state: running;
   }
 .software h1{
     margin: 0 40px;
-}
-.developer{
-    position: relative;
-    padding: 0 40px;
-    transition: all 1s ease-in-out;
-}
-.developer h1{
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    background-color: #f1f1f1;
-    transition: all 1s ease-in-out;
-}
-.shift  h1{
-    position: absolute;
-    left: 15%;
-    transition: all 1s ease-in-out;
-}
-.me{
-    position: absolute;
-    height: 100%;
-    width: 10%;
-}
-.me img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+   white-space: nowrap;
 }
 
+
 .circle{
-    position: fixed;
-    left: 80%;
-    bottom: 120px;
+    color: #9fa5d5;
+    text-shadow: 1px 1px 1px #e8f5c8;
+    position: absolute;
+    left: 85%;
+    bottom: 40px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -99,12 +104,14 @@ animation-play-state: running;
    .arrowicon{
      position: absolute;
      display: inline;
+     color: #cccfca;
    }
    #circular{
      position: absolute;
      user-select: none;
      pointer-events: none;
-     font-size: 10px;
+     font-size: 12px;
+     font-family: work;
      text-transform: uppercase;
     width: 100%;
     height: 100%;
@@ -112,33 +119,13 @@ animation-play-state: running;
     transform-origin: 0 50px;
     animation: animate 5s linear infinite;
     }
+    
    hr{
     color: #212121;
     height: 2px;
    width: 100vw;
    }
-   .downContent{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-   }
-   .downcontent{
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    
-   }
-   .downcontent p{
-    font-family: 'Poppins',neue;
-    font-size: 16px;
-    color: #212121;
-    display: block;
-   }
+  
     @keyframes animate{
      from{
        transform: rotate(0deg);
@@ -161,34 +148,56 @@ animation-play-state: running;
     align-items: center;
     width: 100%;
     font-size: 14px;
-    color: #212121;
+    color: #cccfca;
     padding: 0 40px;
 }
 .count{
     font-size: 56px;
     font-weight: bold;
-    font-family: Grotesk;
+    font-family: condense;
 }
-@media all and (max-width: 1000px){
-    .software{
-        transform: translate3d(0, 0, 0);
-    animation: marquee 8s linear infinite;
-    animation-play-state: paused;
-    }
-}
-    @media all and (max-width: 1000px ) and (min-height: 600px){
+
+    @media all and (max-width: 1350px){
         .creative, .developer{
-            font-size: 70px;
-            height: 100px;
+            font-weight: bold;
             margin-bottom: 30px;
+            font-size: 160px;
+            line-height: 180px;
+            padding: 0 40px;
         }
-        .software h1{
-            margin: 0 30px;
-        }
-        .software{
-            font-size: 70px;
-            height: 100px;
+    }
+    @media all and (max-width: 1200px){
+        .creative, .developer{
+            font-weight: bold;
             margin-bottom: 30px;
+            font-size: 140px;
+            line-height: 160px;
+            padding: 0 40px;
+        }
+    }
+    @media all and (max-width: 1100px){
+        .focus{
+            position: absolute;
+            right: 10%;
+            top: 60%;
+        }
+    }
+    @media all and (max-width: 1000px){
+        .creative, .developer{
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 120px;
+            line-height: 140px;
+            padding: 0 40px;
+        }
+    }
+    @media all and (max-width: 900px){
+        .creative, .developer{
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 100px;
+            line-height: 120px;
+            padding: 0 20px;
         }
     }
     @media all and (max-width: 760px) {
@@ -201,18 +210,18 @@ animation-play-state: running;
         }
         .circle{
             position: fixed;
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             top: 80%;
           }
           #circular{
-           transform-origin: 0 40px;
-           left: 40px;
+           transform-origin: 0 50px;
+           left: 50px;
            }
            #circular span{
             position: absolute;
-            transform-origin: 0 40px;
-            font-family: Neue;
+            transform-origin: 0 50px;
+            font-family: work;
           }
         .software{
             font-size: 60px;
@@ -281,20 +290,23 @@ animation-play-state: running;
     }
     @media all and (max-width: 480px){
         .creative{
-            font-size: 40px;
-            height: 60px;
+            font-size: 50px;
+            min-height: 70px;
+           word-break: break-all;
         }
+      
         .developer{
-            font-size: 36px;
-            height: 60px;
+            font-size: 50px;
+            height: 70px;
+            word-break: break-all;
         }
         .software h1{
             margin: 0 20px;
     
         }
         .software{
-            font-size: 40px;
-            height: 60px;
+            font-size: 50px;
+            height: 70px;
         }
         .me{
             width: 16%;
@@ -304,18 +316,18 @@ animation-play-state: running;
             position: absolute;
         }
       .circle{
-        width: 80px;
-        height: 80px;
-        left: 80%;
+        width: 100px;
+        height: 100px;
+        left: 70%;
       }
       #circular{
-       transform-origin: 0 40px;
-       left: 40px;
+       transform-origin: 0 50px;
+       left: 50px;
        }
        #circular span{
         position: absolute;
-        transform-origin: 0 40px;
-        font-family: Neue;
+        transform-origin: 0 50px;
+        font-family: work;
       }
     }
     @media all and (max-width: 395px) {
@@ -348,23 +360,4 @@ animation-play-state: running;
             height: 45px;
         }
     }
-    @media all and (max-width: 500px) and (min-height: 700px){
-        .downContent{
-            position: fixed;
-            top: 70%;
-           }
-    }
-    @media all and (min-width: 761px) and (max-height: 600px){
-        .creative, .developer{
-            font-size: 40px;
-            height: 40px;
-        }
-        .software{
-            font-size: 40px;
-            height: 40px;
-        }
-        .downContent{
-            position: relative;
-            top: 90%;
-           }
-    }
+   

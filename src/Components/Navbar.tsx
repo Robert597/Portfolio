@@ -49,7 +49,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
     <div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
-            ROBERT
+            PORTFOLIO
             </h1>
         </div>
          
