@@ -1,13 +1,11 @@
 .Homewrapper{
-    width: 100vw;
-    background-color: #212121;
+    width: 100vw; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 .HomeContainer{
-    background: rgb(17, 17, 17);
     width: 100%;
     transform: scale(0.8);
     display: flex;
