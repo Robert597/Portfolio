@@ -60,15 +60,12 @@
   font-family: work;
   font-size: 18px; 
   cursor: pointer; 
-  color: rgb(204, 207, 202);
-  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 2px;
-  text-shadow: 0 0 2px #212121;
+  color: rgb(170, 170, 170);
 }
 .hamburger-menu{
     display: block;
     cursor: pointer;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 2px;
+    color: rgb(170, 170, 170);
 }
 
 
