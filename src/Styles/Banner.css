@@ -12,7 +12,7 @@
     margin-bottom: 30px;
     font-size: 180px;
     line-height: 200px;
-   
+    letter-spacing: -0.005em;
     font-family: 'Bebas Neue';
     text-transform: uppercase;
     display: flex;
@@ -37,6 +37,7 @@
     text-transform: uppercase;
     display: block;
     padding: 0 40px;
+    letter-spacing: -0.005em;
 }
 .animateMarquee .software{
 animation-play-state: running;
@@ -239,7 +240,7 @@ animation-play-state: running;
     padding: 0 20px;
     font-size: 140px;
     line-height: 180px;
-   
+    letter-spacing: -0.05em;
     font-family: 'Bebas Neue';
     text-transform: uppercase;
     word-break: break-word;
@@ -298,16 +299,7 @@ animation-play-state: running;
     }
 }
     
-    @media all and (max-width: 440px){
-        .mobileCreative{
-
-        font-size: 100px;
-        line-height: 140px;
-       
-       
-           }
-     
-    }
+   
     @media all and (max-width: 400px){
         .mobileCreative{
 
@@ -321,8 +313,8 @@ animation-play-state: running;
     @media all and (max-width: 360px){
         .mobileCreative{
 
-        font-size: 80px;
-        line-height: 110px;
+        font-size: 70px;
+        line-height: 100px;
        
        
            }
