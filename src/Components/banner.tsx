@@ -49,23 +49,48 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
     }, [scroll]);
   return (
     <div className={`bannerContainer ${play && 'animateMarquee'}`}>
+        <div className="mobileCreative">
+            <h1>
+                <span>SOFT</span>
+                <br/>
+                <span>&#8212;</span> <span>WARE</span>
+                <br/>
+                 <span>DEVELOPER</span>
+            </h1>
+        </div>
         <div className='creative' 
        data-scroll>
             <h1 data-scroll> <span data-scroll
            
             data-scroll-direction="horizontal"
-            data-scroll-speed="7">SOFT</span>
+            data-scroll-speed="3">SOFT</span>
             
             <span className='dash' style={{
                 transform: `scale(${line}, 1)`
             }}>-</span><span data-scroll
             data-scroll-direction="horizontal"
-            data-scroll-speed="-7">WARE</span></h1>
+            data-scroll-speed="-3">WARE</span></h1>
         </div>
-
+<div className='lower-bottom'>
         <div className='developer'
        >
        <h1>Developer</h1>
+       </div>
+       <div className="focus">
+            <h1>
+                <p>Focus:</p>
+                <span></span>
+            </h1>
+             <p>
+                <span className="numbering">01.</span> <span>Frontend</span>
+             </p>
+             <p>
+             <span className="numbering">02.</span>  <span>Backend</span>
+             </p>
+             <p>
+             <span className="numbering">03.</span>  <span>API Design</span>
+             </p>
+        </div>
         </div>
         
            
@@ -82,25 +107,6 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
         </motion.div>
 }
 
-{
-    !loading && (
-        <div className="focus">
-            <h1>
-                <p>Focus:</p>
-                <span></span>
-            </h1>
-             <p>
-                <span className="numbering">01.</span> <span>Frontend</span>
-             </p>
-             <p>
-             <span className="numbering">02.</span>  <span>Backend</span>
-             </p>
-             <p>
-             <span className="numbering">03.</span>  <span>API Design</span>
-             </p>
-        </div>
-    )
-}       
 
 
 {loading && (

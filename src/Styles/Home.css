@@ -1,19 +1,16 @@
 .Homewrapper{
     width: 100vw;
     background-color: #212121;
-    height: 100vh; 
-    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 .HomeContainer{
-    background-color: #000;
+    background: rgb(8, 8, 8);
     width: 100%;
-    min-height: 100%;
-    min-height: calc(var(--vh, 1vh) * 100);
     transform: scale(0.8);
+    display: flex;
 }
 .logocontainer{
     display: flex;

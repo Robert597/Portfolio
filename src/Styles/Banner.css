@@ -7,8 +7,8 @@
     justify-content: center;
 }
 .creative{
-    color: #9fa5d5;
-    text-shadow: 1px 1px 3px #e8f5c8;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 180px;
@@ -24,29 +24,32 @@
 .creative h1 span{
     display: inline-block;
 }
-
+.mobileCreative{
+    display: none;
+}
 
  .developer{
     font-size: 180px;
     line-height: 200px;
-    color: #9fa5d5;
-    text-shadow: 1px 1px 3px #e8f5c8;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     font-weight: bold;
     margin-bottom: 30px;
     font-family: 'Bebas Neue';
     text-transform: uppercase;
     display: block;
-    align-items: center;
     padding: 0 40px;
 }
 .animateMarquee .software{
 animation-play-state: running;
 }
 
+.lower-bottom{
+    display: flex;
+}
 .focus{
-    position: absolute;
-    right: 15%;
-    top: 60%;
+    display: inline-block;
+    flex-wrap: wrap;
 }
 .focus h1 p{
     font-size: 16px;
@@ -56,7 +59,8 @@ animation-play-state: running;
 .focus p{
     font-size: 24px;
     font-family: condense;
-    color: #9fa5d5;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 2px;
 }
 .numbering{
     font-family: works;
@@ -87,11 +91,11 @@ animation-play-state: running;
 
 
 .circle{
-    color: #9fa5d5;
-    text-shadow: 1px 1px 1px #e8f5c8;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 2px;
     position: absolute;
     left: 85%;
-    bottom: 40px;
+    bottom: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -175,13 +179,7 @@ animation-play-state: running;
             padding: 0 40px;
         }
     }
-    @media all and (max-width: 1100px){
-        .focus{
-            position: absolute;
-            right: 10%;
-            top: 60%;
-        }
-    }
+   
     @media all and (max-width: 1000px){
         .creative, .developer{
             font-weight: bold;
@@ -191,173 +189,100 @@ animation-play-state: running;
             padding: 0 40px;
         }
     }
+
     @media all and (max-width: 900px){
         .creative, .developer{
             font-weight: bold;
             margin-bottom: 30px;
+            font-size: 120px;
+            line-height: 140px;
+            padding: 0 20px;
+        }
+        .lower-bottom{
+            flex-direction: column;
+           }
+           .focus{
+            padding: 0 20px;
+           }
+           .focus h1 p{
+            font-size: 20px;
+           
+        }
+        .focus p{
+            font-size: 28px;
+            font-family: condense;
+        }
+        .circle{
+            left: 80%;
+            bottom: 40px;
+        }
+    }
+    @media all and (max-width: 780px){
+        .creative, .developer{
             font-size: 100px;
             line-height: 120px;
             padding: 0 20px;
         }
+       
     }
-    @media all and (max-width: 760px) {
-        
+    @media all and (max-width: 670px){
         .creative, .developer{
-            font-size: 60px;
-            height: 80px;
-            margin-bottom: 30px;
+            font-size: 90px;
+            line-height: 120px;
             padding: 0 20px;
         }
-        .circle{
-            position: fixed;
-            width: 100px;
-            height: 100px;
-            top: 80%;
-          }
-          #circular{
-           transform-origin: 0 50px;
-           left: 50px;
-           }
-           #circular span{
-            position: absolute;
-            transform-origin: 0 50px;
-            font-family: work;
-          }
-        .software{
-            font-size: 60px;
-            height: 80px;
-            margin-bottom: 30px;
-            padding: 0 20px;
-        }
-        .software h1{
-            margin: 0 20px;
-        }
-        .me{
-            width: 15%;
-        }
-        .shift  h1{
-            left: 20%;
-        }
-        .downContent{
-           min-height: 4rem;
-           padding: 20px 0; 
-           }
-           .downcontent{
-            display: flex;
-            align-items: flex-start;
-            height: 100%;
-            width: 100%;
-            flex-direction: column;
-            padding: 0 20px;
-            justify-content: left;
-             }
-           .downcontent p{
-            font-size: 18px;
-            color: #212121;
-           padding: 10px 0;
-           }
-           .introLoader{
-            padding: 0 20px;
-           }
+       
     }
-
-    @media all and (max-width: 650px){
-        .creative, .developer{
-            font-size: 50px;
-            height: 70px;
-        }
-        .software h1{
-            margin: 0 20px;
-        }
-        .software{
-            font-size: 50px;
-            height: 70px;
-        }
-    }
-    @media all and (max-width: 550px){
-        .creative, .developer{
-            font-size: 40px;
-            height: 60px;
-        }
-        .software h1{
-            margin: 0 20px;
-        }
-        .software{
-            font-size: 40px;
-            height: 60px;
-        }
-     
-    }
-    @media all and (max-width: 480px){
+    @media all and (max-width: 600px){
         .creative{
-            font-size: 50px;
-            min-height: 70px;
-           word-break: break-all;
+            display: none;
         }
-      
-        .developer{
-            font-size: 50px;
-            height: 70px;
-            word-break: break-all;
-        }
-        .software h1{
-            margin: 0 20px;
-    
-        }
-        .software{
-            font-size: 50px;
-            height: 70px;
-        }
-        .me{
-            width: 16%;
-        }
-        .shift  h1{
-            left: 23%;
-            position: absolute;
-        }
-      .circle{
-        width: 100px;
-        height: 100px;
-        left: 70%;
-      }
-      #circular{
-       transform-origin: 0 50px;
-       left: 50px;
-       }
-       #circular span{
-        position: absolute;
-        transform-origin: 0 50px;
-        font-family: work;
-      }
-    }
-    @media all and (max-width: 395px) {
-        .circle{
-            width: 60px;
-            height: 60px;
-            left: 80%;
-          }
-          #circular{
-           transform-origin: 0 30px;
-           left: 30px;
-           }
-           #circular span{
-            position: absolute;
-            transform-origin: 0 30px;
-            font-family: Neue;
-            font-size: 8px;
-          }
-    }
-    @media all and (max-width: 350px) {
-        .creative, .developer{
-            font-size: 25px;
-            height: 45px;
-        }
-        .software h1{
-            margin: 0 20px;
-        }
-        .software{
-            font-size: 25px;
-            height: 45px;
-        }
-    }
+       .mobileCreative{
+        display: block;
+        color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+    padding: 0 20px;
+    font-size: 140px;
+    line-height: 190px;
    
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    word-break: break-word;
+       }
+.developer{
+    display: none;
+}
+    .focus{
+        position: absolute;
+        top: 78%;
+        left: 50%;
+    }
+    .focus h1 p{
+        font-size: 16px;
+       
+    }
+    .focus p{
+        font-size: 20px;
+        font-family: condense;
+    }
+    .circle{
+        width: 70px;
+        height: 70px;
+       }
+       #circular{
+        left: 35px;
+        transform-origin: 0 35px;
+        font-size: 9px;
+        }
+        
+   
+      
+        
+        
+        #circular span{
+          transform-origin: 0 35px;
+        
+        }
+    }
+    
+    
