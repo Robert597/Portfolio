@@ -23,7 +23,7 @@ const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
         ele[i].style.transform= "rotate(" + i * 15
          + "deg)";
     }
-    }, 1000)
+    }, 1000);
    })
     
 });
@@ -56,6 +56,14 @@ const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
         transition: {
             staggerChildren: .3,
             delayChildren: 2
+        }
+    }
+}
+  const spanParentVariant2 = {
+    animate: {
+        transition: {
+            staggerChildren: .3,
+            delayChildren: 1.5
         }
     }
 }
@@ -154,7 +162,7 @@ const lineVariant = {
                 </motion.h1>
        </div>
        <motion.div className="focus"
-       variants={spanParentVariant}
+       variants={width > 600 ? spanParentVariant : spanParentVariant2}
        initial='initial'
        animate='animate'>
             <motion.h1>
@@ -182,11 +190,18 @@ const lineVariant = {
         initial={{
             opacity: 0
         }}
-        animate={{
+        animate={width > 600 ? {
             opacity: 1,
             transition: {
                 duration: 1,
                 delay: 3,
+                ease: "circIn"
+            }
+        } : {
+            opacity: 1,
+            transition: {
+                duration: 1,
+                delay: 2.2,
                 ease: "circIn"
             }
         }}>
