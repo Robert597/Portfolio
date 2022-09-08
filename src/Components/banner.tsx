@@ -24,9 +24,9 @@ const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
          + "deg)";
     }
     }, 1000);
-   })
+   });
     
-});
+}, []);
 
   const lineParentVariant = {
     animate: {
