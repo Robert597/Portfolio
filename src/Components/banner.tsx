@@ -14,9 +14,7 @@ const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
   const [line, setLine] = useState(2);
 
   useEffect(() => {
-   
-    
-        const text = document.getElementById("circular") as HTMLElement;
+   const text = document.getElementById("circular") as HTMLElement;
     text.innerHTML = text.innerText.replace(/\S/g, "<span class='rolls'>$&</span>");
 
     const ele = document.querySelectorAll('.rolls') as any;
