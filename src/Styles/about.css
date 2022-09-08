@@ -2,44 +2,63 @@
     position: relative;
     min-height: 100vh;
 }
-.topAbout{
-    background-color: #00a8e8;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+.aboutHr{
+    position: absolute;
+    width: 0%;
+    transition:  all .5s ease-in-out;
+    height: 2px;
+    background-color: rgb(170, 170, 170);
+}
+.aboutTop{
+    width: 100%;
+    padding: 40px;
+    display: block;
+}
+.aboutTop h1{
     height: 100%;
+    position: relative;
+    width: 100%;
+    hyphens: auto;
+    word-break: break-word;
+    color: rgb(170, 170, 170);
+    text-shadow: 0 0 6px rgb(119, 119, 119);
+    font-family: york;
+    letter-spacing: -2.4px;
+    font-feature-settings: "case";
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 1;
+    padding-top: 40px;
+    overflow-y: hidden;
+}
+.aboutTop h1 .textrow{
+   transform: translateY(200%);
+    transition: all 1s ease-in-out;
 }
 
-.iam {
-    padding: 50px 0;
+
+
+.text-image{
+    max-width: 72px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 0px;
+    display: inline-block;
+    position: relative;
 }
-.iam div{
-    display: flex;
-    align-items: center;
-    font-size: 90px;
-    flex-wrap: nowrap;
-    color: #212121;
-    font-weight: bolder;
-    font-family:  york;
-    text-transform: uppercase;
-    color: #f1f1f1;
-    transform: translate3d(calc(0, 0, 0));
-      animation: marqueeab-lg 8s linear infinite; 
+.text-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: polygon(0px 51px, 0px 21px, 21px 0px, 51px 0px, 72px 21px, 72px 51px, 51px 72px, 21px 72px, 0px 51px);
 }
-@keyframes marqueeab-lg {
-    0% {
-      transform: translate3d(calc(-5%), 0, 0);
-    }
-  
-    100% {
-      transform: translate3d(calc(-80%), 0, 0);
-    }
-  }
-.iam div h1{
-    white-space: nowrap;
-    padding: 0 15px;
-}
+
 .centerAbout{
-    background-color: #cdea68;
     position: relative;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -60,7 +79,7 @@
 .aboutLargeText h1{
     font-size: 36px;
     height: 40px;
-    color: #212121;
+    color: rgb(170, 170, 170);
     position: relative;
     text-transform: capitalize;
     margin-bottom: 10px;
@@ -78,7 +97,6 @@
 
 .aboutText .hrline{
     background-color: #212121;
-    color: #212121;
     width: 90%;
     height: 1px;
     position: absolute;
@@ -89,7 +107,7 @@ padding: 25px 10px;
 .aboutBottomText h1{
     font-size: 18px;
     height: 26px;
-    color: #212121;
+    color: rgb(170, 170, 170);
     position: relative;
     margin-bottom: 10px;
     font-family: Neue;
@@ -146,11 +164,27 @@ padding: 25px 10px;
     top: 0;
     transition: all 1s ease-in-out;
 }
+
+.aboutTop .textUp .textrow{
+    transform: translateY(0%);
+     transition: all 1s ease-in-out;
+ }
+ 
 @media all and (max-width: 760px){
-    .topAbout{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
+   .aboutTop{
+    padding: 40px 20px;
+   }
+   .aboutTop h1{
+    letter-spacing: -1.6px;
+    font-size: 64px;
+    padding-top: 10px;
+   }
+   .text-image{
+    max-width: 48px;
+   }
+   .text-image img{
+    clip-path: polygon(34px 48px, 48px 34px, 48px 14px, 34px 1px, 14px 1px, 1px 14px, 1px 34px, 14px 48px, 34px 48px);
+   }
     .centerAbout{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;

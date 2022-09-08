@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
+import me from "../Assets/me3.jpg";
 import "../Styles/about.css";
 
 const About = () => {
@@ -10,22 +10,34 @@ const About = () => {
  
   return (
     <section data-scroll-section className="about">
-        <div className="topAbout" >
-          <div className="iam" data-scroll data-scroll-sticky data-scroll-target=".about">
-            <hr/>
-            <div>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-              <h1>I AM ROBERT</h1>
-            </div>
-            <hr/>
-          </div>
+      
+      <span className='aboutHr'
+data-scroll 
+data-scroll-offset="70"
+data-scroll-class="showHr"
+style={{left: 0}}></span>
+
+<div className="aboutTop">
+  <h1 data-scroll
+  data-scroll-class="textUp"
+  data-scroll-offset="300"
+>
+   <div className="textrow" >
+<span>Hello! </span>
+<span className="text-image"><img src={me} alt="me"/></span>
+<span>
+  I'M ROBERT OLUWASEUN 
+</span>
+   </div>
+   <div className="textrow" >
+<span>A FULLSTACK </span>
+<span>
+  WEB DEVELOPER.
+</span>
+   </div>
+    
+  </h1>
+</div>
 
           <div className="centerAbout"  data-scroll>
 
@@ -119,7 +131,7 @@ const About = () => {
 
           </div>
 
-        </div>
+        
     </section>
   )
 }
