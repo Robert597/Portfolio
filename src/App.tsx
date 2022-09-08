@@ -14,13 +14,7 @@ function App() {
   const [loading, setLoading] = React.useState(true);
   const [width, setWidth] = React.useState(window.innerWidth);
 
-useEffect(() => {
-  window.addEventListener("load", ()=> {
-    gsap.to("body", {css: {
-      display: "block"
-    }})
-  })
-})
+
 
   useEffect(() => {
     //SETTING DOCUMENT HEIGHT ON LOAD
