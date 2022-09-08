@@ -14,17 +14,17 @@ const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
   const [line, setLine] = useState(2);
 
   useEffect(() => {
-   window.addEventListener("load", () => {
-    setTimeout(() => {
+   
+    
         const text = document.getElementById("circular") as HTMLElement;
     text.innerHTML = text.innerText.replace(/\S/g, "<span class='rolls'>$&</span>");
+
     const ele = document.querySelectorAll('.rolls') as any;
+
     for(var i=0; i < ele.length; i++){
         ele[i].style.transform= "rotate(" + i * 15
          + "deg)";
-    }
-    }, 1000);
-   });
+    };
     
 }, []);
 

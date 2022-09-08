@@ -17,7 +17,7 @@ function App() {
 useEffect(() => {
   window.addEventListener("load", ()=> {
     gsap.to("body", {css: {
-      visibility: "visible"
+      display: "block"
     }})
   })
 })
