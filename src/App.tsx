@@ -12,6 +12,15 @@ function App() {
  
   const containerRef = useRef(null);
   const [loading, setLoading] = React.useState(true);
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+useEffect(() => {
+  window.addEventListener("load", ()=> {
+    gsap.to("body", {css: {
+      visibility: "visible"
+    }})
+  })
+})
 
   useEffect(() => {
     //SETTING DOCUMENT HEIGHT ON LOAD
@@ -20,21 +29,12 @@ function App() {
     //@ts-ignore
     window.addEventListener('resize', () => {
       let vh = window.innerHeight * 0.01;
+      setWidth(window.innerWidth);
       document.documentElement.style.setProperty("--vh", `${vh}px`);
     })
   })
 
- useEffect(() => {
-   loading ? gsap.set('.c-scrollbar', {
-    css: {
-      display: "none"
-    }
-   }) : gsap.set('.c-scrollbar', {
-    css: {
-      display: "block"
-    }
-   })
- }, [loading])
+ 
  
   
 
@@ -63,7 +63,7 @@ return (
 >
   
   <div data-scroll-container ref={containerRef} className="main" id="main">
-   <Home loading={loading} setLoading={setLoading} />
+   <Home loading={loading} setLoading={setLoading} width={width}/>
    <About/>
    <Projects/>
    <Contact/>

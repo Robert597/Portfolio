@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import me from "../Assets/me3.jpg";
 import {BsArrowDown} from "react-icons/bs";
 import "../Styles/Banner.css";
-import {motion, useScroll} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {useLocomotiveScroll} from 'react-locomotive-scroll';
 
 
@@ -10,35 +9,72 @@ import {useLocomotiveScroll} from 'react-locomotive-scroll';
 
 
 
-const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play: boolean;}) => {
-    const[count, setCount] = useState(0);
+const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
+
   const [line, setLine] = useState(2);
 
-   
-    useEffect(() => {
-        if(!loading) {
-            const text = document.getElementById("circular") as HTMLElement;
-            text.innerHTML = text.innerText.replace(/\S/g, "<span class='rolls'>$&</span>");
-            const ele = document.querySelectorAll('.rolls') as any;
-            for(var i=0; i < ele.length; i++){
-                ele[i].style.transform= "rotate(" + i * 15
-                 + "deg)";
-            }
+  useEffect(() => {
+   window.addEventListener("load", () => {
+    setTimeout(() => {
+        const text = document.getElementById("circular") as HTMLElement;
+    text.innerHTML = text.innerText.replace(/\S/g, "<span class='rolls'>$&</span>");
+    const ele = document.querySelectorAll('.rolls') as any;
+    for(var i=0; i < ele.length; i++){
+        ele[i].style.transform= "rotate(" + i * 15
+         + "deg)";
+    }
+    }, 1000)
+   })
+    
+});
+
+  const lineParentVariant = {
+    animate: {
+        transition: {
+            staggerChildren: .3,
         }
-    }, [loading]);
+    }
+}
+  const lineParentVariant3 = {
+    animate: {
+        transition: {
+            staggerChildren: .3,
+            delayChildren: 1.6
+        }
+    }
+}
+  const lineParentVariant2 = {
+    animate: {
+        transition: {
+            staggerChildren: .3,
+        }
+    }
+}
 
-    useEffect(() => {
-  
-        const  introCount = setInterval(() => {
-            if(count >= 100){
-           clearInterval(introCount);
-            }else{
-                setCount(prev => prev + 10);
-            }
-        }, 120);
+  const spanParentVariant = {
+    animate: {
+        transition: {
+            staggerChildren: .3,
+            delayChildren: 2
+        }
+    }
+}
 
-        return () => clearInterval(introCount);
-    }, [count]);
+const lineVariant = {
+    initial: {
+        y: "120%"
+    },
+    animate: {
+        y: 0,
+        transition: {
+            duration: .7,
+            ease: "easeInOut"
+        }
+    }
+}
+   
+
+
     
       const {scroll} = useLocomotiveScroll();
 
@@ -48,73 +84,123 @@ const Banner = ({loading, shift, play}: { loading: boolean; shift: boolean; play
         })
     }, [scroll]);
   return (
-    <div className={`bannerContainer ${play && 'animateMarquee'}`}>
+    <div className="bannerContainer">
         <div className="mobileCreative">
-            <h1>
+            <motion.h1
+            initial={{
+                y: "100%"
+            }}
+            animate={{
+                y: 0,
+                transition: {
+                    duration: 1,
+                    delay: .5,
+                    ease: "easeIn"
+                }
+            }}>
                 <span>SOFT</span>
                 <br/>
                 <span>&#8212;</span> <span>WARE</span>
                 <br/>
                  <span>DEVELOPER</span>
-            </h1>
+            </motion.h1>
         </div>
         <div className='creative' 
        data-scroll>
-            <h1 data-scroll> <span data-scroll
-           
-            data-scroll-direction="horizontal"
-            data-scroll-speed="3">SOFT</span>
+            <h1 data-scroll> <motion.span data-scroll
+           data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            variants={lineParentVariant}
+            initial = 'initial'
+            animate='animate'>
+                <motion.span 
+                variants={lineVariant}>S</motion.span>
+                <motion.span variants={lineVariant}>O</motion.span>
+                <motion.span variants={lineVariant}>F</motion.span>
+                <motion.span variants={lineVariant}>T</motion.span>
+            </motion.span>
             
             <span className='dash' style={{
                 transform: `scale(${line}, 1)`
-            }}>-</span><span data-scroll
+            }}>-</span><motion.span data-scroll
             data-scroll-direction="horizontal"
-            data-scroll-speed="-3">WARE</span></h1>
+            data-scroll-speed="-3"
+            variants={lineParentVariant3}
+            initial = 'initial'
+            animate='animate'>
+                 <motion.span variants={lineVariant}>W</motion.span>
+                <motion.span variants={lineVariant}>A</motion.span>
+                <motion.span variants={lineVariant}>R</motion.span>
+                <motion.span variants={lineVariant}>E</motion.span>
+            </motion.span></h1>
         </div>
 <div className='lower-bottom'>
         <div className='developer'
        >
-       <h1>Developer</h1>
+       <motion.h1
+         variants={lineParentVariant2}
+         initial = 'initial'
+         animate='animate'>
+                <motion.span variants={lineVariant}>D</motion.span>
+                <motion.span variants={lineVariant}>E</motion.span>
+                <motion.span variants={lineVariant}>V</motion.span>
+                <motion.span variants={lineVariant}>E</motion.span>
+                <motion.span variants={lineVariant}>L</motion.span>
+                <motion.span variants={lineVariant}>O</motion.span>
+                <motion.span variants={lineVariant}>P</motion.span>
+                <motion.span variants={lineVariant}>E</motion.span>
+                <motion.span variants={lineVariant}>R</motion.span>
+                
+                </motion.h1>
        </div>
-       <div className="focus">
-            <h1>
-                <p>Focus:</p>
+       <motion.div className="focus"
+       variants={spanParentVariant}
+       initial='initial'
+       animate='animate'>
+            <motion.h1>
+                <motion.p variants={lineVariant}>Focus:</motion.p>
                 <span></span>
-            </h1>
-             <p>
-                <span className="numbering">01.</span> <span>Frontend</span>
-             </p>
-             <p>
-             <span className="numbering">02.</span>  <span>Backend</span>
-             </p>
-             <p>
-             <span className="numbering">03.</span>  <span>API Design</span>
-             </p>
-        </div>
+            </motion.h1>
+             <motion.p>
+                <span className="numbering">01.</span> <motion.span variants={lineVariant}>Frontend</motion.span>
+             </motion.p>
+             <motion.p>
+             <span className="numbering">02.</span>  <motion.span variants={lineVariant}>Backend</motion.span>
+             </motion.p>
+             <motion.p>
+             <span className="numbering">03.</span>  <motion.span variants={lineVariant}>API Design</motion.span>
+             </motion.p>
+        </motion.div>
         </div>
         
            
         
 
       
-{!loading &&
-        <motion.div className='circle'>
+
+        <motion.div className='circle'
+        initial={{
+            opacity: 0
+        }}
+        animate={{
+            opacity: 1,
+            transition: {
+                duration: 1,
+                delay: 3,
+                ease: "circIn"
+            }
+        }}>
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
             Scroll-down-Scroll-down.
         </h2>
         </motion.div>
-}
 
 
 
-{loading && (
-    <div className="introLoader">
-        <p className='text'>Loading...</p>
-        <p className='count'>{count}%</p>
-    </div>
-)}
+
+
     </div>
   )
 }

@@ -44,12 +44,23 @@ const Navbar = ({loading}:{loading: Boolean}) => {
     
   return (
 
-    <div>
-        {!loading && <>
+    <motion.div className='navv'
+    initial={{
+        y: "-100%"
+    }}
+    animate={{
+        y: 0,
+        transition:{
+            duration: .5,
+            ease: "easeInOut"
+        }
+    }}
+    >
+        <>
     <div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
-            PORTFOLIO
+            ROBERT
             </h1>
         </div>
          
@@ -64,8 +75,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
 </div>
 <Mobile state={state} handleMenu={handleMenu}/>
 </>
-}
-</div>
+</motion.div>
   )
 }
 

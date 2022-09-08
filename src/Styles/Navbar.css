@@ -1,3 +1,7 @@
+.navv{
+    display: block;
+    height: 3rem;
+}
 .NavbarContainer{
     display: flex;
     justify-content: space-between;
@@ -76,6 +80,10 @@
        .hamburger-menu{
         display: block;
        }
+       .navv{
+        display: block;
+        height: 3rem;
+    }
        .NavbarContainer{
         padding: 30px 20px;
         position: fixed;
