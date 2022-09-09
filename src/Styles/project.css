@@ -1,23 +1,34 @@
 .project{
     width: 100vw;
     min-height: 100vh;
-    background-color: #f1f1f1;
     padding-top: 40px;
     padding-bottom: 120px;
     position: relative;
   }
+  .projectHr{
+    position: absolute;
+    width: 0%;
+    transition:  all .5s ease-in-out;
+    height: 1px;
+    background-color: rgb(204, 207, 202);
+}
+
+.project .showHr{
+    width: 100%;
+    transition:  all .5s ease-in-out;
+}
   .projectTop{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0 40px;
+    padding: 20px 40px;
   }
   .projectTop h1{
     font-size: 80px;
-    color: #212121;
-    text-shadow: 0 0 4px #212121;
-    font-family: york;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+    font-family: condense;
   }
   .projectTopHr{
 position: absolute;
@@ -25,14 +36,14 @@ right: 0;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: #212121;
+background-color: rgba(204, 207, 202);
   }
   .projectHr{
     position: absolute;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: #212121;
+background-color: rgba(204, 207, 202);
   }
   .showHr{
     width: 100%;
@@ -48,15 +59,15 @@ background-color: #212121;
     cursor: pointer;
   }
   .projectDetailsContainer h1{
-font-family: york;
-color: #212121;
-font-size: 60px;
-height: 70px;
+font-family: 'Bebas Neue';
+font-size: 80px;
+height: 90px;
 position: relative;
 display: block;
 width: 60%;
 overflow-y: hidden;
-text-shadow: 0 0 4px #212121;
+color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
   }
   .projectDetailsContainer h1 span{
     position: absolute;
@@ -74,27 +85,28 @@ text-shadow: 0 0 4px #212121;
 /* CSS */
 .projectDetailButtons .button-17 {
   align-items: center;
-  background-color:#f1f1f1;
+  background-color:transparent;
   border-radius: 24px;
-  border: 1px #212121 solid;
+  border: 1px rgb(204, 207, 202) solid;
   cursor: pointer;
-  font-family: Neue;
+  font-family: condenseInt;
   font-size: 14px;
   height: 40px;
   padding: 2px 20px;
   position: relative;
   text-align: center;
   margin-right: 10px;
-  text-shadow: 0 0 2px #212121;
+  color: rgb(204, 207, 202);
+  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
   opacity: 0;
   transition: all .5s ease-in-out;
 }
 .button-17 a{
     text-decoration: none;
-    font-family: Neue;
+    font-family: condenseInt;
   font-size: 14px;
-  color: #212121;
-  text-shadow: 0 0 2px #212121;
+  color: rgb(204, 207, 202);
+  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
   transition: all .5s ease-in-out;
 }
 
@@ -106,7 +118,8 @@ text-shadow: 0 0 4px #212121;
 }
 .projectLowerPart p{
  font-size: 16px;
- color: #212121;
+ color: rgb(204, 207, 202);
+ text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
 }
 .projectDetailButtons .showBtn{
   opacity: 1;
@@ -116,8 +129,8 @@ text-shadow: 0 0 4px #212121;
     font-size: 60px;
   }
   .projectDetailsContainer h1{
-    font-size: 50px;
-    height: 70px;
+    font-size: 70px;
+    height: 80px;
     width: 60%;
       }
 }
@@ -126,8 +139,8 @@ text-shadow: 0 0 4px #212121;
     font-size: 60px;
   }
   .projectDetailsContainer h1{
-    font-size: 40px;
-    height: 70px;
+    font-size: 60px;
+    height: 80px;
     width: 60%;
       }
 }
@@ -140,8 +153,8 @@ text-shadow: 0 0 4px #212121;
     cursor: pointer;
   }
   .projectDetailsContainer h1{
-    font-size: 60px;
-    height: 70px;
+    font-size: 70px;
+    height: 90px;
     width: 100%;
       }
       .projectDetailsContainer{
@@ -167,14 +180,14 @@ text-shadow: 0 0 4px #212121;
 }
 @media all and (max-width: 580px){
   .projectDetailsContainer h1{
-    font-size: 50px;
-    height: 60px;
+    font-size: 60px;
+    height: 80px;
       }
 }
 @media all and (max-width: 450px){
   .projectDetailsContainer h1{
-    font-size: 40px;
-    height: 45px;
+    font-size: 50px;
+    height: 75px;
       }
       .projectDetailButtons .button-17 {
         font-size: 12px;

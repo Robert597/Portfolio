@@ -23,7 +23,7 @@ style={{left: 0}}></span>
   data-scroll-offset="300"
 >
    <div className="textrow" >
-<span>Hello! </span>
+<span>Hello!</span>
 
 <span className="text-image"><img src={me} alt="me"/></span>
 
@@ -41,99 +41,59 @@ style={{left: 0}}></span>
   </h1>
 </div>
 
-          <div className="centerAbout"  data-scroll>
+          <div className="about_bio">
+              <div className="about_label">
+                  <div className="section_label">
+                  <span className="label_text">
+                    About
+                  </span>
+                  <svg width="55" height="24" fill="none">
+                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h40.526L54.5 7.237v9.527L47.764 23.5H7.236Z" stroke="#484b45"></path>
+                  </svg>
+                  </div>
 
-            <div className="firstAbout">
-            <div className="aboutText">
-
-               <div className="aboutLargeText" data-scroll 
-               data-scroll-class="up"
-               data-scroll-repeat="true"
-               data-scroll-offset="200">
-                  <h1  data-scroll >
-                    <span >
-                      Software developer based in Lagos, Nigeria.
-                    </span>
-                  </h1>
-                  <h1>
-                    <span>
-                      Specialized in fullstack web development.
-                    </span>
-                  </h1>
-               </div>
-<span className="hrline"></span>
-               <div className="aboutBottomText" data-scroll 
-               data-scroll-class="up"
-               data-scroll-repeat="true"
-               data-scroll-offset="200">
-                
-                <h1>
-                  <span>I am Robert Oluwaseun, a fullstack web developer</span>
-                </h1>
-
-                <h1>
-                  <span>dedicated to developing and optimizing</span>
-                </h1>
-
-                <h1>
-                  <span>interactive, user-friendly and feature rich websites.</span>
-                </h1>
-
-                <h1>
-                  <span>Leveraging analytical skills and strong attention to detail</span>
-                </h1>
-
-                <h1>
-                  <span>in order to deliver original and efficient web solutions.</span>
-                </h1>
-               </div>
+                  <div className="section_label">
+                  <span className="label_text">
+                    ME
+                  </span>
+                  <svg width="32" height="24" fill="none">
+                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h17.527L31.5 7.237v9.527L24.764 23.5H7.236Z" stroke="#484b45"></path>
+                  </svg>
+                  </div>
 </div>
-<span className='mobilehr'></span>
-             <div className="skill" >
-             <h1 className='skillh1' data-scroll 
-            data-scroll-class="up"
-            data-scroll-repeat="true"
-            data-scroll-offset="200">
-      <span>Skills:</span>
-    </h1>
+            <div className="aboutText"> 
+            <div className="about_desc">
+                <p>
+                  Web developer based in Lagos, Nigeria, specialized in fullstack web development, dedicated to developing and optimizing interactive, user-friendly and feature rich websites. leveraging analytical skills and strong attention to details in order to deliver original and efficient web solutions.
+                </p>
+              </div>
 
-  <div className="skills" 
-   data-scroll 
-   data-scroll-class="up"
-   data-scroll-repeat="true"
-   data-scroll-offset="200">
-    <h1>
-      <span>Javascript</span>
-    </h1>
-    <h1>
-      <span>Typescript</span>
-    </h1>
-    <h1>
-      <span>Css & SASS</span>
-    </h1>
-    <h1>
-      <span>React & Redux</span>
-    </h1>
-    <h1>
-      <span>NodeJs & ExpressJs</span>
-    </h1>
-    <h1>
-      <span>MongoDb & Mongoose</span>
-    </h1>
-    <h1>
-      <span>SQL & PostgreSQL</span>
-    </h1>
-  </div>
+               <div className="skill" >
+
+               <div className="section_label">
+                  <span className="label_text">
+                    Skills
+                  </span>
+                  <svg width="55" height="24" fill="none">
+                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h40.526L54.5 7.237v9.527L47.764 23.5H7.236Z" stroke="#484b45"></path>
+                  </svg>
+                  </div>
+
+  <ul className="skills">
+    <li>Javascript</li>
+    <li>Typescript</li>
+    <li>Css & Sass</li>
+    <li>React & Redux</li>
+    <li>SQL & postgreSQL</li>
+    <li>Node.js & Express.js</li>
+    <li>MongoDB & Mongoose</li>
+  </ul>
  </div>
+</div>
+
+          
 
              </div>
- 
- 
- 
-
-          </div>
-
-        
     </section>
   )
 }

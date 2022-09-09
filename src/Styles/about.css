@@ -1,13 +1,20 @@
 .about{
     position: relative;
     min-height: 100vh;
+    padding-bottom: 30px;
 }
+
 .aboutHr{
     position: absolute;
     width: 0%;
     transition:  all .5s ease-in-out;
     height: 2px;
     background-color: rgb(204, 207, 202);
+}
+
+.about .showHr{
+    width: 100%;
+    transition:  all .5s ease-in-out;
 }
 .aboutTop{
     width: 100%;
@@ -55,114 +62,75 @@
     clip-path: polygon(0px 51px, 0px 21px, 21px 0px, 51px 0px, 72px 21px, 72px 51px, 51px 72px, 21px 72px, 0px 51px);
 }
 
-.centerAbout{
-    position: relative;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    z-index: 8;
+.about_bio{
+    display: grid;
+    padding: 40px;
 }
-.firstAbout{
+.about_label{
+    display: inline-flex;
+    gap: 8px;
+}
+.aboutText{
     display: flex;
     width: 100%;
 }
-.aboutText{
-    width: 70%;
-    padding: 30px;
-    position: relative;
-}
-.aboutLargeText{
-    padding: 30px 10px;
-}
-.aboutLargeText h1{
-    font-size: 36px;
-    height: 40px;
+.about_desc{
+    letter-spacing: -1.2px;
+    text-transform: none;
+    font-family: condenseInt;
+    font-size: 48px;
+    line-height: 1.15;
     color: rgb(204, 207, 202);
     text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+    margin-top: 24px;
+    width: 80%;
+}
+
+.about_label  .section_label, .skill .section_label{
     position: relative;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-family: Neue;
-    overflow-y: hidden;
-    transition: all .5s ease-in-out;
+    height: 24px;
+    width: 32px;
+    letter-spacing: normal;
+    font-family: condenseInt, monospace;
+    font-size: 12px;
+    line-height: 1.3;
+}
+.label_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
 }
 
-.aboutLargeText h1 span {
-    position: absolute;
-    top: 100%;
-    transition: all 0.5s ease-in-out;
+.about_label .section_label:first-of-type {
+    width: 55px;
 }
-
-
-.aboutText .hrline{
-    background-color: #212121;
-    width: 90%;
-    height: 1px;
-    position: absolute;
-}
-.aboutBottomText{
-padding: 25px 10px;
-}
-.aboutBottomText h1{
-    font-size: 18px;
-    height: 26px;
-    color: rgb(170, 170, 170);
-    position: relative;
-    margin-bottom: 10px;
-    font-family: Neue;
-    overflow-y: hidden;
-    transition: all .5s linear;
-}
-.aboutBottomText h1 span {
-    position: absolute;
-    top: 100%;
-    transition: all 0.5s ease-in-out;
+.skill .section_label{
+    width: 55px;
 }
 .skill{
-    width: 30%;
-    padding: 90px 20px;
-    position: relative;
-}
-.skillh1{
-    font-size: 36px;
-    height: 40px;
-    color: #212121;
-    position: relative;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-family: Neue;
-    overflow-y: hidden;
-    transition: all .5s ease-in-out;
-}
-.skillh1 span{
-    position: absolute;
-    top: 100%;
-    transition: all 0.5s ease-in-out;
-}
-.skills h1{
-    font-size: 18px;
-    height: 26px;
-    color: #212121;
-    position: relative;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-family: Neue;
-    overflow-y: hidden;
-    transition: all .5s ease-in-out;
-}
-.mobilehr{
-    display: none;
-}
-.skills h1 span{
-    position: absolute;
-    top: 100%;
-    transition: all 0.5s ease-in-out;
-} 
-.up h1 span, .up span{
-    position: absolute;
-    top: 0;
-    transition: all 1s ease-in-out;
+    padding: 10px 30px;
+    width: 20%;
 }
 
+.skills{
+  list-style: none;
+  margin-top: 32px;
+  width: 100%;
+  display: block;
+}
+.skills li{
+    text-transform: capitalize;
+    letter-spacing: 0.28px;
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+    font-family: condense;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
 .aboutTop .textUp .textrow{
     transform: translateY(0%);
      transition: all 1s ease-in-out;
@@ -184,124 +152,24 @@ padding: 25px 10px;
     max-height: 48px;
     clip-path: polygon(34px 48px, 48px 34px, 48px 14px, 34px 1px, 14px 1px, 1px 14px, 1px 34px, 14px 48px, 34px 48px);
    }
-    .centerAbout{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .iam div{
-        font-size: 60px; 
-    }
-    .firstAbout{
-        flex-direction: column;
-    }
-    .aboutText{
-        width: 100%;
-    }
-    .aboutBottomText h1{
-        font-size: 24px;
-        height: 32px;
-    }
-    .aboutBottomText h1 span {
-        position: absolute;
-    }
-    .mobilehr{
-        display: block;
-        background-color: #212121;
-        height: 1px;
-        width: 100%;
-    }
-    .skill{
-        width: 100%;
-        padding: 20px;
-        display: flex;
-        position: relative;
-    }
-    .skillh1{
-        font-size: 36px;
-        height: 40px;
-        color: #212121;
-        position: relative;
-        text-transform: capitalize;
-        margin-bottom: 10px;
-        font-family: Neue;
-        overflow-y: hidden;
-        width: 30%;
-    }
-    .skillh1 span{
-        position: absolute;
-    }
-    .skills{
-        width: 70%;
-       text-align: center;
-    }
-    .skills h1 span{
-        position: absolute;
-    } 
+   .about_bio{
+    padding: 40px 20px;
+   }
+   .aboutText{
+    flex-direction: column;
+   }
+   .about_desc{
+    width: 100%;
+    font-size: 38px;
+   }
+   .skill{
+    width: 100%;
+    padding: 30px 0;
+   }
 }
-@media all and (max-width: 650px){
-    .iam div{
-        font-size: 40px; 
-    }
-    .aboutLargeText h1{
-        font-size: 24px;
-        height: 30px;
-    }
-    .aboutBottomText h1{
-        font-size: 18px;
-        height: 24px;
-    }
-}
- 
-@media all and (max-width: 600px){
-    .skills{
-       text-align: left;
-       padding-left: 100px;
-    }
-}
-@media all and (max-width: 550px){
-    .skills{
-       text-align: left;
-       padding-left: 100px;
-    }
-    .aboutText{
-        padding: 30px 15px;
-    }
-    .aboutLargeText{
-        padding: 15px 0;
-    }
-    .aboutLargeText h1{
-        font-size: 20px;
-        height: 26px;
-        font-weight: bold;
-    }
-}
-@media all and (max-width: 440px){
-    .aboutLargeText h1{
-        font-size: 17px;
-        height: 25px;
-        font-weight: bold;
-    }
-    .aboutBottomText{
-        padding: 25px 0;
-    }
-    .aboutBottomText h1{
-        font-size: 14px;
-        height: 22px;
-    }
-    .skill{
+@media all and (max-width: 500px){
+    .about_desc{
         width: 100%;
-        padding: 20px;
-        display: flex;
-        position: relative;
-        flex-direction: column;
-    }
-    .skills{
-        text-align: left;
-        padding-left: 0px;
-        padding-top: 20px;
-     }
-    .skills h1{
-        font-size: 18px;
-        height: 26px;
-    }
+        font-size: 32px;
+       }
 }
