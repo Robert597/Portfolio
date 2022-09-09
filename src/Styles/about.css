@@ -49,6 +49,7 @@
     font-size: 0px;
     display: inline-block;
     text-align: center;
+    margin-top: 8px;
 }
 .text-image img {
     display: block;
