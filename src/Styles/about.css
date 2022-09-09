@@ -7,7 +7,7 @@
     width: 0%;
     transition:  all .5s ease-in-out;
     height: 2px;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(204, 207, 202);
 }
 .aboutTop{
     width: 100%;
@@ -20,8 +20,8 @@
     width: 100%;
     hyphens: auto;
     word-break: break-word;
-    color: rgb(170, 170, 170);
-    text-shadow: 0 0 6px rgb(119, 119, 119);
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     font-family: york;
     letter-spacing: -2.4px;
     font-feature-settings: "case";
@@ -79,7 +79,8 @@
 .aboutLargeText h1{
     font-size: 36px;
     height: 40px;
-    color: rgb(170, 170, 170);
+    color: rgb(204, 207, 202);
+    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     position: relative;
     text-transform: capitalize;
     margin-bottom: 10px;

@@ -24,7 +24,9 @@ style={{left: 0}}></span>
 >
    <div className="textrow" >
 <span>Hello! </span>
+
 <span className="text-image"><img src={me} alt="me"/></span>
+
 <span>
   I'M ROBERT OLUWASEUN 
 </span>
