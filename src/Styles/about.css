@@ -39,20 +39,23 @@
 
 
 .text-image{
+    position: relative;
     max-width: 72px;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin-left: 16px;
     margin-right: 16px;
     font-size: 0px;
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 .text-image img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
     clip-path: polygon(0px 51px, 0px 21px, 21px 0px, 51px 0px, 72px 21px, 72px 51px, 51px 72px, 21px 72px, 0px 51px);
 }
