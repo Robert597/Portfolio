@@ -52,9 +52,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
     clip-path: polygon(0px 51px, 0px 21px, 21px 0px, 51px 0px, 72px 21px, 72px 51px, 51px 72px, 21px 72px, 0px 51px);
 }
 
