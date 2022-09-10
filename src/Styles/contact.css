@@ -4,14 +4,10 @@
   padding: 0;
 }
 .contactTop{
-    background-color: #005a34;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     width: 100%;
     padding-top: 40px;
 }
 .contactMarquee{
-    color: #f1f1f1;
     text-transform: uppercase;
     white-space: nowrap;
     width: 80%;
@@ -30,9 +26,6 @@
     }
 }
 .contactContent{
-    background-color: #cdea68;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     height: 100%;
     width: 100%;
     height: 100vh;
@@ -51,9 +44,6 @@
     line-height: 90px;
 }
 .container1{
-    border-top-right-radius: 5vw;
-    border-top-left-radius: 5vw;
-    background-color: #f1f1f1;
     position: relative;
     z-index: 5;
     padding: 50px 0px;
@@ -63,7 +53,6 @@
   display: block;
 width: 100vw;
 height: 1px;
-background-color: #212121;
 }
 .container-1 {
     width: 100%;
@@ -77,7 +66,6 @@ background-color: #212121;
     padding: 0px;
     font-size: 80px;
     height: 90px;
-    color: #212121;
     font-family: york;
     white-space: nowrap;
     position: relative;
@@ -365,9 +353,6 @@ background-color: #212121;
   
   @media (max-width: 800px) {
     .contactTop{
-      background-color: #005a34;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
       width: 100%;
       padding-top: 25px;
   }

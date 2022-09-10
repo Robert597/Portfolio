@@ -10,7 +10,7 @@
     width: 0%;
     transition:  all .5s ease-in-out;
     height: 1px;
-    background-color: rgb(204, 207, 202);
+    background-color: rgb(170, 170, 170);
 }
 
 .project .showHr{
@@ -25,10 +25,11 @@
     padding: 20px 40px;
   }
   .projectTop h1{
-    font-size: 80px;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
-    font-family: condense;
+    font-size: 100px;
+    font-family: york;
+    letter-spacing: -0.05em;
+    color: rgb(170, 170, 170);
+
   }
   .projectTopHr{
 position: absolute;
@@ -36,14 +37,14 @@ right: 0;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: rgba(204, 207, 202);
+background-color: rgba(170, 170, 170);
   }
   .projectHr{
     position: absolute;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: rgba(204, 207, 202);
+background-color: rgba(170, 170, 170);
   }
   .showHr{
     width: 100%;
@@ -59,15 +60,14 @@ background-color: rgba(204, 207, 202);
     cursor: pointer;
   }
   .projectDetailsContainer h1{
-font-family: 'Bebas Neue';
-font-size: 80px;
-height: 90px;
+font-family: work;
+font-weight: 400;
+font-size: 50px;
+height: 70px;
 position: relative;
 display: block;
 width: 60%;
 overflow-y: hidden;
-color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
   }
   .projectDetailsContainer h1 span{
     position: absolute;
@@ -87,7 +87,7 @@ color: rgb(204, 207, 202);
   align-items: center;
   background-color:transparent;
   border-radius: 24px;
-  border: 1px rgb(204, 207, 202) solid;
+  border: 1px rgb(170, 170, 170) solid;
   cursor: pointer;
   font-family: condenseInt;
   font-size: 14px;
@@ -96,8 +96,7 @@ color: rgb(204, 207, 202);
   position: relative;
   text-align: center;
   margin-right: 10px;
-  color: rgb(204, 207, 202);
-  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+  color: rgb(170, 170, 170);
   opacity: 0;
   transition: all .5s ease-in-out;
 }
@@ -105,21 +104,20 @@ color: rgb(204, 207, 202);
     text-decoration: none;
     font-family: condenseInt;
   font-size: 14px;
-  color: rgb(204, 207, 202);
-  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+  color: rgb(170, 170, 170);
   transition: all .5s ease-in-out;
 }
 
 .button-17:hover{
-    box-shadow: 0px 2px 5px  #212121;
+    box-shadow: 0px 2px 5px  rgb(170, 170, 170);
 }
 .projectLowerPart{
   padding: 20px 40px;
 }
 .projectLowerPart p{
- font-size: 16px;
- color: rgb(204, 207, 202);
- text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+ font-size: 14px;
+ text-transform: capitalize;
+ font-family: condenseThin;
 }
 .projectDetailButtons .showBtn{
   opacity: 1;
@@ -134,61 +132,44 @@ color: rgb(204, 207, 202);
     width: 60%;
       }
 }
-@media all and (max-width: 740px){
+@media all and (max-width: 760px){
+  .projectDetailsContainer{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    cursor: pointer;
+    flex-direction: column;
+  }
   .projectTop h1{
-    font-size: 60px;
+    font-size: 80px;
   }
   .projectDetailsContainer h1{
-    font-size: 60px;
-    height: 80px;
-    width: 60%;
+    font-size: 40px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
       }
 }
+
 @media all and (max-width: 650px){
   .projectTop h1{
-    font-size: 40px;
+    font-size: 70px;
   }
   .projectDetailsContainer{
     padding: 20px 20px;
     cursor: pointer;
   }
-  .projectDetailsContainer h1{
-    font-size: 70px;
-    height: 90px;
-    width: 100%;
-      }
-      .projectDetailsContainer{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        align-items: flex-start;
-        cursor: pointer;
-        flex-direction: column;
-      }
       .projectDetailButtons{
         display: flex;
         width: 100%;
         padding: 10px 0;
-        justify-content: flex-end;
       }
 }
-@media all and (max-width: 610px){
-  .projectTop h1{
-    font-size: 40px;
-  }
-}
-@media all and (max-width: 580px){
-  .projectDetailsContainer h1{
-    font-size: 60px;
-    height: 80px;
-      }
-}
+
+
 @media all and (max-width: 450px){
-  .projectDetailsContainer h1{
-    font-size: 50px;
-    height: 75px;
-      }
       .projectDetailButtons .button-17 {
         font-size: 12px;
       }

@@ -11,8 +11,6 @@
     line-height: 200px;
     height: 240px;
     letter-spacing: -0.005em;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     font-weight: bold;
     position: relative;
     overflow-y: hidden;
@@ -41,8 +39,6 @@ display: inline-block;
     height: 240px;
     position: relative;
     overflow-y: hidden;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     font-weight: bold;
     font-family: 'Bebas Neue';
     text-transform: uppercase;
@@ -67,21 +63,19 @@ animation-play-state: running;
     position: relative;
     height: 26px;
     overflow-y: hidden;
+    color: rgb(119, 119, 119);
 }
 .focus h1 p{
     font-size: 16px;
     font-family: york;
-    color: rgb(119, 119, 119);
-    text-shadow: 0 0 0 #000;
+    
 }
 .focus p{
-    font-size: 24px;
+    font-size: 16px;
     position: relative;
-    height: 34px;
+    height: 24px;
     overflow-y: hidden;
-    font-family: condense;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
+    font-family: condenseInt;
 }
 .focus p span{
     display: inline-block;
@@ -115,8 +109,6 @@ animation-play-state: running;
 
 
 .circle{
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     position: absolute;
     left: 85%;
     bottom: 20px;
@@ -261,8 +253,6 @@ animation-play-state: running;
         }
        .mobileCreative{
         display: block;
-        color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
     padding: 0 20px;
     font-size: 140px;
     line-height: 180px;

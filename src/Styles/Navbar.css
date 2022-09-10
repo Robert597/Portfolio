@@ -62,17 +62,13 @@
     align-items: center;
 }
 .logo{
-  font-family: work;
+  font-family: condenseInt;
   font-size: 18px; 
   cursor: pointer; 
-  color: rgb(204, 207, 202);
-  text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
 }
 .hamburger-menu{
     display: block;
     cursor: pointer;
-    color: rgb(204, 207, 202);
-    text-shadow: rgba(204, 207, 202, 0.75) 0px 0px 8px;
 }
 
 

@@ -26,13 +26,22 @@
   font-family: condense;
   src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Condensed/SuisseIntlCond-Regular.otf);
 }
+
 @font-face {
   font-family: condenseInt;
   src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Int/SuisseIntl-Regular.otf);
 }
 @font-face {
+  font-family: condenseThin;
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Int/SuisseIntl-Thin.otf);
+}
+@font-face {
   font-family: work;
   src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Works/SuisseWorks-Regular.otf);
+}
+@font-face {
+  font-family: sign;
+  src: url(../Fonts/swiss/SwissTypeFaces/Suisse\ Neue/SuisseNeue-Regular.otf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *{
@@ -45,7 +54,8 @@ body {
   margin: 0;
   font-family: 'Poppins',
     sans-serif;
-    background: rgb(8, 8, 8);
+    background: rgb(17, 17, 17);
+    color: rgb(170, 170, 170)
 }
 
 

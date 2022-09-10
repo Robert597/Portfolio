@@ -15,12 +15,12 @@ const Projects = () => {
       details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
     },
     {
-      name: "RobCommerc",
+      name: "gate",
       link: "https://momentss.vercel.app",
       details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
     },
     {
-      name: "RobCommerc",
+      name: "dante",
       link: "https://momentss.vercel.app",
       details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
     },
@@ -40,7 +40,7 @@ data-scroll-class="showHr"
 style={{left: 0}}></span>
 
       <div className="projectTop">
-        <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="4">PROJECTS(5)</h1>
+        <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="4">PROJECTS (5)</h1>
         <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="3">2021-2022</h1>
       </div>
       <span className='projectTopHr'
