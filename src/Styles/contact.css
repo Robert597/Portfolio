@@ -2,23 +2,35 @@
    width: 100vw;
   display: block;
   padding: 0;
+  position: relative;
 }
-.contactTop{
-    width: 100%;
-    padding-top: 40px;
+.contactHr{
+  height: 1px;
+  background-color: rgb(170, 170, 170);
 }
-.contactMarquee{
-    text-transform: uppercase;
-    white-space: nowrap;
-    width: 80%;
-    padding: 40px 0;
+.contact .section_label{
+  position: relative;
+  height: 24px;
+  width: 55px;
+  letter-spacing: normal;
+  font-family: condenseInt, monospace;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.label_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .marquee1{
-    font-family: york;
+    font-family: work;
     font-size: 100px;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: -0.09em;
     padding: 10px 20px;
     animation: animate2 9s linear infinite;
+    white-space: nowrap;
 }
 @keyframes animate2{
     100%{
@@ -354,7 +366,7 @@ height: 1px;
   @media (max-width: 800px) {
     .contactTop{
       width: 100%;
-      padding-top: 25px;
+      padding-top: 15px;
   }
     .container-2 {
       flex-direction: column;

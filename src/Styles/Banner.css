@@ -6,21 +6,26 @@
     flex-direction: column;
     justify-content: center;
 }
+.bannerTopContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .creative{
-    font-size: 180px;
-    line-height: 200px;
-    height: 240px;
-    letter-spacing: -0.005em;
-    font-weight: bold;
+    font-size: 170px;
+    line-height: 0.8;
+    height: auto;
+    letter-spacing: -0.05em;
+    font-weight: 700;
     position: relative;
     overflow-y: hidden;
-    font-family: 'Bebas Neue';
+    font-family: york, 'Roboto';
     text-transform: uppercase;
+     padding: 30px 40px 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px 40px 10px;
-    width: 100%;
 }
 
 .creative h1 span, .developer h1 span{
@@ -34,17 +39,48 @@ display: inline-block;
 }
 
  .developer{
-    font-size: 180px;
-    line-height: 200px;
-    height: 240px;
+    font-size: 170px;
+    line-height: 0.8;
+    height: auto;
+    width: 100%;
     position: relative;
     overflow-y: hidden;
-    font-weight: bold;
-    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-family: york,'Roboto';
     text-transform: uppercase;
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: 30px 40px 10px;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.05em;
+}
+.blueContent{
+    position: relative;
+    background-color: #713fd5;
+    width: 100%;
+    border-radius: 0 80px 0 80px;
+    box-sizing: border-box;
+    padding: 80px 40px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.blueTitle{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-family: 'Inter';
+    margin-bottom: 20px;
+}
+.bluecontent{
+    font-size: 42px;
+    font-family: 'Inter';
+    letter-spacing: -0.05em;
+    margin-left: 10px;
+}
+
+.blueLeftContent{
+
 }
 .animateMarquee .software{
 animation-play-state: running;
@@ -54,64 +90,19 @@ animation-play-state: running;
     display: flex;
 }
 
-.focus{
-    display: inline-block;
-    flex-wrap: wrap;
-    padding-top: 30px;
-}
-.focus h1{
-    position: relative;
-    height: 26px;
-    overflow-y: hidden;
-    color: rgb(119, 119, 119);
-}
-.focus h1 p{
-    font-size: 16px;
-    font-family: york;
-    
-}
-.focus p{
-    font-size: 16px;
-    position: relative;
-    height: 24px;
-    overflow-y: hidden;
-    font-family: condenseInt;
-}
-.focus p span{
-    display: inline-block;
-}
-.numbering{
-    font-family: works;
-    font-size: 20px;
-}
-@keyframes marquee {
-    0% {
-      transform: translate3d(0%, 0, 0);
-    }
-  
-    100% {
-      transform: translate3d(-175%, 0, 0);
-    }
-  }
-  @keyframes marquee-lg {
-    0% {
-      transform: translate3d(calc(0), 0, 0);
-    }
-  
-    100% {
-      transform: translate3d(calc(-150% + 20vw), 0, 0);
-    }
-  }
+
 .software h1{
     margin: 0 40px;
    white-space: nowrap;
 }
 
-
+.blueRightContent{
+    display: flex;
+    height: 100%;
+    align-self: flex-end;
+}
 .circle{
-    position: absolute;
-    left: 85%;
-    bottom: 20px;
+    position: relative;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -124,7 +115,6 @@ animation-play-state: running;
    .arrowicon{
      position: absolute;
      display: inline;
-     color: #cccfca;
    }
    #circular{
      position: absolute;
@@ -140,11 +130,7 @@ animation-play-state: running;
     animation: animate 5s linear infinite;
     }
     
-   hr{
-    color: #212121;
-    height: 2px;
-   width: 100vw;
-   }
+ 
   
     @keyframes animate{
      from{
@@ -160,37 +146,47 @@ animation-play-state: running;
       transform-origin: 0 50px;
       font-family: Neue;
     }
-.introLoader{
-    position: absolute;
-    bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 14px;
-    color: #cccfca;
-    padding: 0 40px;
-}
-.count{
-    font-size: 56px;
-    font-weight: bold;
-    font-family: condense;
-}
 
+.Mobilecreative{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-family: york;
+    font-size: 60px;
+    overflow-y: hidden;
+    padding: 30px 20px 10px;
+    font-weight: 700;
+    line-height: 0.8;
+}
+.blueAbout{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: 5%;
+    color: #141414;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d5cd;
+}
     @media all and (max-width: 1350px){
         .creative, .developer{
             font-weight: bold;
             font-size: 160px;
-            line-height: 180px;
-            height: 200px;
+          line-height: 0.8;
+          height: auto;
         }
     }
     @media all and (max-width: 1200px){
         .creative, .developer{
             font-weight: bold;
             font-size: 140px;
-            line-height: 160px;
-            height: 180px;
+            line-height: 0.8;
+            height: auto;
         }
     }
    
@@ -198,16 +194,16 @@ animation-play-state: running;
         .creative, .developer{
             font-weight: bold;
             font-size: 120px;
-            line-height: 140px;
-            height: 160px;
+            line-height: 0.8;
+          height: auto;
         }
     }
 
     @media all and (max-width: 900px){
         .creative, .developer{
-            font-size: 120px;
-            line-height: 140px;
-            height: 160px;
+            font-size: 90px;
+            line-height: 0.8;
+          height: auto;
             padding: 30px 20px 10px;
         }
         .lower-bottom{
@@ -227,107 +223,101 @@ animation-play-state: running;
             font-size: 28px;
             font-family: condense;
         }
-        .circle{
-            left: 80%;
-            bottom: 40px;
-        }
+     
     }
     @media all and (max-width: 780px){
         .creative, .developer{
-            font-size: 100px;
-            line-height: 120px;
-            height: 140px;
+            font-size: 80px;
+            line-height: 0.8;
+          height: auto;
         }   
     }
-    @media all and (max-width: 670px){
-        .creative, .developer{
-            font-size: 90px;
-            line-height: 120px;
-            height: 130px;
-        }
-       
-    }
-    @media all and (max-width: 600px){
+    @media all and (max-width: 760px){
         .creative{
             display: none;
         }
-       .mobileCreative{
-        display: block;
-    padding: 0 20px;
-    font-size: 140px;
-    line-height: 180px;
-    position: relative;
-    height: 100%;
-    overflow-y: hidden;
-    letter-spacing: -0.07em;
-    font-family: 'Bebas Neue';
-    text-transform: uppercase;
-    word-break: break-word;
-       }
-     
-.developer{
-    display: none;
-}
-    
-    .focus h1 p{
-        font-size: 16px;
-       
-    }
-    .focus p{
-        font-size: 20px;
-        font-family: condense;
-    }
-    .circle{
-        width: 70px;
-        height: 70px;
-        left: 75%;
-       }
-       #circular{
-        left: 35px;
-        transform-origin: 0 35px;
-        font-size: 9px;
+        .Mobilecreative{
+            display: block;
+            font-size: 80px;
         }
-        
-   
-      
-        
-        
-        #circular span{
-          transform-origin: 0 35px;
-        
+        .Mobilecreative h1{
+            height: 100%;
+        }
+        .Mobilecreative h1 span{
+            display: inline-block;
+        }
+        .developer{
+            font-size: 80px;
+            display: block;
+        }
+        .blueContent{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .blueTitle{
+            font-size: 18px;
+        }
+        .bluecontent{
+            font-size: 42px;
+        }
+       .blueRightContent{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+       }
+    }
+  
+    @media all and (max-width: 600px){
+        .Mobilecreative, .developer{
+            font-size: 70px;
         }
     }
     @media all and (max-width: 550px){
-        .mobileCreative{
-        font-size: 120px;
-        line-height: 160px;
-           }
+        .Mobilecreative, .developer{
+            font-size: 60px;
+        }
+        .blueTitle{
+            font-size: 16px;
+        }
+        .bluecontent{
+            font-size: 32px;
+        }
+        .blueAbout{
+            width: 100px;
+            height: 100px;
+        }
+        .blueContent{
+            border-radius: 0 80px 0 80px;
+            box-sizing: border-box;
+            padding: 60px 20px;
+        }
     }
-    @media all and (max-width: 490px){
-        .mobileCreative{
-        font-size: 110px;
-        line-height: 150px;
-     }
+    @media all and (max-width: 460px){
+        .Mobilecreative, .developer{
+            font-size: 50px;
+        }
+        .blueAbout{
+            width: 90px;
+            height: 90px;
+        }
 }
-    @media all and (max-width: 440px){
-        .mobileCreative{
-        font-size: 100px;
-        line-height: 140px;
-     }
+    @media all and (max-width: 390px){
+        .Mobilecreative, .developer{
+            font-size: 45px;
+        }
+        .blueAbout{
+            width: 80px;
+            height: 80px;
+        }
+        .blueTitle{
+            font-size: 14px;
+        }
+        .bluecontent{
+            font-size: 28px;
+        }
 }
     
    
-    @media all and (max-width: 400px){
-        .mobileCreative{
-        font-size: 90px;
-        line-height: 120px;
-    }
-}
-    @media all and (max-width: 360px){
-        .mobileCreative{
-        font-size: 80px;
-        line-height: 110px;
-       }
-    }
+   
     
     

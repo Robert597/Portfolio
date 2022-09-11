@@ -60,7 +60,8 @@ const Navbar = ({loading}:{loading: Boolean}) => {
     <div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
-            ROBERT
+                <span>ROBERT</span>
+                <span className="logoCircle"></span>
             </h1>
         </div>
          
@@ -69,7 +70,7 @@ const Navbar = ({loading}:{loading: Boolean}) => {
 
 
 <motion.div className='hamburger-menu' onClick={() => handleMenu()} >
-<RiMenu4Fill/>
+<span>Menu</span>
 </motion.div>
 
 </div>

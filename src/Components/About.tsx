@@ -11,11 +11,6 @@ const About = () => {
   return (
     <section data-scroll-section className="about">
       
-      <span className='aboutHr'
-data-scroll 
-data-scroll-offset="70"
-data-scroll-class="showHr"
-style={{left: 0}}></span>
 
 <div className="aboutTop">
   <h1 data-scroll

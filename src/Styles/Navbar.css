@@ -62,13 +62,36 @@
     align-items: center;
 }
 .logo{
-  font-family: condenseInt;
-  font-size: 18px; 
+  font-size: 24px;
+  font-family: 'Inter';
+  letter-spacing: -0.05em; 
   cursor: pointer; 
+  font-weight: 700;
+  position: relative;
+  height: auto;
+  align-items: center;
+}
+.logoCircle{
+    letter-spacing: -0.05em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #713fd5;
 }
 .hamburger-menu{
     display: block;
     cursor: pointer;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 2px solid #713fd5;
 }
 
 

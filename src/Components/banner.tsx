@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {BsArrowDown} from "react-icons/bs";
+import {BsArrowDown, BsArrowUpRight} from "react-icons/bs";
 import "../Styles/Banner.css";
 import {motion} from 'framer-motion';
 import {useLocomotiveScroll} from 'react-locomotive-scroll';
@@ -91,6 +91,7 @@ const lineVariant = {
     }, [scroll]);
   return (
     <div className="bannerContainer">
+
         <div className="mobileCreative">
             <motion.h1
             initial={{
@@ -111,6 +112,28 @@ const lineVariant = {
                  <span>DEVELOPER</span>
             </motion.h1>
         </div>
+
+        <div className='bannerTopContainer'>
+
+        <div className='Mobilecreative' 
+       data-scroll>
+            <h1 data-scroll>
+                 <motion.span
+            variants={lineParentVariant}
+            initial = 'initial'
+            animate='animate'>
+                <motion.span 
+                variants={lineVariant}>S</motion.span>
+                <motion.span variants={lineVariant}>O</motion.span>
+                <motion.span variants={lineVariant}>F</motion.span>
+                <motion.span variants={lineVariant}>T</motion.span>
+                <motion.span variants={lineVariant}>W</motion.span>
+                <motion.span variants={lineVariant}>A</motion.span>
+                <motion.span variants={lineVariant}>R</motion.span>
+                <motion.span variants={lineVariant}>E</motion.span>
+            </motion.span>
+            </h1>
+            </div>
         <div className='creative' 
        data-scroll>
             <h1 data-scroll> <motion.span data-scroll
@@ -139,8 +162,7 @@ const lineVariant = {
                 <motion.span variants={lineVariant}>R</motion.span>
                 <motion.span variants={lineVariant}>E</motion.span>
             </motion.span></h1>
-        </div>
-<div className='lower-bottom'>
+</div>
         <div className='developer'
        >
        <motion.h1
@@ -159,32 +181,30 @@ const lineVariant = {
                 
                 </motion.h1>
        </div>
-       <motion.div className="focus"
-       variants={width > 600 ? spanParentVariant : spanParentVariant2}
-       initial='initial'
-       animate='animate'>
-            <motion.h1>
-                <motion.p variants={lineVariant}>Focus:</motion.p>
-                <span></span>
-            </motion.h1>
-             <motion.p>
-                <span className="numbering">01.</span> <motion.span variants={lineVariant}>Frontend</motion.span>
-             </motion.p>
-             <motion.p>
-             <span className="numbering">02.</span>  <motion.span variants={lineVariant}>Backend</motion.span>
-             </motion.p>
-             <motion.p>
-             <span className="numbering">03.</span>  <motion.span variants={lineVariant}>API Design</motion.span>
-             </motion.p>
-        </motion.div>
+     
         </div>
         
-           
-        
+        <div className="blueContent">
+            <div className="blueAbout">
+                <BsArrowUpRight/>
+            </div>
+            <div className="blueLeftContent">
+                <h1 className="blueTitle">
+                    <span>Area of Expertise &#8212;</span>
+                </h1>
+                <h1 className="bluecontent">
+                    <span>Frontend Development</span>
+                </h1>
+                <h1 className="bluecontent">
+                    <span>Backend Development</span>
+                </h1>
+                <h1 className="bluecontent">
+                    <span>API-Design</span>
+                </h1>
+            </div>
 
-      
-
-        <motion.div className='circle'
+            <div className="blueRightContent">
+            <motion.div className='circle'
         initial={{
             opacity: 0
         }}
@@ -209,6 +229,14 @@ const lineVariant = {
             Scroll-down-Scroll-down.
         </h2>
         </motion.div>
+            </div>
+        </div>
+           
+        
+
+      
+
+       
 
 
 

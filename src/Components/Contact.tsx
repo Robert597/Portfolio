@@ -9,14 +9,20 @@ const Contact = () => {
     <div
   className='contact'
   data-scroll-section>
-    <div className='contactTop'>
-     
-      <div className="contactMarquee"
-      data-scroll data-scroll-sticky data-scroll-target=".contact">
-        <hr />
-        <div className='marquee1'>Let's Talk - Let's Collaborate - Say Hello-Let's Talk - Let's Collaborate - Say Hello</div>
-        <hr />
-      </div>
+    
+                  <div className="section_label">
+                  <span className="label_text">
+                    Contact
+                  </span>
+                  <svg width="55" height="24" fill="none">
+                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h40.526L54.5 7.237v9.527L47.764 23.5H7.236Z" stroke="#484b45"></path>
+                  </svg>
+                  </div>
+
+    <hr className="contactHr" />
+        <div className='marquee1'>Let's Talk - Let's Collaborate - Say Hello - Let's Talk - Let's Collaborate - Say Hello</div>
+       <hr className="contactHr" />
+      
 <div className='container1'>
       <div className="container-1">
         <div className="content">
@@ -92,7 +98,7 @@ const Contact = () => {
       </div>
 
     </div>
-  </div>
+
   )
 }
 

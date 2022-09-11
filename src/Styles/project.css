@@ -2,7 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
     position: relative;
   }
   .projectHr{
@@ -63,6 +63,7 @@ background-color: rgba(170, 170, 170);
 font-family: work;
 font-weight: 400;
 font-size: 50px;
+letter-spacing: -0.09em;
 height: 70px;
 position: relative;
 display: block;
@@ -166,10 +167,16 @@ overflow-y: hidden;
         width: 100%;
         padding: 10px 0;
       }
+      .projectTop h1{
+        font-size: 70px;
+      }
 }
 
 
 @media all and (max-width: 450px){
+  .projectTop h1{
+    font-size: 60px;
+  }
       .projectDetailButtons .button-17 {
         font-size: 12px;
       }
