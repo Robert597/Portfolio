@@ -61,14 +61,17 @@ display: inline-block;
     box-sizing: border-box;
     padding: 0;
     display: flex;
-    height: 0;
+    opacity: 0;
+    height: auto;
+    transform: scaleY(1.2);
+padding: 80px 40px;
     align-items: center;
     justify-content: space-between;
     transition: 1s all ease-in-out;
 }
 .blueContentShow{
-height: auto;
-padding: 80px 40px;
+opacity: 1;
+transform: scaleY(1);
 transition: 1s all ease-in-out;
 }
 .blueTitle{
@@ -135,6 +138,7 @@ animation-play-state: running;
    }
    .blueContentShow .showcircle{
     opacity: 1;
+    transition: all 1s cubic-bezier(0.755, 0.05, 0.855, 0.06) 1s;
    }
    .arrowicon{
      position: absolute;
