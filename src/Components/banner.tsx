@@ -73,7 +73,7 @@ const lineVariant = {
     animate: {
         y: 0,
         transition: {
-            duration: .7,
+            duration: .5,
             ease: "easeInOut"
         }
     }
@@ -151,7 +151,8 @@ const lineVariant = {
             
             <span className='dash' style={{
                 transform: `scale(${line}, 1)`
-            }}>-</span><motion.span data-scroll
+            }}>-</span>
+            <motion.span data-scroll
             data-scroll-direction="horizontal"
             data-scroll-speed="-3"
             variants={lineParentVariant3}
@@ -184,53 +185,57 @@ const lineVariant = {
      
         </div>
         
-        <div className="blueContent">
+        <motion.div className="blueContent" 
+        data-scroll
+        data-scroll-class="blueContentShow"
+        data-scroll-offset="200"
+        >
+
             <div className="blueAbout">
                 <BsArrowUpRight/>
             </div>
             <div className="blueLeftContent">
-                <h1 className="blueTitle">
+                <h1 className="blueTitle"
+                data-scroll
+                data-scroll-class="bluesmallcontent"
+                data-scroll-offset="200"
+                >
                     <span>Area of Expertise &#8212;</span>
                 </h1>
-                <h1 className="bluecontent">
+                <h1 className="bluecontent"
+                 data-scroll
+                 data-scroll-class="bluesmallcontent"
+                 data-scroll-offset="200">
                     <span>Frontend Development</span>
                 </h1>
-                <h1 className="bluecontent">
+                <h1 className="bluecontent"
+                 data-scroll
+                 data-scroll-class="bluesmallcontent"
+                 data-scroll-offset="200">
                     <span>Backend Development</span>
                 </h1>
-                <h1 className="bluecontent">
+                <h1 className="bluecontent"
+                 data-scroll
+                 data-scroll-class="bluesmallcontent"
+                 data-scroll-offset="200">
                     <span>API-Design</span>
                 </h1>
             </div>
 
             <div className="blueRightContent">
-            <motion.div className='circle'
-        initial={{
-            opacity: 0
-        }}
-        animate={width > 600 ? {
-            opacity: 1,
-            transition: {
-                duration: 1,
-                delay: 3,
-                ease: "circIn"
-            }
-        } : {
-            opacity: 1,
-            transition: {
-                duration: 1,
-                delay: 2.2,
-                ease: "circIn"
-            }
-        }}>
+            <div className='circle'
+            data-scroll
+            data-scroll-class="showcircle"
+            data-scroll-offset="200"
+       >
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
             Scroll-down-Scroll-down.
         </h2>
-        </motion.div>
-            </div>
         </div>
+            </div>
+        </motion.div>
            
         
 

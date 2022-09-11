@@ -51,8 +51,8 @@ const Navbar = ({loading}:{loading: Boolean}) => {
     animate={{
         y: 0,
         transition:{
-            duration: .5,
-            ease: "easeInOut"
+            duration: 1,
+            ease: "linear"
         }
     }}
     >
