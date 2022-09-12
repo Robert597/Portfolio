@@ -20,6 +20,7 @@
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^9.4.0",
     "react-locomotive-scroll": "^0.2.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "ts-debounce": "^4.0.0",
     "typescript": "^4.7.4",

@@ -7,6 +7,8 @@ import "./Styles/locomotive.css";
 import gsap from "gsap";
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import {Route, Routes} from 'react-router-dom'
+import Loader from './Components/Loader';
 
 function App() {
  
@@ -57,9 +59,11 @@ return (
 >
   
   <div data-scroll-container ref={containerRef} className="main" id="main">
-   <Home loading={loading} setLoading={setLoading} width={width}/>
-   <About/>
-   <Projects/>
+   <Routes>
+    <Route  path='/' element={<Home />} />
+    <Route  path='/about' element={<About />}/>
+    <Route  path='/projects' element={<Projects />}/>
+   </Routes>
    <Contact/>
 
   </div>

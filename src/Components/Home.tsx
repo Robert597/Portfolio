@@ -2,16 +2,21 @@ import React, {useEffect} from 'react';
 import { Dispatch, SetStateAction } from 'react';
 import Banner from './banner';
 import "../Styles/Home.css";
+import Transition from './transition';
 
-const Home = ({loading, setLoading, width}: { loading: boolean; setLoading: Dispatch<SetStateAction<boolean>>; width:Number; }) => {
+const Home = () => {
  
 
  
   
   return (
-    <section data-scroll-section  className='Homewrapper' >
-       <Banner loading={loading} width={width}/>
+    <div data-scroll-section>
+      <Transition/>
+
+     <section className='Homewrapper' >
+       <Banner/>
     </section>
+    </div>
   )
 }
 

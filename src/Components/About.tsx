@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import me from "../Assets/me3.jpg";
 import "../Styles/about.css";
+import Transition from "./transition";
 
 const About = () => {
  
@@ -9,7 +10,12 @@ const About = () => {
   
  
   return (
-    <section data-scroll-section className="about">
+    <div data-scroll-section>
+
+<Transition/>
+
+    <section className="about">
+      
       
 
 <div className="aboutTop">
@@ -90,6 +96,7 @@ const About = () => {
 
              </div>
     </section>
+    </div>
   )
 }
 

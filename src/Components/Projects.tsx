@@ -1,6 +1,7 @@
 import React from 'react';
 import "../Styles/project.css";
 import Project from './Project';
+import Transition from './transition';
 
 const Projects = () => {
   const Projects = [
@@ -32,6 +33,7 @@ const Projects = () => {
   ]
   return (
     <div  className='project' data-scroll-section >
+<Transition/>
 
            <span className='projectHr'
 data-scroll 

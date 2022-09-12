@@ -1,6 +1,5 @@
 .navv{
     display: block;
-    height: 3rem;
     position: relative;
     z-index: 10;
 }
@@ -104,12 +103,10 @@
        }
        .navv{
         display: block;
-        height: 3rem;
     }
        .NavbarContainer{
         padding: 30px 20px;
         position: fixed;
         top: 0;
-        z-index: 30;
     }
     }

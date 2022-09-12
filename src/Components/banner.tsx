@@ -3,13 +3,16 @@ import {BsArrowDown, BsArrowUpRight} from "react-icons/bs";
 import "../Styles/Banner.css";
 import {motion} from 'framer-motion';
 import {useLocomotiveScroll} from 'react-locomotive-scroll';
+import {useNavigate} from 'react-router-dom';
 
 
 
 
 
 
-const Banner = ({loading, width}: { loading: boolean; width: Number;}) => {
+const Banner = () => {
+
+const navigate= useNavigate();
 
   const [line, setLine] = useState(2);
 
@@ -92,26 +95,6 @@ const lineVariant = {
   return (
     <div className="bannerContainer">
 
-        <div className="mobileCreative">
-            <motion.h1
-            initial={{
-                y: "100%"
-            }}
-            animate={{
-                y: 0,
-                transition: {
-                    duration: 1,
-                    delay: .5,
-                    ease: "easeIn"
-                }
-            }}>
-                <span>SOFT</span>
-                <br/>
-                <span>&#8212;</span> <span>WARE</span>
-                <br/>
-                 <span>DEVELOPER</span>
-            </motion.h1>
-        </div>
 
         <div className='bannerTopContainer'>
 
@@ -191,7 +174,9 @@ const lineVariant = {
         data-scroll-offset="200"
         >
 
-            <div className="blueAbout">
+            <div className="blueAbout" onClick={() => {
+                navigate("/about")
+            }}>
                 <BsArrowUpRight/>
             </div>
             <div className="blueLeftContent">
