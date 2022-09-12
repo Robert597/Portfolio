@@ -58,12 +58,17 @@ body {
     color: #d9d5cd;
     position: relative;
 }
+.transition{
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
 
 .transition-effect{
   height: 100vh;
   width: 50%;
-  position: fixed;
-  background-color: #713fd5;
+  position: absolute;
+  background-color: #717c7d;
   top: 0;
   right: 0;
   z-index: 10000;
@@ -71,8 +76,8 @@ body {
 .transition-effect-1{
   height: 100vh;
   width: 50%;
-  position: fixed;
-  background-color: #713fd5;
+  position: absolute;
+  background-color: #717c7d;
   bottom: 0;
   left: 0;
   z-index: 10000;

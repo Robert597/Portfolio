@@ -33,6 +33,7 @@ const navigate= useNavigate();
     animate: {
         transition: {
             staggerChildren: .3,
+            delayChildren: 1.5
         }
     }
 }
@@ -40,7 +41,7 @@ const navigate= useNavigate();
     animate: {
         transition: {
             staggerChildren: .3,
-            delayChildren: 1.6
+            delayChildren: 3.1
         }
     }
 }
@@ -48,6 +49,7 @@ const navigate= useNavigate();
     animate: {
         transition: {
             staggerChildren: .3,
+            delayChildren: 1.5
         }
     }
 }
