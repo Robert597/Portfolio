@@ -3,7 +3,7 @@ import {BsArrowDown, BsArrowUpRight} from "react-icons/bs";
 import "../Styles/Banner.css";
 import {motion} from 'framer-motion';
 import {useLocomotiveScroll} from 'react-locomotive-scroll';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 
 
 
@@ -195,25 +195,10 @@ const lineVariant = {
         animate="animate"
         >
 
-            <motion.div className="blueAbout" onClick={() => {
-                navigate("/about")
-            }} initial={
-                {
-                    opacity: 0,
-                    scale: 1.2
-                }
-               }
-               animate={{
-                opacity: 1,
-                scale: 1,
-                transition: {
-                    duration: 1,
-                    delay: 2.1,
-                    ease: "circIn"
-                }
-               }}>
+            <Link to="/about" className="blueAbout" 
+             >
                 <BsArrowUpRight/>
-            </motion.div>
+            </Link>
             <motion.div className="blueLeftContent"
         variants={blueContentSpanParent}
         >

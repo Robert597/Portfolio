@@ -9,6 +9,7 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import {Route, Routes} from 'react-router-dom'
 import Loader from './Components/Loader';
+import ScrollToTop from './Components/scrolltotop';
 
 function App() {
  
@@ -36,6 +37,7 @@ function App() {
 
 return (
   <>
+  <ScrollToTop>
   <Navbar/>
 <LocomotiveScrollProvider
   options={
@@ -69,6 +71,7 @@ return (
   </div>
   
 </LocomotiveScrollProvider>
+</ScrollToTop>
 </>
 )
 }

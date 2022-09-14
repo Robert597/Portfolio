@@ -81,8 +81,8 @@
 .marquee1{
 font-size: 70px;
 }
-.bottomcontactdetails{
-  gap: 20px;
+.contactDetails, .socials, .location{
+  margin-bottom: 20px;
 }
 }
 @media all and (max-width: 700px){

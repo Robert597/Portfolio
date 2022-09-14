@@ -5,7 +5,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
     font-size: 24px;
     font-family: 'Inter';
     padding:  40px;
@@ -15,6 +14,7 @@
     height: auto;
     overflow-y: hidden;
     position: relative;
+    margin-right: 20px;
 }
 .moreproject p span{
     display: inline-block;
@@ -50,7 +50,6 @@ transition: 1s all ease-in-out 0.5s;
     .moreproject{
         display: flex;
         justify-content: flex-end;
-        gap: 20px;
         padding: 20px 20px;
         font-size: 16px;
     }

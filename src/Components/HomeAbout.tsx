@@ -1,8 +1,6 @@
  import React from 'react';
  import "../Styles/homeabout.css";
  import me from "../Assets/me3.jpg";
- import me1 from "../Assets/flower.jpg";
- import me2 from "../Assets/painted.jpg";
  import { BsArrowUpRight } from 'react-icons/bs';
  import { useNavigate } from 'react-router';
 
@@ -48,18 +46,9 @@ data-scroll-offset="200"
 <span>
   I'M ROBERT OLUWASEUN 
 </span>
-
-
-<span className="text-image"><img src={me1} alt="me"/></span>
-
    </div>
    <div className="textrow" >
 <span>A FULLSTACK </span>
-
-<span className="text-image"><img src="https://images.pexels.com/photos/2749672/pexels-photo-2749672.jpeg?auto=compress&cs=tinysrgb&w=600" alt="me"/></span>
-
-
-
 <span>
   WEB DEVELOPER.
 </span>
