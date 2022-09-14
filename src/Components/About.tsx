@@ -3,6 +3,7 @@ import me from "../Assets/me3.jpg";
 import "../Styles/about.css";
 import Transition from "./transition";
 import me1 from "../Assets/flower.jpg";
+import me2 from "../Assets/painted.jpg";
 
 const About = () => {
  
@@ -37,13 +38,13 @@ const About = () => {
 </span>
 
 
-<span className="text-image"><img src={me1} alt="me"/></span>
+<span className="text-image"><img src={me2} alt="me"/></span>
 
    </div>
    <div className="textrow" >
 <span>A FULLSTACK </span>
 
-<span className="text-image"><img src={me1} alt="me"/></span>
+<span className="text-image"><img src="https://images.pexels.com/photos/2749672/pexels-photo-2749672.jpeg?auto=compress&cs=tinysrgb&w=600" alt="me"/></span>
 
 
 
