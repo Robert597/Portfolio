@@ -36,7 +36,8 @@ const About = () => {
   I'M ROBERT OLUWASEUN 
 </span>
 
-<span className="about-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/560138399.sd.mp4?s=4ae6f18a4d755cc137ab982407a58602025d92fd&profile_id=164&oauth2_token_id=57447761"  ></video></span>
+
+<span className="text-image"><img src={me1} alt="me"/></span>
 
    </div>
    <div className="textrow" >

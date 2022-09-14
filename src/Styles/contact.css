@@ -77,7 +77,6 @@
   color: rgb(170, 170, 170);
   text-decoration: none;
   font-size: 20px;
-  text-transform: uppercase;
 }
 @media all and (max-width: 760px){
 .marquee1{
@@ -89,12 +88,6 @@ font-size: 70px;
     text-align: left;
     font-size: 14px;
     padding: 40px 20px;
-  }
-  .contactDetails h1, .socials h1, .location h1{
-    font-size: 24px;
-  }
-  .contactDetails div a , .socialsaccount div a, .lagos span{
-font-size: 28px;
   }
 .marquee1{
 font-size: 70px;

@@ -63,7 +63,9 @@
     object-fit: cover;
     clip-path: polygon(0px 51px, 0px 21px, 21px 0px, 51px 0px, 72px 21px, 72px 51px, 51px 72px, 21px 72px, 0px 51px);
 }
-
+.text-image video{
+    margin-bottom: 30px;
+}
 .about_bio{
     display: grid;
     padding: 40px;
