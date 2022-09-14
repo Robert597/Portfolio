@@ -1,0 +1,139 @@
+.homeabout{
+    position: relative;
+    background-color: #d9d5cd;
+    color: #141414;
+    padding: 20px 0 40px 0;
+}
+.homeabout .about_label{
+    padding: 20px 40px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.homeabout .showlabel{
+    opacity: 1;
+    transition: 1s all ease-in-out;
+}
+.homeabout .aboutTop{
+    padding: 20px 40px;
+}
+.about-image{
+    max-width: 144px;
+    aspect-ratio: 2;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: inline-block;
+}
+.about-image video{
+    clip-path: polygon(21px 72px,1px 51px,1px 21px,21px 1px,123px 1px,144px 21px,144px 51px,123px 72px,21px 72px);
+
+}
+.homedetailsmallcontent{
+    font-size: 40px;
+    line-height: 1;
+    font-family: condenseInt;
+    letter-spacing: -0.05em;
+    padding: 40px;
+    text-transform: capitalize;
+}
+.homedetailsmallcontent p{
+    height: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+.homedetailsmallcontent p span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s all ease-in-out;
+}
+.homedetailsmallcontent .smalltextUp span{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s all ease-in-out;
+}
+.moreabout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+.moreabout p{
+    height: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+.moreabout p span{
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.moretextUp p span{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s all ease-in-out;
+}
+.moreabout .moreAboutIcon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: #141414;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: 1s all ease-in-out 0.5s;
+    background-color: #3f76bf;
+}
+.moretextUp .moreAboutIcon{
+opacity: 1;
+transform: scale(1);
+transition: 1s all ease-in-out 0.5s;
+}
+@media all and (max-width: 768px){
+    .about-image{
+        max-width: 96px;
+    }
+    .about-image video{
+        clip-path: polygon(14px 48px, 1px 34px, 1px 14px, 14px 1px, 82px 1px, 96px 14px, 96px 34px, 82px 48px, 14px 48px);
+     }
+     .homedetailsmallcontent{
+        font-size: 30px;
+        padding: 40px 20px;
+    }
+    .homeabout .about_label{
+        padding: 20px 20px;
+    }
+    .homeabout .aboutTop{
+        padding: 20px 20px;
+    }
+}
+@media all and (max-width: 500px){
+    .moreabout{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 20px 20px;
+        font-size: 16px;
+    }
+    .homedetailsmallcontent{
+        font-size: 30px;
+        padding: 40px 20px;
+    }
+    .moreabout .moreAboutIcon{
+        width: 100px;
+        height: 100px;
+        font-size: 54px;
+    }
+}
+

@@ -1,7 +1,12 @@
 .navv{
     display: block;
     position: relative;
-    z-index: 10;
+    z-index: 5;
+    height: 100%;
+}
+.navbarcont{
+    position: relative;
+    mix-blend-mode: difference;
 }
 .NavbarContainer{
     display: flex;
@@ -60,7 +65,7 @@
     display: flex;
     align-items: center;
 }
-.logo{
+ .logo{
   font-size: 24px;
   font-family: 'Inter';
   letter-spacing: -0.05em; 
@@ -69,7 +74,10 @@
   position: relative;
   height: auto;
   align-items: center;
+ 
 }
+
+
 .logoCircle{
     letter-spacing: -0.05em;
     position: absolute;
@@ -89,9 +97,11 @@
     font-weight: 700;
     font-size: 18px;
     padding: 10px 20px;
+    mix-blend-mode: difference;
     border-radius: 50%;
     border: 2px solid #3f76bf;
 }
+
 
 
     @media all and (max-width: 760px){

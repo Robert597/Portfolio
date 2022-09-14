@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import me from "../Assets/me3.jpg";
 import "../Styles/about.css";
 import Transition from "./transition";
+import me1 from "../Assets/flower.jpg";
 
 const About = () => {
  
@@ -11,17 +12,20 @@ const About = () => {
  
   return (
     <div data-scroll-section>
-
+ 
 <Transition/>
 
     <section className="about">
       
+    
+
+
       
 
-<div className="aboutTop">
+    <div className="aboutTop">
   <h1 data-scroll
   data-scroll-class="textUp"
-  data-scroll-offset="300"
+  data-scroll-offset="200"
 >
    <div className="textrow" >
 <span>Hello!</span>
@@ -31,9 +35,17 @@ const About = () => {
 <span>
   I'M ROBERT OLUWASEUN 
 </span>
+
+<span className="about-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/560138399.sd.mp4?s=4ae6f18a4d755cc137ab982407a58602025d92fd&profile_id=164&oauth2_token_id=57447761"  ></video></span>
+
    </div>
    <div className="textrow" >
 <span>A FULLSTACK </span>
+
+<span className="text-image"><img src={me1} alt="me"/></span>
+
+
+
 <span>
   WEB DEVELOPER.
 </span>
@@ -41,27 +53,8 @@ const About = () => {
     
   </h1>
 </div>
-
           <div className="about_bio">
-              <div className="about_label">
-                  <div className="section_label">
-                  <span className="label_text">
-                    About
-                  </span>
-                  <svg width="55" height="24" fill="none">
-                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h40.526L54.5 7.237v9.527L47.764 23.5H7.236Z" stroke="#484b45"></path>
-                  </svg>
-                  </div>
-
-                  <div className="section_label">
-                  <span className="label_text">
-                    ME
-                  </span>
-                  <svg width="32" height="24" fill="none">
-                    <path d="M7.237 23.5.5 16.764V7.237L7.237.5h17.527L31.5 7.237v9.527L24.764 23.5H7.236Z" stroke="#484b45"></path>
-                  </svg>
-                  </div>
-</div>
+              
             <div className="aboutText"> 
             <div className="about_desc">
                 <p>

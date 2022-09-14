@@ -36,7 +36,7 @@ function App() {
 
 return (
   <>
-  <Navbar loading={loading}/>
+  <Navbar/>
 <LocomotiveScrollProvider
   options={
     {

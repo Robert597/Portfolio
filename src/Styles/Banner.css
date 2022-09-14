@@ -60,9 +60,7 @@ display: inline-block;
     box-sizing: border-box;
     padding: 0;
     display: flex;
-    opacity: 0;
     height: auto;
-    transform: scaleY(1.2);
 padding: 80px 40px;
     align-items: center;
     justify-content: space-between;
@@ -73,6 +71,7 @@ opacity: 1;
 transform: scaleY(1);
 transition: 1s all ease-in-out;
 }
+
 .blueTitle{
     font-size: 24px;
     text-transform: uppercase;
@@ -94,19 +93,7 @@ transition: 1s all ease-in-out;
 }
 .bluecontent span, .blueTitle span{
     display: inline-block;
-    transform: translateY(100%);
 }
-.blueContentShow .bluesmallcontent span{
-    transform: translateY(0);
-    transition:  1s all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
-}
-
-.animateMarquee .software{
-animation-play-state: running;
-}
-
-
-
 
 .software h1{
     margin: 0 40px;

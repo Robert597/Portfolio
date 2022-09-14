@@ -4,6 +4,7 @@
     padding-bottom: 30px;
     background-color: #d9d5cd;
     color: #141414;
+    padding-top: 4rem;
 }
 
 .aboutHr{
@@ -29,8 +30,8 @@
     width: 100%;
     hyphens: auto;
     word-break: break-word;
-    font-family: york;
-    letter-spacing: -2.4px;
+    font-family: condense;
+    letter-spacing: -0.05em;
     font-feature-settings: "case";
     font-size: 96px;
     font-weight: 600;
@@ -39,6 +40,7 @@
     overflow-y: hidden;
 }
 .aboutTop h1 .textrow{
+    opacity: 0;
    transform: translateY(200%);
     transition: all 1s ease-in-out;
 }
@@ -69,6 +71,7 @@
 .about_label{
     display: inline-flex;
     gap: 8px;
+    padding: 0 40px 20px;
 }
 .aboutText{
     display: flex;
@@ -127,6 +130,7 @@
 }
 .aboutTop .textUp .textrow{
     transform: translateY(0%);
+    opacity: 1;
      transition: all 1s ease-in-out;
  }
  
@@ -162,8 +166,17 @@
    }
 }
 @media all and (max-width: 500px){
+    .aboutTop h1{
+        font-size: 54px;
+        line-height: 1;
+       }
     .about_desc{
         width: 100%;
         font-size: 32px;
+       }
+}
+@media all and (max-width: 460px){
+    .aboutTop h1{
+        font-size: 50px;
        }
 }

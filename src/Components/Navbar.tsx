@@ -6,7 +6,7 @@ import Mobile from "./Mobile";
 
 
 
-const Navbar = ({loading}:{loading: Boolean}) => {
+const Navbar = () => {
     const [state, setState] = React.useState<{
         initial: boolean | null,
         clicked: boolean | null,
@@ -45,22 +45,24 @@ const Navbar = ({loading}:{loading: Boolean}) => {
   return (
 
     <motion.div className='navv'
-    initial={{
+   
+    >
+        <>
+        <div className="navbarcont">
+    <motion.div className="NavbarContainer" initial={{
         y: "-100%"
     }}
     animate={{
         y: 0,
         transition:{
             duration: 1,
+            delay: 1.6,
             ease: "linear"
         }
-    }}
-    >
-        <>
-    <div className="NavbarContainer">
+    }}>
         <div className="logoContainer">
              <h1 className='logo'>
-                <span>ROBERT</span>
+                <span className='logoname'>ROBERT</span>
                 <span className="logoCircle"></span>
             </h1>
         </div>
@@ -73,8 +75,11 @@ const Navbar = ({loading}:{loading: Boolean}) => {
 <span>Menu</span>
 </motion.div>
 
+</motion.div>
 </div>
+
 <Mobile state={state} handleMenu={handleMenu}/>
+
 </>
 </motion.div>
   )

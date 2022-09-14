@@ -17,6 +17,7 @@
     height: 0;
     width: 100%;
     display: none;
+    isolation: isolate;
 }
 .menu-secondary{
     z-index: -1;

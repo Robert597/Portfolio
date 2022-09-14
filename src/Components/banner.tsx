@@ -54,22 +54,41 @@ const navigate= useNavigate();
     }
 }
 
-  const spanParentVariant = {
+ const blueContentVariant = {
+    initial: {
+        opacity: 0,
+        scaleY: 1.2
+    },
+    animate: {
+        scaleY: 1,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            delay: 1.6,
+            ease: "easeInOut"
+        }
+    }
+ }
+const blueContentSpanParent = {
     animate: {
         transition: {
-            staggerChildren: .3,
-            delayChildren: 2
+            delayChildren: 2.6,
+            staggerChildren: .3
         }
     }
 }
-  const spanParentVariant2 = {
+ const blueContentSpan = {
+    initial: {
+        y: "100%"
+    },
     animate: {
+        y: 0,
         transition: {
-            staggerChildren: .3,
-            delayChildren: 1.5
+            duration: 1,
+            ease: "easeInOut"
         }
     }
-}
+ }
 
 const lineVariant = {
     initial: {
@@ -171,56 +190,76 @@ const lineVariant = {
         </div>
         
         <motion.div className="blueContent" 
-        data-scroll
-        data-scroll-class="blueContentShow"
-        data-scroll-offset="200"
+        variants={blueContentVariant}
+        initial="initial"
+        animate="animate"
         >
 
-            <div className="blueAbout" onClick={() => {
+            <motion.div className="blueAbout" onClick={() => {
                 navigate("/about")
-            }}>
+            }} initial={
+                {
+                    opacity: 0,
+                    scale: 1.2
+                }
+               }
+               animate={{
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    duration: 1,
+                    delay: 2.1,
+                    ease: "circIn"
+                }
+               }}>
                 <BsArrowUpRight/>
-            </div>
-            <div className="blueLeftContent">
+            </motion.div>
+            <motion.div className="blueLeftContent"
+        variants={blueContentSpanParent}
+        >
                 <h1 className="blueTitle"
-                data-scroll
-                data-scroll-class="bluesmallcontent"
-                data-scroll-offset="200"
                 >
-                    <span>Area of Expertise &#8212;</span>
+                    <motion.span variants={blueContentSpan}>Area of Expertise &#8212;</motion.span>
                 </h1>
                 <h1 className="bluecontent"
-                 data-scroll
-                 data-scroll-class="bluesmallcontent"
-                 data-scroll-offset="200">
-                    <span>Frontend Development</span>
+        >
+                    <motion.span variants={blueContentSpan}>Frontend Development</motion.span>
                 </h1>
                 <h1 className="bluecontent"
-                 data-scroll
-                 data-scroll-class="bluesmallcontent"
-                 data-scroll-offset="200">
-                    <span>Backend Development</span>
+                 >
+                    <motion.span
+                    variants={blueContentSpan}>Backend Development</motion.span>
                 </h1>
                 <h1 className="bluecontent"
-                 data-scroll
-                 data-scroll-class="bluesmallcontent"
-                 data-scroll-offset="200">
-                    <span>API-Design</span>
+                 >
+                    <motion.span variants={blueContentSpan}>API-Design</motion.span>
                 </h1>
-            </div>
+            </motion.div>
 
             <div className="blueRightContent">
-            <div className='circle'
-            data-scroll
-            data-scroll-class="showcircle"
-            data-scroll-offset="200"
+            <motion.div className='circle'
+           initial={
+            {
+                opacity: 0,
+                scale: 1.3
+            }
+           }
+           animate={{
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 1,
+                delay: 3.6,
+                ease: "circIn"
+            }
+           }}
        >
        <BsArrowDown className='arrowicon'/>
         
         <h2 id="circular">
             Scroll-down-Scroll-down.
         </h2>
-        </div>
+        </motion.div>
             </div>
         </motion.div>
            
