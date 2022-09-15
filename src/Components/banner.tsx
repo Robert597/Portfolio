@@ -195,10 +195,25 @@ const lineVariant = {
         animate="animate"
         >
 
-            <Link to="/about" className="blueAbout" 
-             >
+            <motion.div className="blueAbout" onClick={() => {
+                navigate("/about")
+            }} initial={
+                {
+                    opacity: 0,
+                    scale: 1.2
+                }
+               }
+               animate={{
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    duration: 1,
+                    delay: 2.1,
+                    ease: "circIn"
+                }
+               }}>
                 <BsArrowUpRight/>
-            </Link>
+            </motion.div>
             <motion.div className="blueLeftContent"
         variants={blueContentSpanParent}
         >

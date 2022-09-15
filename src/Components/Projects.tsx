@@ -35,14 +35,9 @@ const Projects = () => {
     <div  className='project' data-scroll-section >
 <Transition/>
 
-           <span className='projectHr'
-data-scroll 
-data-scroll-offset="70"
-data-scroll-class="showHr"
-style={{left: 0}}></span>
 
       <div className="projectTop">
-        <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="4">PROJECTS (5)</h1>
+        <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="4">PROJECTS</h1>
         <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed ="3">2021-2022</h1>
       </div>
       <span className='projectTopHr'

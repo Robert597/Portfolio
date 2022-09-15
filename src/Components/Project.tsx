@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 
 
@@ -23,7 +24,7 @@ const Project = ({item, index}:  {item: {
     <button className='button-17' onClick={() => setShowDetails(prev => !prev)} 
     data-scroll
     data-scroll-offset="70"
-    data-scroll-class="showBtn">{!showDetails ? "Expand" : "Collapse" }</button>
+    data-scroll-class="showBtn">View <BsArrowUpRight/></button>
     <button className='button-17'
      data-scroll
      data-scroll-offset="70"

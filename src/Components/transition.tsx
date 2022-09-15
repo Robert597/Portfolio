@@ -7,6 +7,7 @@ const Transition = () => {
         gsap.to(".transition-effect",  {
                 height: 0,
                 duration: 1,
+                delay: .2,
                 ease: "power3.inOut"
             }
             );
@@ -17,13 +18,7 @@ const Transition = () => {
                 ease: "power3.inOut"
             }
             );
-            gsap.to(".transition", {
-                height: 0,
-                delay: .5,
-                duration: 1,
-                ease: "power3.inOut"
-            }
-            );
+           
 
     }, [])
     

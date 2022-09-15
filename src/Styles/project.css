@@ -73,7 +73,7 @@ overflow-y: hidden;
   .projectDetailsContainer h1 span{
     position: absolute;
     top: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   .projectDetailsContainer .projectUp span{
     position: absolute;

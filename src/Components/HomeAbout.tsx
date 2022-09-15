@@ -46,9 +46,11 @@ data-scroll-offset="200"
 <span>
   I'M ROBERT OLUWASEUN 
 </span>
+<span className="text-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/614736932.sd.mp4?s=c310d9c4bc625d2af201c1d8b7b8d3d76d47ba0d&profile_id=165&oauth2_token_id=57447761"></video></span>
    </div>
    <div className="textrow" >
 <span>A FULLSTACK </span>
+<span className="text-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/547953937.hd.mp4?s=1da276d905656724ca1c2f912e3a72557560bdc7&profile_id=174&oauth2_token_id=57447761"></video></span>
 <span>
   WEB DEVELOPER.
 </span>

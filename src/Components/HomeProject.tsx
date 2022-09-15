@@ -2,7 +2,8 @@ import React from 'react';
 import Project from './Project';
 import "../Styles/homeproject.css";
 import { BsArrowUpRight } from 'react-icons/bs';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const HomeProject = () => {
     const navigate = useNavigate();
@@ -57,7 +58,6 @@ const HomeProject = () => {
                 <BsArrowUpRight/>
             </div>
 </div>
-
      </div>
   )
 }

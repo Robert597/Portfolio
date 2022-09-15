@@ -8,6 +8,7 @@ import gsap from "gsap";
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import {Route, Routes} from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import Loader from './Components/Loader';
 import ScrollToTop from './Components/scrolltotop';
 
@@ -16,7 +17,7 @@ function App() {
   const containerRef = useRef(null);
   const [loading, setLoading] = React.useState(true);
   const [width, setWidth] = React.useState(window.innerWidth);
-
+const {pathname} = useLocation();
 
 
   useEffect(() => {
@@ -37,8 +38,8 @@ function App() {
 
 return (
   <>
-  <ScrollToTop>
   <Navbar/>
+    <>
 <LocomotiveScrollProvider
   options={
     {
@@ -48,30 +49,33 @@ return (
       },
       tablet: {
         smooth: true
-      }
+      },
+    
       // ... all available Locomotive Scroll instance options 
     }
   }
   watch={
     [
-     
+     pathname
     ]
   }
+  location={pathname}
+  //@ts-ignore
+  onLocationChange={scroll => scroll.scrollTo(0, {duration: 0, disableLerp: true})}
   containerRef={containerRef}
 >
-  
+
   <div data-scroll-container ref={containerRef} className="main" id="main">
-   <Routes>
+  <Routes>
     <Route  path='/' element={<Home />} />
     <Route  path='/about' element={<About />}/>
     <Route  path='/projects' element={<Projects />}/>
-   </Routes>
+    </Routes>
    <Contact/>
-
   </div>
-  
+ 
 </LocomotiveScrollProvider>
-</ScrollToTop>
+</>
 </>
 )
 }

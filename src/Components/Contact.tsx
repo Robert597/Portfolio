@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <div
   className='contact3'
-  data-scroll-section>
-   
-    <div className="contactCollaborations">
+  data-scroll-section
+  >
+   <div className="contactCollaborations">
       <h1>
         <p>To talk collaborations or </p>
       </h1>
@@ -26,12 +26,12 @@ const Contact = () => {
   <hr className="contactHr" 
   data-scroll
   data-scroll-class="hrwidth"
-  data-scroll-offset="200"/>
+  data-scroll-offset="100"/>
         <div className='marquee1'>Let's Talk - Let's Collaborate - Say Hello - Let's Talk - Let's Collaborate - Say Hello</div>
        <hr className="contactHr" 
        data-scroll
        data-scroll-class="hrwidth"
-       data-scroll-offset="200"/>
+       data-scroll-offset="100"/>
       
        <div className="bottomcontactdetails">
     <div className="contactDetails">
@@ -56,7 +56,7 @@ const Contact = () => {
       <h1>Location</h1>
       <h1 className="lagos">
         <span>Lagos, NG. </span>
-        <span>{new Date().getHours() + ":" + new Date().getMinutes()} </span>
+        <span>{new Date().toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true})} </span>
       </h1>
     </div>
        </div>
