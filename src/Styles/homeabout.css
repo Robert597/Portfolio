@@ -4,6 +4,16 @@
     color: #141414;
     padding: 20px 0 40px 0;
 }
+.homeabout .aboutTop h1 .textrow{
+    opacity: 0;
+   transform: translateY(200%);
+    transition: all 1s ease-in-out;
+}
+.homeabout .aboutTop .textUp .textrow{
+    transform: translateY(0%);
+    opacity: 1;
+     transition: all 1s ease-in-out;
+ }
 .homeabout .about_label{
     padding: 20px 40px;
     opacity: 0;

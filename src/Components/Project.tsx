@@ -3,6 +3,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 
 
+
 const Project = ({item, index}:  {item: {
     name: string;
     link: string;

@@ -6,31 +6,7 @@ import {motion} from "framer-motion";
 
 const About = () => {
 
- const aboutVariant = {
-  animate: {
-    transition:{
-    staggerChildren: .3,
-    delayChildren: .5
-    }
-  }
- }
 
-
-
- const meLineVariant = {
-  initial: {
-  y: "100%",
-  opacity: 0
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition:{
-      duration: .5,
-      ease: "easeInOut"
-    }
-  }
- }
      
  
   
@@ -48,11 +24,9 @@ const About = () => {
       
 
     <div className="aboutTop">
-  <motion.h1 variants={aboutVariant}
-  initial='initial'
-  animate='animate'
+  <motion.h1
 >
-   <motion.div className="textrow" variants={meLineVariant}>
+   <motion.div className="textrow" >
 <span>Hello!</span>
 
 <span className="text-image"><img src={me} alt="me"/></span>
@@ -65,7 +39,7 @@ const About = () => {
 <span className="text-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/614736932.sd.mp4?s=c310d9c4bc625d2af201c1d8b7b8d3d76d47ba0d&profile_id=165&oauth2_token_id=57447761"></video></span>
 
    </motion.div>
-   <motion.div className="textrow" variants={meLineVariant}>
+   <motion.div className="textrow" >
 <span>A FULLSTACK </span>
 
 <span className="text-image"><video autoPlay loop muted playsInline src="https://player.vimeo.com/external/547953937.hd.mp4?s=1da276d905656724ca1c2f912e3a72557560bdc7&profile_id=174&oauth2_token_id=57447761"></video></span>

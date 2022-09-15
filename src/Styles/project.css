@@ -10,7 +10,7 @@
     width: 0%;
     transition:  all .5s ease-in-out;
     height: 1px;
-    background-color: rgb(170, 170, 170);
+    background-color: #d9d5cd;
 }
 
 .project .showHr{
@@ -28,7 +28,6 @@
     font-size: 100px;
     font-family: york;
     letter-spacing: -0.05em;
-    color: rgb(170, 170, 170);
 
   }
   .projectTopHr{
@@ -37,14 +36,14 @@ right: 0;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: rgba(170, 170, 170);
+background-color: #d9d5cd;
   }
   .projectHr{
     position: absolute;
 width: 0%;
 transition:  all .5s ease-in-out;
 height: 1px;
-background-color: rgba(170, 170, 170);
+background-color: #d9d5cd;
   }
   .showHr{
     width: 100%;
@@ -88,7 +87,7 @@ overflow-y: hidden;
   align-items: center;
   background-color:transparent;
   border-radius: 24px;
-  border: 1px rgb(170, 170, 170) solid;
+  border: 1px #d9d5cd solid;
   cursor: pointer;
   font-family: condenseInt;
   font-size: 14px;
@@ -97,20 +96,20 @@ overflow-y: hidden;
   position: relative;
   text-align: center;
   margin-right: 10px;
-  color: rgb(170, 170, 170);
   opacity: 0;
+  color: #d9d5cd;
   transition: all .5s ease-in-out;
 }
 .button-17 a{
     text-decoration: none;
+    color: #d9d5cd;
     font-family: condenseInt;
   font-size: 14px;
-  color: rgb(170, 170, 170);
   transition: all .5s ease-in-out;
 }
 
 .button-17:hover{
-    box-shadow: 0px 2px 5px  rgb(170, 170, 170);
+    box-shadow: 0px 2px 5px  #d9d5cd;
 }
 .projectLowerPart{
   padding: 20px 40px;
@@ -144,7 +143,7 @@ overflow-y: hidden;
     flex-direction: column;
   }
   .projectTop h1{
-    font-size: 80px;
+    font-size: 70px;
   }
   .projectDetailsContainer h1{
     font-size: 40px;
@@ -156,7 +155,7 @@ overflow-y: hidden;
 
 @media all and (max-width: 650px){
   .projectTop h1{
-    font-size: 70px;
+    font-size: 60px;
   }
   .projectDetailsContainer{
     padding: 20px 20px;
@@ -175,7 +174,7 @@ overflow-y: hidden;
 
 @media all and (max-width: 450px){
   .projectTop h1{
-    font-size: 60px;
+    font-size: 50px;
   }
       .projectDetailButtons .button-17 {
         font-size: 12px;
