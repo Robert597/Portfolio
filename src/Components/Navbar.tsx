@@ -49,17 +49,7 @@ const Navbar = () => {
     >
         <>
         <div className="navbarcont">
-    <motion.div className="NavbarContainer" initial={{
-        y: "-100%"
-    }}
-    animate={{
-        y: 0,
-        transition:{
-            duration: 1,
-            delay: 1.6,
-            ease: "linear"
-        }
-    }}>
+    <motion.div className="NavbarContainer">
         <div className="logoContainer">
              <h1 className='logo'>
                 <span className='logoname'>ROBERT</span>

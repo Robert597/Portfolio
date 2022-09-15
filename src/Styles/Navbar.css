@@ -74,7 +74,7 @@
   position: relative;
   height: auto;
   align-items: center;
- 
+ color: #3f76bf;
 }
 
 
@@ -96,8 +96,7 @@
     font-family: 'Inter';
     font-weight: 700;
     font-size: 18px;
-    padding: 10px 20px;
-    mix-blend-mode: difference;
+    padding: 10px 20px; 
     border-radius: 50%;
     border: 2px solid #3f76bf;
 }
