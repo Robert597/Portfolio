@@ -18,7 +18,7 @@
     width: 100%;
     display: none;
     isolation: isolate;
-    box-sizing: border-box;
+    padding: 0;
 }
 .menu-secondary{
     z-index: -1;
@@ -160,7 +160,7 @@ display: inline-block;
         display: flex;
         justify-content: space-evenly;
         position: absolute;
-        bottom: 130px;
+        bottom: 200px;
         left: 0;
         flex-wrap: wrap;
     }
@@ -170,15 +170,16 @@ display: inline-block;
         line-height: 1.2;
     }
     .menuContactMe{
-        top: 60%;
+        top: 40%;
         left: 10%;
         width: 120px;
         height: 120px;
-        transform: translate(-10%, -60%);
+        transform: translate(-10%, -4%);
         transform: rotate(0deg);
     }
     .menuBottomContainer{
-        padding: 20px;
+        padding: 40px;
+        bottom: 100px;
     }
 }
 @media all and (max-width: 650px){

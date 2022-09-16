@@ -89,7 +89,9 @@ gsap.fromTo(".menulinkname", {
     stagger: .2,
     ease: "slow (0.7, 0.7, false)"
 })
-gsap.to(".topContent", {
+gsap.fromTo(".topContent", {
+    opacity: 0
+},{
     opacity: 1,
     delay: 1,
     duration: 1,
