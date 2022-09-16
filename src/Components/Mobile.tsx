@@ -91,6 +91,7 @@ gsap.fromTo(".menulinkname", {
 })
 gsap.to(".topContent", {
     opacity: 1,
+    delay: 1,
     duration: 1,
     ease: "slow (0.7, 0.7, false)"
 });

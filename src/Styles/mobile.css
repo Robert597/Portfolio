@@ -36,6 +36,7 @@
 
 .menu-layer{
     width: 100%;
+    position: relative;
     background-color: #d9d5cd;
     color: #141414;
     height: 100%;
@@ -88,7 +89,7 @@ display: inline-block;
     width: 100%;
     padding: 20px 40px;
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
 }
 .menuContactMe{
     background-color: #3f76bf;
@@ -159,7 +160,7 @@ display: inline-block;
         display: flex;
         justify-content: space-evenly;
         position: absolute;
-        bottom: 100px;
+        bottom: 130px;
         left: 0;
         flex-wrap: wrap;
     }
