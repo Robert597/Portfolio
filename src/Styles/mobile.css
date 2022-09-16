@@ -45,12 +45,12 @@
     align-items: center;
     flex-direction: column;
     z-index: 20;
-    padding: 30px 40px;
 }
 .topContent{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 20px 40px;
 }
 .topContent .logo, .topContent .hamburger-menu{
     color: #141414;
@@ -60,7 +60,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 40px;
 }
 .menuLink, .menuSocialsContainer h1{
     height: auto;
@@ -146,11 +146,9 @@ display: inline-block;
     }
 }
 @media all and (max-width: 760px){
-    .menu-layer{
-        padding: 30px 20px;
-    }
     .menuCenterContent{
       flex-direction: column;
+      padding: 20px;
     }
     .menuLinkContainer{
         align-self: flex-end;
@@ -180,6 +178,9 @@ display: inline-block;
     .menuBottomContainer{
         padding: 40px;
         bottom: 100px;
+    }
+    .topContent{
+        padding: 20px;
     }
 }
 @media all and (max-width: 650px){

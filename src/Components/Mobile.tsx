@@ -150,7 +150,7 @@ gsap.fromTo(".menuBottomContainer p", {
                 <div className="menuLinkContainer">
                     <h1 className="menuLink" onClick={() => {
                         handleMenu()
-                        navigate("/home")
+                        navigate("/")
                     }}>
                         <span className="menulinkno">01.</span>
                         <span className="menulinkname">Home</span>
