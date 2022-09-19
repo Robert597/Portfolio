@@ -12,7 +12,7 @@ const Home = () => {
  
   
   return (
-    <div data-scroll-section>
+    <div data-scroll-section className='homemaincontainer'>
       <Transition/>
      <section className='Homewrapper' >
        <Banner/>

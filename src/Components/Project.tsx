@@ -1,5 +1,7 @@
 import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { useNavigate } from 'react-router';
+
 
 
 
@@ -7,10 +9,10 @@ import { BsArrowUpRight } from 'react-icons/bs';
 const Project = ({item, index}:  {item: {
     name: string;
     link: string;
-    details: string
+    details: string[]
 }, index: number}) => {
   
-    const[showDetails, setShowDetails] = React.useState<boolean>(false);
+    const navigate = useNavigate();
   return (
     <>
          <div className='mainProjectContainer'>
@@ -22,10 +24,11 @@ const Project = ({item, index}:  {item: {
   {item.name}
     </span></h1>
   <div className='projectDetailButtons'>
-    <button className='button-17' onClick={() => setShowDetails(prev => !prev)} 
+    <button className='button-17'  
     data-scroll
     data-scroll-offset="70"
-    data-scroll-class="showBtn">View <BsArrowUpRight/></button>
+    data-scroll-class="showBtn"
+    onClick={() => navigate("/details", {state: item})}>View <BsArrowUpRight/></button>
     <button className='button-17'
      data-scroll
      data-scroll-offset="70"
@@ -33,10 +36,7 @@ const Project = ({item, index}:  {item: {
   </div>
 </div>
 
-{showDetails && <div className='projectLowerPart'>
-<p>{item.details}</p>
-</div>
-}
+
 
 <span className='projectHr'
 data-scroll 

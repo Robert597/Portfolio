@@ -58,7 +58,10 @@ body {
     color: #d9d5cd;
     position: relative;
 }
-
+.main{
+  position: relative;
+  min-height: 100vh;
+}
 
 .transition-effect{
   height: 100vh;

@@ -4,27 +4,11 @@ import "../Styles/homeproject.css";
 import { BsArrowUpRight } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { data } from '../utils/project';
 
 const HomeProject = () => {
     const navigate = useNavigate();
-        const Projects = [
-          {
-            name: "Moments",
-            link: "https://momentss.vercel.app",
-            details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive. This project was built using Reactjs for user Interface, Node and expressJs for server, MongoDb for database and use of javascript animation library(GSAP) for animations.",
-          }, 
-          {
-            name: "RobCommerce",
-            link: "https://momentss.vercel.app",
-            details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
-          },
-          {
-            name: "gate",
-            link: "https://momentss.vercel.app",
-            details: "A full stack social media application with email and Google Authentication, pagination, search and filtering capabilities, comments and  fully responsive."
-          },
-          
-        ]
+      
   return (
     <div className='homeProject'>
          <div className="projectTop">
@@ -38,7 +22,7 @@ const HomeProject = () => {
 
       <div className='projectContainer'>
         {
-          Projects.map((item, index) => (
+          data.slice(0, 3).map((item, index) => (
        <Project item={item} index={index} key={index}/> 
           ))
         }

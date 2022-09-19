@@ -11,6 +11,7 @@ import {Route, Routes} from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import Loader from './Components/Loader';
 import ScrollToTop from './Components/scrolltotop';
+import Detail from './Components/Detail';
 
 function App() {
  
@@ -70,6 +71,7 @@ return (
     <Route  path='/' element={<Home />} />
     <Route  path='/about' element={<About />}/>
     <Route  path='/projects' element={<Projects />}/>
+    <Route  path='/details' element={<Detail />}/>
     </Routes>
    <Contact/>
   </div>
