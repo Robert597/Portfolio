@@ -70,6 +70,7 @@
     background-color: #3f76bf;
     color: #d9d5cd;
   }
+ 
   @media all and (max-width: 760px){
     .detailImageSection{
         padding: 70px 20px 40px;

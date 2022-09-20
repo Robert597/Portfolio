@@ -71,9 +71,9 @@ const Navbar = () => {
 
 
 
-<motion.div className='hamburger-menu' onClick={() => handleMenu()} >
-<span>Menu</span>
-</motion.div>
+<div className='hamburger-menu' onClick={() => handleMenu()} >
+<RiMenu4Fill/>
+</div>
 
 </motion.div>
 </div>

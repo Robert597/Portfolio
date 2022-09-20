@@ -84,6 +84,42 @@ const Detail = () => {
       }
     }
   }
+  const visitProjectParent = {
+    animate: {
+      transition: {
+        staggerChildren: .3,
+        delayChildren: 4
+      }
+    }
+  }
+  const visitProject = {
+    initial: {
+      y: "100%",
+      opacity: 0
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: .8,
+        ease: "easeIn"
+      }
+    }
+  }
+  const visitProjectButton = {
+    initial: {
+      scale: 1.5,
+      opacity: 0
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: .8,
+        ease: "easeIn"
+      }
+    }
+  }
   return (
     <motion.div data-scroll-section className='detailImageSection'
     initial='initial'
@@ -154,20 +190,22 @@ variants={projectLabel}
 
         </div>
        </div>
-       <div className="moreproject" 
-      data-scroll
-      data-scroll-class="moreprojectUp"
-      data-scroll-offset="200">
+       <motion.div className="moreproject" 
+       variants={visitProjectParent}>
     <p>
-      <span> Visit Site </span>
+      <motion.span variants={visitProject}
+      initial="initial"
+      animate="animate"> Visit Site </motion.span>
     </p>
 
-    <div className="moreProjectIcon" onClick={() => {
+    <motion.div className="moreProjectIcon" 
+    variants={visitProjectButton}
+    onClick={() => {
                 window.open(data?.link)
             }}>
                 <BsArrowUpRight/>
-            </div>
-</div>
+            </motion.div>
+</motion.div>
     </motion.div>
   )
 }

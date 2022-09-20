@@ -95,11 +95,10 @@
     background-color: transparent;
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     padding: 10px 20px; 
     border-radius: 50%;
     text-shadow: 0 0 4px #141414;
-    border: 2px solid #3f76bf;
 }
 
 

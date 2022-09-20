@@ -1,5 +1,4 @@
 .homeabout{
-    position: relative;
     background-color: #d9d5cd;
     color: #141414;
     padding: 20px 0 40px 0;
@@ -42,8 +41,8 @@
 
 }
 .homedetailsmallcontent{
-    font-size: 40px;
-    line-height: 1;
+    font-size: 32px;
+    line-height: 1.2;
     font-family: condenseInt;
     letter-spacing: -0.05em;
     padding: 40px;
@@ -118,7 +117,7 @@ transition: 1s all ease-in-out 0.5s;
         clip-path: polygon(14px 48px, 1px 34px, 1px 14px, 14px 1px, 82px 1px, 96px 14px, 96px 34px, 82px 48px, 14px 48px);
      }
      .homedetailsmallcontent{
-        font-size: 30px;
+        font-size: 28px;
         padding: 40px 20px;
     }
     .homeabout .about_label{
@@ -136,7 +135,7 @@ transition: 1s all ease-in-out 0.5s;
         font-size: 16px;
     }
     .homedetailsmallcontent{
-        font-size: 30px;
+        font-size: 28px;
         padding: 40px 20px;
     }
     .moreabout .moreAboutIcon{

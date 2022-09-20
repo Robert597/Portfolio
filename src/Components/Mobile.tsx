@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import gsap from 'gsap';
 import "../Styles/mobile.css";
 import { BsArrowUpRight } from 'react-icons/bs';
+import {GrClose} from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -142,7 +143,7 @@ gsap.fromTo(".menuBottomContainer p", {
         </div>
          
 <div className='hamburger-menu' onClick={() => handleMenu()} >
-<span>Close</span>
+<GrClose/>
 </div>
             </div>
 
