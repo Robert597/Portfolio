@@ -34,6 +34,7 @@ html.has-scroll-dragging {
   transform-origin: center right;
   transition: transform 0.3s, opacity 0.3s;
   opacity: 0; }
+
   .c-scrollbar:hover {
     transform: scaleX(1.45); }
   .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
@@ -51,7 +52,7 @@ html.has-scroll-dragging {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: black;
+  background-color: rgb(170, 170, 170);
   opacity: 0.5;
   width: 7px;
   border-radius: 10px;
