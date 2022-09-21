@@ -45,6 +45,9 @@ return (
   options={
     {
       smooth: true,
+      mobile: {
+        smooth: true
+      },
       smartphone: {
         smooth: true
       },

@@ -17,12 +17,6 @@ const About = () => {
  
 
     <section className="about">
-      
-   
-
-
-      
-
     <div className="aboutTop">
   <motion.h1
 >
@@ -61,19 +55,19 @@ const About = () => {
                 <motion.p 
             
                 >
-                  Web developer based in Lagos, Nigeria, specialized in fullstack web development, dedicated to developing and optimizing interactive, user-friendly and feature rich websites. leveraging analytical skills and strong attention to details in order to deliver original and efficient web solutions.
+                  I am a web developer based in Lagos, Nigeria, my area of expertise is in fullstack web development. I am dedicated to developing and optimizing interactive user-friendly and feature rich websites through analytical skills and strong attention to details in order to deliver original and efficient web solutions.
                 </motion.p>
                 <motion.p   
                 >
-                 I started coding in the university, i majored in Computer Science in school, it wasnt easy when i started but it's something i've come to really love. 
+                 I majored in Computer Science in school and i started coding while i was a student, it was not easy when i started but web development is somethimg i have developed strong passion for.
                 </motion.p>
                 <motion.p   
                >
-                  i've been a part of this industry for few years and within those years, ive honed my analytic and collaborative skills which makes working with a team easier.
+                  I have been a part of this industry significant period of time and along the line,i have honed my analytic and collaborative skills which makes working with a team easy for me.
                 </motion.p>
                 <motion.p   
                 >
-                  I'm all about growth, i always want to add one or two more skills to my stack, a mentor once told me there's no end to learning in this industry.
+                  I am all about growth and i am always open to learning new things which i can add to my stack. My mentor once told me "there is no end to learning in this industry".
                 </motion.p>
               </motion.div>
 
