@@ -1,4 +1,7 @@
-
+.homemaincontainer{
+    position: relative;
+    min-height: 100vh;
+}
 .Homewrapper{
     width: 100vw; 
 }

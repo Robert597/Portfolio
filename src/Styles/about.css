@@ -1,3 +1,7 @@
+.aboutabout{
+    position: relative;
+    min-height: 100vh;
+}
 .about{
     position: relative;
     padding-bottom: 30px;

@@ -12,7 +12,7 @@ const About = () => {
   
  
   return (
-    <div data-scroll-section>
+    <div data-scroll-section className="aboutabout">
  <Transition/>
  
 
