@@ -8,7 +8,7 @@ const Projects = () => {
   
   return (
     <div  className='project' data-scroll-section >
-<Transition/>
+
 
 
       <div className="projectTop">

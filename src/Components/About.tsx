@@ -13,10 +13,10 @@ const About = () => {
  
   return (
     <div data-scroll-section className="aboutabout">
- <Transition/>
+ 
  
 
-    <section className="about">
+    <div className="about">
     <div className="aboutTop">
   <motion.h1
 >
@@ -131,7 +131,7 @@ const About = () => {
           
 
              </div>
-    </section>
+    </div>
     </div>
   )
 }

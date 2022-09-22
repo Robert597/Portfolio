@@ -13,12 +13,12 @@ const Home = () => {
   
   return (
     <div data-scroll-section className='homemaincontainer'>
-      <Transition/>
-     <section className='Homewrapper' >
+
+     <div className='Homewrapper' >
        <Banner/>
        <HomeAbout/>
        <HomeProject/>
-    </section>
+    </div>
     </div>
   )
 }
