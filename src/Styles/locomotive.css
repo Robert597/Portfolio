@@ -66,4 +66,9 @@ html.has-scroll-dragging {
     right: auto;
     bottom: 0; }
 
-
+@media screen and (max-width: 480px){
+  html.has-scroll-smooth {
+    overflow-y: scroll; }
+    .has-scroll-smooth body {
+      overflow-y: scroll; }
+}
