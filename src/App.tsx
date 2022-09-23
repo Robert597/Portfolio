@@ -38,9 +38,6 @@ const {pathname} = useLocation();
   
 
 return (
-  <>
-  <Navbar/>
-  <>
 <LocomotiveScrollProvider
   options={
     {
@@ -80,8 +77,6 @@ return (
   </div>
  
 </LocomotiveScrollProvider>
-</>
-</>
 )
 }
 
