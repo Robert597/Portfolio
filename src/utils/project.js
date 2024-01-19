@@ -1,4 +1,14 @@
 export  const data = [
+  {
+    name: "Apple Vision Pro",
+    link: "https://apple-vision-pro1.vercel.app/",
+    details: ["A revamped online platform showcasing the Apple Vision pro 3D spatial computer.",
+  "The user interface was developed using React.js", 
+"Gsap and Framer Motion were employed to craft dynamic animations throughout the website.",
+"The site utilizes React Router for seamless navigation between pages."],
+    tools: ["React.js", "GSAP", "Framer Motion"],
+    image: "cover.png"
+  },
     {
       name: "Rob-Commerce",
       link: "https://robcommerce.vercel.app/",
